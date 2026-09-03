@@ -1,6 +1,7 @@
 services:
-  - type: static_site
+  - type: web
     name: your-bible-counselor
+    env: static
     branch: main
     buildCommand: npm run build
     staticPublishPath: dist
