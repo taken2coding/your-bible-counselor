@@ -30,7 +30,7 @@ Thumbs.db
 *.swp
 *~
 
-# build / coverage
+# build / coverage — but keep dist for static deploy? Render builds dist via buildCommand, so ignore local dist
 dist/
 coverage/
 .cache/
