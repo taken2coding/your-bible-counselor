@@ -1,0 +1,38 @@
+# deps
+node_modules/
+bun.lockb
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# env / secrets — never commit tokens
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# logs / tmp / ngrok
+*.log
+/tmp/
+ngrok.log
+bible-counselor*.log
+*.url
+ngrok-direct.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# editor / IDE
+.idea/
+.vscode/
+*.swp
+*~
+
+# build / coverage
+dist/
+coverage/
+.cache/
+tmp/
+
