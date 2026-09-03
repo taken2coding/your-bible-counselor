@@ -1,9 +1,9 @@
 services:
-  - type: static
+  - type: static_site
     name: your-bible-counselor
     branch: main
     buildCommand: npm run build
-    publishPath: dist
+    staticPublishPath: dist
     # no server — pure static, free CDN, never sleeps
     headers:
       - path: /*
