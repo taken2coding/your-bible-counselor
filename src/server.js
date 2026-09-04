@@ -1,10 +1,11 @@
-// Your Bible Counselor — Animated Fun UI + 150 Biblical Scenarios Gallery
+// Your Bible Counselor — Animated Fun UI — Dynamic counts from stories/verses
 import http from "http";
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
 import { counsel, buildLLMPrompt } from "./agent.js";
 import { STORIES } from "../data/stories.js";
+import { VERSES } from "../data/verses.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -83,13 +84,17 @@ function serveStaticFile(res, filePath, contentType) {
 }
 
 function htmlHome() {
+  const STORY_COUNT = STORIES.length;
+  const VERSE_COUNT = VERSES.length;
   const allStoriesJson = JSON.stringify(STORIES.map(s=>({id:s.id,title:s.title,character:s.character,tags:s.situationTags,book:s.book,chapter:s.chapter,verses:s.verses})));
+  const STORY_COUNT_CLIENT = STORIES.length;
+  const VERSE_COUNT_CLIENT = VERSES.length;
   return `<!doctype html>
 <html>
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Your Bible Counselor — KJV 1769 • 150 Biblical Scenarios</title>
+<title>Your Bible Counselor — KJV 1769 • ${STORY_COUNT} Biblical Scenarios</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
 <style>
@@ -207,8 +212,8 @@ textarea:focus{border-color:var(--maroon);box-shadow:0 0 0 3px rgba(139,0,0,0.12
   <h1>Your <span>Bible Counselor</span></h1>
   <div class="sub">Simple, proven wisdom for every part of your life</div>
   <div class="badgeRow">
-    <span class="badge gold">✦ 150 Biblical Scenarios</span>
-    <span class="badge">📜 120+ Verses</span>
+    <span class="badge gold">✦ ${STORY_COUNT} Biblical Scenarios</span>
+    <span class="badge">📜 ${VERSE_COUNT} Verses</span>
   </div>
 </div>
 
@@ -240,7 +245,7 @@ textarea:focus{border-color:var(--maroon);box-shadow:0 0 0 3px rgba(139,0,0,0.12
       <button class="btn btnGreen" onclick="example('10 verses to justify background checks')">Background checks</button>
       <button class="btn btnGhost" onclick="example('falsely accused and forgotten in prison like Joseph')">Falsely accused</button>
       <button class="btn btnGhost" onclick="example('need courage to speak up like Esther, afraid')">Esther courage</button>
-      <button class="btn btnGhost" onclick="document.getElementById('gallery').scrollIntoView({behavior:'smooth'})">↓ 150 Biblical Scenarios</button>
+      <button class="btn btnGhost" onclick="document.getElementById('gallery').scrollIntoView({behavior:'smooth'})">↓ ${STORY_COUNT} Biblical Scenarios</button>
     </div>
   </div>
 
@@ -248,8 +253,8 @@ textarea:focus{border-color:var(--maroon);box-shadow:0 0 0 3px rgba(139,0,0,0.12
 
   <div class="galleryHead" id="gallery">
     <div>
-      <h2>📚 Explore All 150 Biblical Scenarios</h2>
-      <div class="stats" id="galleryStats">Showing 24 of 150 — click any card to auto-prompt</div>
+      <h2>📚 Explore All ${STORY_COUNT} Biblical Scenarios</h2>
+      <div class="stats" id="galleryStats">Showing 24 of ${STORY_COUNT} — click any card to auto-prompt</div>
     </div>
     <div class="filterBar">
       <input id="archSearch" placeholder="Filter archetypes… e.g., fear, diligence, debt" oninput="filterGallery()"/>
@@ -320,8 +325,8 @@ function renderGallery(){
     grid.appendChild(card);
   });
   countPill.textContent = galleryExpanded ? filtered.length+' shown • all visible' : show+' shown • '+(filtered.length-show)+' hidden — click “Show all”';
-  stats.textContent = 'Showing '+show+' of '+filtered.length+' (of 150) — click any card to auto-prompt';
-  document.getElementById('storyCountFoot').textContent = filtered.length+' filtered • 150 total';
+  stats.textContent = 'Showing '+show+' of '+filtered.length+' (of ${STORY_COUNT}) — click any card to auto-prompt';
+  document.getElementById('storyCountFoot').textContent = filtered.length+' filtered • ${STORY_COUNT} total';
 }
 
 function filterGallery(){
@@ -393,7 +398,7 @@ async function ask(){
   if(q.length>600){ alert('Please shorten to under 600 characters.'); return; }
   const out=document.getElementById('out');
   const modeParam = selectedMode==='auto' ? '' : '&mode='+selectedMode;
-  out.innerHTML='<div class=card style="padding:18px;text-align:center"><div><span class=loadingDot></span><span class=loadingDot></span><span class=loadingDot></span></div><p class=small>Seeking counsel for: <em>'+esc(q).slice(0,120)+'</em> — mode: <b>'+esc(selectedMode)+'</b> — consulting 150 archetypes + 120+ verses…</p></div>';
+  out.innerHTML='<div class=card style="padding:18px;text-align:center"><div><span class=loadingDot></span><span class=loadingDot></span><span class=loadingDot></span></div><p class=small>Seeking counsel for: <em>'+esc(q).slice(0,120)+'</em> — mode: <b>'+esc(selectedMode)+'</b> — consulting ${STORY_COUNT} archetypes + ${VERSE_COUNT} verses…</p></div>';
   out.scrollIntoView({behavior:'smooth', block:'start'});
   const res=await fetch('/counsel?q='+encodeURIComponent(q)+modeParam, {headers:{'ngrok-skip-browser-warning':'true'}});
   const text=await res.text();

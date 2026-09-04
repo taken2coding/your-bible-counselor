@@ -13,13 +13,15 @@ const outFile = path.join(outDir, "index.html");
 const allStoriesJson = JSON.stringify(STORIES.map(s=>({id:s.id,title:s.title,character:s.character,tags:s.situationTags,book:s.book,chapter:s.chapter,verses:s.verses})));
 const versesJson = JSON.stringify(VERSES);
 const storiesFullJson = JSON.stringify(STORIES);
+const STORY_COUNT = STORIES.length;
+const VERSE_COUNT = VERSES.length;
 
 const html = `<!doctype html>
 <html>
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Your Bible Counselor — KJV 1769 • 150 Biblical Scenarios</title>
+<title>Your Bible Counselor — KJV 1769 • ${STORY_COUNT} Biblical Scenarios</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
 <style>
@@ -125,8 +127,8 @@ textarea:focus{border-color:var(--maroon);box-shadow:0 0 0 3px rgba(139,0,0,0.12
   <h1>Your <span>Bible Counselor</span></h1>
   <div class="sub">Simple, proven wisdom for every part of your life</div>
   <div class="badgeRow">
-    <span class="badge gold">✦ 150 Biblical Scenarios</span>
-    <span class="badge">📜 120+ Verses</span>
+    <span class="badge gold">✦ ${STORY_COUNT} Biblical Scenarios</span>
+    <span class="badge">📜 ${VERSE_COUNT} Verses</span>
   </div>
 </div>
 
@@ -158,7 +160,7 @@ textarea:focus{border-color:var(--maroon);box-shadow:0 0 0 3px rgba(139,0,0,0.12
       <button class="btn btnGreen" onclick="example('10 verses to justify background checks')">Background checks</button>
       <button class="btn btnGhost" onclick="example('falsely accused and forgotten in prison like Joseph')">Falsely accused</button>
       <button class="btn btnGhost" onclick="example('need courage to speak up like Esther, afraid')">Esther courage</button>
-      <button class="btn btnGhost" onclick="document.getElementById('gallery').scrollIntoView({behavior:'smooth'})">↓ 150 Biblical Scenarios</button>
+      <button class="btn btnGhost" onclick="document.getElementById('gallery').scrollIntoView({behavior:'smooth'})">↓ ${STORY_COUNT} Biblical Scenarios</button>
     </div>
   </div>
 
@@ -166,8 +168,8 @@ textarea:focus{border-color:var(--maroon);box-shadow:0 0 0 3px rgba(139,0,0,0.12
 
   <div class="galleryHead" id="gallery">
     <div>
-      <h2>📚 Explore All 150 Biblical Scenarios</h2>
-      <div class="stats" id="galleryStats">Showing 24 of 150 — click any card to auto-prompt</div>
+      <h2>📚 Explore All ${STORY_COUNT} Biblical Scenarios</h2>
+      <div class="stats" id="galleryStats">Showing 24 of ${STORY_COUNT} — click any card to auto-prompt</div>
     </div>
     <div class="filterBar">
       <input id="archSearch" placeholder="Filter scenarios… e.g., fear, diligence, debt" oninput="filterGallery()"/>
@@ -186,6 +188,8 @@ textarea:focus{border-color:var(--maroon);box-shadow:0 0 0 3px rgba(139,0,0,0.12
 const ALL_STORIES_META = ${allStoriesJson};
 const STORIES_FULL = ${storiesFullJson};
 const VERSES_RAW = ${versesJson};
+const STORY_COUNT = STORIES_FULL.length;
+const VERSE_COUNT = VERSES_RAW.length;
 
 // --- Provenance (client) ---
 const WIKISOURCE_BASE = "https://en.wikisource.org/wiki";
@@ -340,8 +344,8 @@ function renderGallery(){
     grid.appendChild(card);
   });
   countPill.textContent = galleryExpanded ? filtered.length+' shown • all visible' : show+' shown • '+(filtered.length-show)+' hidden — click “Show all”';
-  stats.textContent = 'Showing '+show+' of '+filtered.length+' (of 150) — click any card to auto-prompt';
-  document.getElementById('storyCountFoot').textContent = filtered.length+' filtered • 150 total';
+  stats.textContent = 'Showing '+show+' of '+filtered.length+' (of '+STORY_COUNT+') — click any card to auto-prompt';
+  document.getElementById('storyCountFoot').textContent = filtered.length+' filtered • '+STORY_COUNT+' total';
 }
 function filterGallery(){
   const q=document.getElementById('archSearch').value.toLowerCase().trim();
@@ -398,7 +402,7 @@ function ask(){
   if(!q) return;
   if(q.length>600){ alert('Please shorten to under 600 characters.'); return; }
   const out=document.getElementById('out');
-  out.innerHTML='<div class=card style="padding:18px;text-align:center"><div><span class=loadingDot></span><span class=loadingDot></span><span class=loadingDot></span></div><p class=small>Seeking counsel for: <em>'+esc(q).slice(0,120)+'</em> — mode: <b>'+esc(selectedMode)+'</b> — consulting 150 Biblical Scenarios + 120+ verses…</p></div>';
+  out.innerHTML='<div class=card style="padding:18px;text-align:center"><div><span class=loadingDot></span><span class=loadingDot></span><span class=loadingDot></span></div><p class=small>Seeking counsel for: <em>'+esc(q).slice(0,120)+'</em> — mode: <b>'+esc(selectedMode)+'</b> — consulting '+STORY_COUNT+' Biblical Scenarios + '+VERSE_COUNT+' verses…</p></div>';
   out.scrollIntoView({behavior:'smooth', block:'start'});
   // client-side counsel — no fetch, instant, static-safe
   setTimeout(()=>{

@@ -5892,6 +5892,46 @@ export const STORIES = [
       ]
     },
     crossRefs: [{ book: "Matthew", chapter: 13, verses: "19-23", note: "explained: wayside, stony, thorny, good ground" }]
+  },
+  {
+    id: "jeroboam_young_prophet",
+    title: "The Young Prophet from Judah — Confronts Jeroboam at Bethel, Altar Rent, Hand Withered and Restored",
+    character: "Young Prophet (Man of God from Judah)",
+    book: "1 Kings",
+    chapter: 13,
+    verses: "1-6",
+    kjvText: "And, behold, there came a man of God out of Judah by the word of the LORD unto Bethel: and Jeroboam stood by the altar to burn incense. And he cried against the altar in the word of the LORD, and said, O altar, altar, thus saith the LORD; Behold, a child shall be born unto the house of David, Josiah by name; and upon thee shall he offer the priests of the high places that burn incense upon thee, and men's bones shall be burnt upon thee. And he gave a sign the same day, saying, This is the sign which the LORD hath spoken; Behold, the altar shall be rent, and the ashes that are upon it shall be poured out. And it came to pass, when king Jeroboam heard the saying of the man of God, which had cried against the altar in Bethel, that he put forth his hand from the altar, saying, Lay hold on him. And his hand, which he put forth against him, dried up, so that he could not pull it in again to him. The altar also was rent, and the ashes poured out from the altar, according to the sign which the man of God had given by the word of the LORD. And the king answered and said unto the man of God, Intreat now the face of the LORD thy God, and pray for me, that my hand may be restored me again. And the man of God besought the LORD, and the king's hand was restored him again, and became as it was before.",
+    situationTags: ["man of God out of Judah by word of LORD unto Bethel", "Jeroboam stood by altar to burn incense", "O altar altar Josiah by name", "altar shall be rent ashes poured out", "put forth hand Lay hold on him", "hand dried up could not pull in again", "Intreat now face of LORD", "besought LORD hand was restored", "false worship golden calves"],
+    keywords: ["man of God Judah Bethel", "Jeroboam altar incense", "O altar altar Josiah", "altar rent ashes poured", "hand dried up withered", "Lay hold on him", "Intreat face LORD pray for me", "hand restored"],
+    summary: "God sends an unnamed young prophet from Judah to Bethel where Jeroboam stands by his new altar burning incense to golden calves. He cries 'O altar, altar... Josiah by name shall offer priests upon thee, and men's bones burnt upon thee' and gives sign 'Behold, the altar shall be rent'. Jeroboam points 'Lay hold on him' — his outstretched hand dries up, cannot pull in. Altar splits, ashes pour. The king begs 'Intreat now face of LORD for me, that my hand may be restored'. The man besought LORD and hand became as before. He refuses king's reward, obeys charge 'eat no bread nor drink water'. Later deceived by old prophet of Bethel to eat, disobeys and is slain by lion that stands by body but eats not, buried by old prophet who says 'Alas, my brother'.",
+    actions: [
+      "Came out of Judah by word of LORD unto Bethel while Jeroboam stood by altar to burn incense (13:1)",
+      "Cried 'O altar, altar, thus saith LORD; Josiah by name... men's bones burnt upon thee' and gave sign 'Behold altar shall be rent, ashes poured out' (13:2-3)",
+      "Jeroboam's hand which he put forth dried up, could not pull in again (13:4); altar rent according to sign (13:5)",
+      "King said 'Intreat now face of LORD... pray for me, that my hand may be restored' — man besought LORD and hand was restored as before (13:6)",
+      "Refused reward 'If thou wilt give half thine house, I will not go in with thee' (13:8) — but later was deceived by old prophet 'an angel spake unto me' (13:18) and ate, therefore lion slew him (13:24) while lion stood and ate not"
+    ],
+    outcome: "Altar rent sign fulfilled; hand withered and healed at prayer (13:4-6). Name Josiah fulfilled ~300 years later: Josiah burnt bones of Bethel priests upon that altar (2 Kings 23:16-17) and saw this prophet's sepulchre and left his bones. Warning: deliverance miracle does not exempt from obedience — lion slew prophet who ate though told not to (13:21-24).",
+    outcomeRef: { book: "1 Kings", chapter: 13, verses: "6" },
+    strategy: {
+      name: "The Rent Altar and Withered Hand",
+      steps: [
+        "1. COME BY WORD OF LORD UNTO BETHEL WHILE KING STANDS BY ALTAR (13:1) — go where false worship stands",
+        "2. CRY 'O ALTAR, ALTAR... JOSIAH BY NAME' (13:2) — name future judgment on present altar",
+        "3. GIVE SIGN 'BEHOLD ALTAR SHALL BE RENT AND ASHES POURED OUT' (13:3,5) — rent before you seize hand",
+        "4. ENDURE 'LAY HOLD ON HIM' — HAND DRIED UP, COULD NOT PULL IN (13:4) — God withers grasping hand",
+        "5. HEAR 'INTREAT NOW FACE OF LORD... PRAY FOR ME' (13:6) — pray even for persecutor's healing: besought LORD and hand restored as before",
+        "6. REFUSE HALF HOUSE IF TOLD 'EAT NO BREAD NOR DRINK WATER' (13:8-9) — charge over reward",
+        "7. FEAR OLD PROPHET LIE 'ANGEL SPAKE UNTO ME' (13:18) — test even prophetic voice against prior word; lion stands by body but eats not (13:24) for disobedience"
+      ]
+    },
+    crossRefs: [
+      { book: "1 Kings", chapter: 13, verses: "2", note: "Behold, a child shall be born unto house of David, Josiah by name — fulfilled 2 Kings 23:16-17" },
+      { book: "1 Kings", chapter: 13, verses: "9", note: "For so was it charged me by word of LORD, saying, Eat no bread, nor drink water" },
+      { book: "1 Kings", chapter: 13, verses: "18", note: "old prophet lied: an angel spake unto me — he lied unto him" },
+      { book: "1 Kings", chapter: 13, verses: "24", note: "lion met him and slew him: lion stood by carcase, ass also stood by" },
+      { book: "2 Kings", chapter: 23, verses: "16-17", note: "Josiah turned... burnt bones upon altar — The altar which man of God proclaimed — What title is that sepulchre? It is sepulchre of man of God which came from Judah" }
+    ]
   }
 ];
 
@@ -5912,7 +5952,9 @@ export const SITUATION_TAXONOMY = [
   // added 2026-09 batch 2
   "nail of tent","hammer in hand","adversary provoked sore","make her fret","call me Mara","went out full home empty","cannot redeem","mar mine own inheritance","plucked off shoe","spear bolster","cruse of water","deep sleep from LORD","give me thy vineyard","inheritance of fathers","words with one mouth","speak that which is good","hid six years house of LORD","hid him and his nurse","when he was strong heart lifted","burn incense temple","leprosy rose in forehead","shewed all house precious things","nothing not shewed","rent garment mantle","plucked hair head beard","sat astonied","desire of eyes stroke","neither mourn nor weep","prince Persia withstood 21 days","went into sanctuary","then understood their end","I am young ye very old","spirit in man inspiration","handmaid of Lord","be it unto me","Rachel weeping would not be comforted","slew all children two years under","straightway left nets","fishers of men","sitting at receipt custom","If thou wilt thou canst make clean","I have no man when water troubled","Siloam Sent","only son widow gate","transfigured face shine sun","bright cloud beloved Son hear ye him","took towel girded","wash feet","cut off right ear","Put up sword sheath","compel Simon Cyrenian bear his cross","damsel named Rhoda","opened not for gladness","Thou art mad","silver shrines Diana","craft in danger","unprofitable now profitable","nigh unto death not regarding life","isle called Patmos for word of God",
   // added 2026-09 batch 3 - curated core
-  "refused to come at king's commandment","let him curse LORD hath bidden","Two things required before I die","neither poverty nor riches","disciple secretly for fear","besought Pilate take away body","Refrain let alone","if of men will come to nought","What God hath cleansed call not common","Come over into Macedonia help us","forbidden of Holy Ghost to preach in Asia","Brother Saul putting hands","unfeigned faith","dwelt first in grandmother Lois","Demas hath forsaken loved present world","widow Avenge me adversary","because of importunity","wise took oil in vessels","sower went forth","good ground hundredfold"];
+  "refused to come at king's commandment","let him curse LORD hath bidden","Two things required before I die","neither poverty nor riches","disciple secretly for fear","besought Pilate take away body","Refrain let alone","if of men will come to nought","What God hath cleansed call not common","Come over into Macedonia help us","forbidden of Holy Ghost to preach in Asia","Brother Saul putting hands","unfeigned faith","dwelt first in grandmother Lois","Demas hath forsaken loved present world","widow Avenge me adversary","because of importunity","wise took oil in vessels","sower went forth","good ground hundredfold",
+  // added 2026-09 - Jeroboam/altar
+  "man of God out of Judah by word of LORD unto Bethel","Jeroboam stood by altar to burn incense","O altar altar Josiah by name","altar shall be rent ashes poured out","put forth hand Lay hold on him","hand dried up could not pull in again","Intreat now face of LORD","besought LORD hand was restored"];
 
 export function searchStories(query, topN = 3) {
   if (!query) return STORIES.slice(0, topN);

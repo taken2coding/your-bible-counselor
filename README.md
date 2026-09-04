@@ -36,7 +36,7 @@ console.log(result.bestStrategicPlan);
 ```
 
 ## Knowledge base
-- `data/stories.js` — 241 archetypal stories, curated complete core (from 150 → 241, ~98% counseling intent coverage)
+- `data/stories.js` — 242 archetypal stories, curated complete core (from 150 → 242, ~98% counseling intent coverage) — includes Jeroboam/altar 1 Kings 13
 - `src/provenance.js` — Wikisource URL resolver for all 66 books
 - `src/agent.js` — matching engine + plan synthesis
 - `data/verses.js` — 145 KJV verses across 50+ topics with provenance
