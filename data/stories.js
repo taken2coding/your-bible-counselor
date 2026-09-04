@@ -3699,6 +3699,2199 @@ export const STORIES = [
       ]
     },
     crossRefs: []
+  },
+  {
+    id: "deborah_palm",
+    title: "Deborah — Judge Under the Palm When No Man Would Lead",
+    character: "Deborah",
+    book: "Judges",
+    chapter: 4,
+    verses: "4-9",
+    kjvText: "And Deborah, a prophetess, the wife of Lapidoth, she judged Israel at that time. And she dwelt under the palm tree of Deborah between Ramah and Bethel in mount Ephraim: and the children of Israel came up to her for judgment. And she sent and called Barak the son of Abinoam out of Kedeshnaphtali, and said unto him, Hath not the LORD God of Israel commanded, saying, Go and draw toward mount Tabor, and take with thee ten thousand men of the children of Naphtali and of the children of Zebulun?",
+    situationTags: ["female leadership", "judge", "palm tree", "Barak fear", "when men won't lead", "prophetess", "mount tabor"],
+    keywords: ["deborah", "palm tree", "barak", "tabor", "judged israel", "prophetess"],
+    summary: "Israel oppressed by Sisera's 900 chariots; prophetess under palm sends for hesitant general Barak. He will only go if she goes. She goes — honour goes to Jael's tent peg.",
+    actions: ["Judged under palm faithfully before battle (4:5)", "Called Barak with command 'Hath not the LORD commanded' (4:6)", "Went with him though honour would pass to Jael (4:9)"],
+    outcome: "Sisera falls to Jael's nail (4:21), Israel has rest 40 years (5:31). Song of Deborah celebrates.",
+    outcomeRef: { book: "Judges", chapter: 4, verses: "21-23" },
+    strategy: {
+      name: "The Palm Tree Judging",
+      steps: [
+        "1. DWELL UNDER PALM: Judge where you are — Israel came up (4:5)",
+        "2. CALL BARAK: 'Hath not the LORD commanded' — remind of command not suggestion (4:6)",
+        "3. GO EVEN IF HONOUR PASSES TO JAEL: Obedience over credit (4:9)"
+      ]
+    },
+    crossRefs: [{ book: "Judges", chapter: 5, verses: "7", note: "until that I Deborah arose, that I arose a mother in Israel" }]
+  },
+  {
+    id: "leah_tender_eyes",
+    title: "Leah — Tender Eyed and Unloved, Yet Mother of Judah",
+    character: "Leah",
+    book: "Genesis",
+    chapter: 29,
+    verses: "31-35",
+    kjvText: "And when the LORD saw that Leah was hated, he opened her womb: but Rachel was barren. And Leah conceived, and bare a son, and she called his name Reuben: for she said, Surely the LORD hath looked upon my affliction; now therefore my husband will love me.",
+    situationTags: ["unloved", "tender eyed", "hated", "rivalry", "barren vs fruitful", "Reuben", "Leah saw affliction", "marriage rejection"],
+    keywords: ["leah tender eyes", "hated", "opened womb", "rachel barren", "reuben", "looked affliction"],
+    summary: "Laban swaps Leah for Rachel on wedding night. Jacob hates Leah; LORD opens womb. Each son's name is a prayer: Reuben (see), Simeon (heard), Levi (joined), Judah (praise).",
+    actions: ["Bore Reuben 'Surely LORD looked upon affliction' (29:32)", "Bore Judah and said 'now will I praise LORD' (29:35) — moved from wanted love to worship", "Became mother of Levi (priests) and Judah (kings, Messiah)"],
+    outcome: "Through unloved Leah comes Judah — line of Christ (49:10, Matt 1:3). 'The LORD saw that Leah was hated' (29:31).",
+    outcomeRef: { book: "Genesis", chapter: 49, verses: "31" },
+    strategy: {
+      name: "The Tender-Eyed Praise",
+      steps: [
+        "1. KNOW 'THE LORD SAW THAT LEAH WAS HATED' (29:31) — God sees unloved",
+        "2. NAME AFFLICTION UNTIL PRAISE: Reuben to Judah — from 'husband will love me' to 'now will I praise' (29:32-35)",
+        "3. BEAR JUDAH THOUGH UNLOVED: Messiah comes via rejected wife (49:10)"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "tamar_judah_righteous",
+    title: "Tamar — Widow Denied Justice, Called More Righteous",
+    character: "Tamar",
+    book: "Genesis",
+    chapter: 38,
+    verses: "26-27",
+    kjvText: "And Judah acknowledged them, and said, She hath been more righteous than I; because that I gave her not to Shelah my son. And he knew her again no more.",
+    situationTags: ["widow denied", "pledge", "signet bracelet", "more righteous than I", "justice", "Levirate", "Tamar"],
+    keywords: ["tamar judah", "signet bracelet staff", "more righteous", "shelah", "pledge", "harlot veil"],
+    summary: "Twice widowed, denied Shelah, Tamar veils at Enaim, takes Judah's signet/bracelet/staff as pledge. Pregnant, nearly burned, produces pledge — Judah confesses she is more righteous.",
+    actions: ["Demanded pledge — signet, bracelet, staff (38:18) — evidence", "Was judged but produced pledge (38:25)", "Heard 'more righteous than I' (38:26)"],
+    outcome: "Bears Perez and Zerah; Perez in Messiah's line (Matt 1:3). Law later protects widows because of this.",
+    outcomeRef: { book: "Genesis", chapter: 38, verses: "27-30" },
+    strategy: {
+      name: "The Pledge Strategy",
+      steps: [
+        "1. REQUIRE PLEDGE: Signet, bracelet, staff — get witness (38:18)",
+        "2. PRODUCE EVIDENCE WHEN ACCUSED: Bring forth pledge (38:25)",
+        "3. HEAR 'MORE RIGHTEOUS THAN I' (38:26) — justice vindicates"
+      ]
+    },
+    crossRefs: [{ book: "Matthew", chapter: 1, verses: "3", note: "Judas begat Phares and Zara of Thamar" }]
+  },
+  {
+    id: "tamar_amnon_absalom",
+    title: "Tamar Daughter of David — Violation, Ashes, and Absalom's Revenge",
+    character: "Tamar (daughter of David)",
+    book: "2 Samuel",
+    chapter: 13,
+    verses: "12-20",
+    kjvText: "And she answered him, Nay, my brother, do not force me; for no such thing ought to be done in Israel: do not thou this folly. ... Howbeit he would not hearken unto her voice: but, being stronger than she, forced her, and lay with her.",
+    situationTags: ["violation", "do not force me", "folly in Israel", "ashes on head", "rent garment", "desolate", "Absalom hate", "abuse", "Tamar"],
+    keywords: ["tamar amnon", "do not force me", "folly israel", "rent coat", "ashes head", "desolate", "absalom"],
+    summary: "Amnon crafts Jonadab's counsel, feigns sick, forces half-sister Tamar despite 'do not this folly', then hates and throws out. Tamar puts ashes, rents coat of many colours, lives desolate in Absalom's house. David angry but does nothing — Absalom waits 2 years and kills Amnon.",
+    actions: ["Plead 'do not force me...no such thing ought be done' (13:12)", "Was forced though stronger (13:14)", "Put ashes, rent garment, cried (13:19)", "Dwelt desolate in Absalom's house (13:20)"],
+    outcome: "Absalom murders Amnon (13:28-29), flees; David's house fulfills Nathan's prophecy 'sword shall never depart' (12:10). Tamar's story demands justice for Tamar.",
+    outcomeRef: { book: "2 Samuel", chapter: 13, verses: "32" },
+    strategy: {
+      name: "The Ashes and the Advocate",
+      steps: [
+        "1. SAY 'DO NOT THIS FOLLY IN ISRAEL' (13:12) — name violation as folly",
+        "2. RENT GARMENT AND ASHES: Let grief be visible (13:19)",
+        "3. REQUIRE ADVOCACY: David's silence births Absalom's rage — unchecked violation fractures house (13:21-22)"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "rizpah_sackcloth",
+    title: "Rizpah — Mother's Sackcloth That Moved a King",
+    character: "Rizpah",
+    book: "2 Samuel",
+    chapter: 21,
+    verses: "10-14",
+    kjvText: "And Rizpah the daughter of Aiah took sackcloth, and spread it for her upon the rock, from the beginning of harvest until water dropped upon them out of heaven, and suffered neither the birds of the air to rest on them by day, nor the beasts of the field by night.",
+    situationTags: ["sackcloth on rock", "from harvest till rain", "birds not rest", "mother vigil", "unburied sons", "moved David", "Rizpah"],
+    keywords: ["rizpah", "sackcloth rock", "birds air", "harvest till water dropped", "aiah", "seven sons"],
+    summary: "Saul broke Gibeonite covenant; famine. David gives 7 Saulides to Gibeonites, hanged at harvest. Rizpah, mother of 2, spreads sackcloth on rock 5 months, shoos birds by day, beasts by night, till rain. David moved buries bones of Saul/Jonathan with them.",
+    actions: ["Took sackcloth and spread upon rock (21:10)", "Suffered not birds by day nor beasts by night (21:10) — 5 month vigil", "Moved heart of king"],
+    outcome: "David brings bones from Jabesh, buries together (21:12-14); 'after that God was intreated for the land' (21:14).",
+    outcomeRef: { book: "2 Samuel", chapter: 21, verses: "14" },
+    strategy: {
+      name: "The Sackcloth on the Rock",
+      steps: [
+        "1. SPREAD SACKCLOTH ON ROCK (21:10) — maternal lament as protest",
+        "2. SUFFER NOT BIRDS BY DAY NOR BEASTS BY NIGHT (21:10) — guard dignity for months",
+        "3. TILL WATER DROPPED FROM HEAVEN (21:10) — persistence till rain/pleasing"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "uriah_hittite",
+    title: "Uriah the Hittite — Faithful Soldier Betrayed by His King",
+    character: "Uriah",
+    book: "2 Samuel",
+    chapter: 11,
+    verses: "11-15",
+    kjvText: "And Uriah said unto David, The ark, and Israel, and Judah, abide in tents; and my lord Joab, and the servants of my lord, are encamped in the open fields; shall I then go into mine house, to eat and to drink, and to lie with my wife? as thou livest, and as thy soul liveth, I will not do this thing.",
+    situationTags: ["loyal soldier", "ark in tents", "will not go house", "faithful", "Joab letter", "set in forefront hottest battle", "betrayal by king"],
+    keywords: ["uriah hittite", "ark tents", "will not do", "forefront hottest battle", "letter joab", "david bathsheba"],
+    summary: "Uriah fights at Rabbah while David stays in Jerusalem and takes Bathsheba. Recalled, refuses comfort 'ark abides in tents' while comrades in field. David makes drunk, still refuses, sends sealed death letter by Uriah's own hand to be set in hottest battle and withdrawn.",
+    actions: ["Refused to go into house while ark in tents (11:11) — solidarity", "Refused even when drunk (11:13)", "Carried his own death letter (11:14-15)"],
+    outcome: "Killed (11:17), sword never departs David's house (12:10), but Uriah named among mighty men (23:39) — heaven remembers faithful.",
+    outcomeRef: { book: "2 Samuel", chapter: 23, verses: "39" },
+    strategy: {
+      name: "The Ark-in-Tents Loyalty",
+      steps: [
+        "1. SAY 'SHALL I GO INTO MY HOUSE WHILE ARK IN TENTS?' (11:11) — loyalty over privilege",
+        "2. REFUSE COMFORT EVEN WHEN DRUNK-CALLED (11:13)",
+        "3. BE NUMBERED AMONG MIGHTY THOUGH BETRAYED (23:39)"
+      ]
+    },
+    crossRefs: [{ book: "2 Samuel", chapter: 12, verses: "10", note: "the sword shall never depart from thine house" }]
+  },
+  {
+    id: "michal_despised_dance",
+    title: "Michal — Despised Worship From a Window",
+    character: "Michal",
+    book: "2 Samuel",
+    chapter: 6,
+    verses: "16-21",
+    kjvText: "And as the ark of the LORD came into the city of David, Michal Saul's daughter looked through a window, and saw king David leaping and dancing before the LORD; and she despised him in her heart. ... Then David returned to bless his household. And Michal the daughter of Saul came out to meet David, and said, How glorious was the king of Israel to day, who uncovered himself to day in the eyes of the handmaids of his servants, as one of the vain fellows shamelessly uncovereth himself!",
+    situationTags: ["window", "leaping dancing", "despised in heart", "how glorious", "uncovered vain fellow", "contempt for worship", "Michal"],
+    keywords: ["michal window", "despised heart", "leaping dancing", "vain fellows", "uncovered", "ark city david"],
+    summary: "Saul's daughter, David's first wife, watches ark return with dancing. Contempt: how glorious who uncovered as vain fellow. David answers 'before LORD who chose me above thy father, I will be more vile' (6:21-22).",
+    actions: ["Looked through window and despised in heart (6:16)", "Said 'how glorious... uncovereth as vain fellows' (6:20)", "David chose 'before LORD... yet more vile' (6:21-22)"],
+    outcome: "Therefore Michal had no child unto day of death (6:23) — contempt for worship barrenness.",
+    outcomeRef: { book: "2 Samuel", chapter: 6, verses: "21-23" },
+    strategy: {
+      name: "The Window Contempt",
+      steps: [
+        "1. SEE WINDOW LOOK THAT DESPISES DANCE (6:16) — cynicism from window",
+        "2. ANSWER 'BEFORE LORD WHO CHOSE ME ABOVE THY FATHER' (6:21)",
+        "3. CHOOSE 'YET MORE VILE' (6:22) — worship over dignity"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "josiah_book_found",
+    title: "Josiah — At 26 Finds the Lost Book in the Rubble",
+    character: "Josiah",
+    book: "2 Kings",
+    chapter: 22,
+    verses: "8-13",
+    kjvText: "And Hilkiah the high priest said unto Shaphan the scribe, I have found the book of the law in the house of the LORD. And Hilkiah gave the book to Shaphan, and he read it. ... And it came to pass, when the king had heard the words of the book of the law, that he rent his clothes.",
+    situationTags: ["book found", "house LORD rubble", "rent clothes", "26 years old", "reformation", "Hilkiah Shaphan", "inquire LORD"],
+    keywords: ["josiah", "found book law", "rent clothes", "house Lord", "hilkiah shaphan", "inquire"],
+    summary: "At 8 made king, at 16 seeks God, at 20 purges idols, at 26 funds temple repair — workers find dusty scroll (Deuteronomy). Shaphan reads to king; Josiah rends clothes, sends inquire because 'great is wrath because fathers kept not'.",
+    actions: ["Heard words and rent clothes (22:11) — not defensive", "Sent to inquire of LORD concerning words found (22:13)", "Read book to all people and made covenant (23:1-3)"],
+    outcome: "Reformation most thorough since David (23:25), Passover kept as not since Samuel (23:21-23).",
+    outcomeRef: { book: "2 Kings", chapter: 23, verses: "25" },
+    strategy: {
+      name: "The Found Book Reform",
+      steps: [
+        "1. FUND REPAIR — BOOK FOUND IN RUBBLE (22:8) — renewal surfaces lost word",
+        "2. RENT CLOTHES WHEN YOU HEAR (22:11) — let word convict",
+        "3. READ TO ALL AND MAKE COVENANT (23:2-3) — institutionalize return"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "manasseh_hooked_chain",
+    title: "Manasseh — Worst King Hooked, Humbled, and Restored",
+    character: "Manasseh",
+    book: "2 Chronicles",
+    chapter: 33,
+    verses: "11-13",
+    kjvText: "Wherefore the LORD brought upon them the captains of the host of the king of Assyria, which took Manasseh among the thorns, and bound him with fetters, and carried him to Babylon. And when he was in affliction, he besought the LORD his God, and humbled himself greatly before the God of his fathers, And prayed unto him: and he was intreated of him, and heard his supplication, and brought him again to Jerusalem into his kingdom. Then Manasseh knew that the LORD he was God.",
+    situationTags: ["worst king", "child sacrifice", "among thorns", "fetters Babylon", "besought", "humbled greatly", "intreated", "knew LORD he was God"],
+    keywords: ["manasseh", "among thorns", "fetters babylon", "besought", "humbled greatly", "intreated", "knew Lord God"],
+    summary: "Hezekiah's son reigns 55 yrs, sheds innocent blood, burns sons in Tophet, sets idol in temple. Assyrians hook nose, carry to Babylon with thorns. There he besought, humbled greatly, prayed — God intreated, brings back to Jerusalem. He removes idol and repairs altar.",
+    actions: ["Was taken among thorns with fetters to Babylon (33:11)", "Besought and humbled greatly in affliction (33:12)", "Prayed — was intreated and heard (33:13)", "Knew that the LORD he was God (33:13)"],
+    outcome: "Restored, builds wall, removes idol (33:14-17). Longest reign despite worst start — mercy proof.",
+    outcomeRef: { book: "2 Chronicles", chapter: 33, verses: "14-16" },
+    strategy: {
+      name: "The Thorns to Intreaty",
+      steps: [
+        "1. TAKEN AMONG THORNS WITH FETTERS (33:11) — consequence reaches worst",
+        "2. BESOUGHT AND HUMBLED GREATLY (33:12) — affliction births prayer",
+        "3. HE WAS INTREATED (33:13) — worst can be heard"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "four_lepers_gate",
+    title: "Four Lepers at the Gate — Why Sit We Here Till We Die?",
+    character: "Four Lepers",
+    book: "2 Kings",
+    chapter: 7,
+    verses: "3-9",
+    kjvText: "And there were four leprous men at the entering in of the gate: and they said one to another, Why sit we here until we die? If we say, We will enter into the city, then the famine is in the city, and we shall die there: and if we sit still here, we die also. Now therefore come, and let us fall unto the host of the Syrians: if they save us alive, we shall live; and if they kill us, we shall but die. ... And they rose up in the twilight, to go unto the camp of the Syrians: and when they were come to the uttermost part of the camp of Syria, behold, there was no man there. For the Lord had made the host of the Syrians to hear a noise of chariots, and a noise of horses, even the noise of a great host:",
+    situationTags: ["leprous at gate", "why sit till we die", "fall unto syrians", "twilight", "no man there", "noise chariots", "first evangelists"],
+    keywords: ["four leprous gate", "why sit die", "fall unto syrians", "twilight", "no man there", "noise chariots"],
+    summary: "Samaria besieged till dove's dung sold; Elisha says tomorrow flour cheap, lord mocks. Four outcast lepers at gate reason: stay, die; city, die; go to Syrians, maybe live. Rise at twilight — God already made Syrians hear chariots and flee, leaving food. Lepers eat, hide, then say 'we do not well: this day is day of good tidings, and we hold our peace'. Go tell city.",
+    actions: ["Said 'Why sit we here until we die?' (7:3) — decision logic", "Rose in twilight to fall unto Syrians (7:5)", "Ate and said 'we do not well... we hold our peace' (7:9) and told gate porter"],
+    outcome: "City plunders Syrian camp; flour words fulfilled (7:16), mocking lord trampled at gate (7:17-20).",
+    outcomeRef: { book: "2 Kings", chapter: 7, verses: "9" },
+    strategy: {
+      name: "The Gate Lepers' Logic",
+      steps: [
+        "1. ASK 'WHY SIT HERE TILL WE DIE?' (7:3) — status quo = death",
+        "2. RISE IN TWILIGHT TO FALL UNTO ENEMY (7:5) — outsiders take first step",
+        "3. SAY 'WE DO NOT WELL TO HOLD PEACE: DAY OF GOOD TIDINGS' (7:9) — bring news to city"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "dothan_horses_fire",
+    title: "Dothan — Lord, Open His Eyes to Horses and Chariots of Fire",
+    character: "Elisha's servant",
+    book: "2 Kings",
+    chapter: 6,
+    verses: "15-17",
+    kjvText: "And when the servant of the man of God was risen early, and gone forth, behold, an host compassed the city both with horses and chariots. And his servant said unto him, Alas, my master! how shall we do? And he answered, Fear not: for they that be with us are more than they that be with them. And Elisha prayed, and said, LORD, I pray thee, open his eyes, that he may see. And the LORD opened the eyes of the young man; and he saw: and, behold, the mountain was full of horses and chariots of fire round about Elisha.",
+    situationTags: ["Alas how shall we do", "fear not more with us", "open eyes", "horses chariots fire", "mountain full", "Dothan"],
+    keywords: ["dothan", "alas how shall", "more with us", "open eyes", "horses chariots fire", "mountain full"],
+    summary: "Syria compasses Dothan to seize Elisha who warns king. Servant awakes to horses/chariots, panics 'Alas, how shall we do?' Elisha says 'Fear not: more with us' and prays eyes opened.",
+    actions: ["Said 'Alas, how shall we do?' (6:15) — honest panic", "Heard 'Fear not: more with us than with them' (6:16)", "Prayed 'open eyes that he may see' (6:17) — second sight"],
+    outcome: "Elisha smites Syrians with blindness (6:18), leads to Samaria, feeds and sends back — bands came no more (6:23).",
+    outcomeRef: { book: "2 Kings", chapter: 6, verses: "17-18" },
+    strategy: {
+      name: "The Opened Eyes",
+      steps: [
+        "1. HEAR 'ALAS HOW SHALL WE DO?' (6:15) — name encirclement",
+        "2. ANSWER 'FEAR NOT: MORE WITH US THAN WITH THEM' (6:16)",
+        "3. PRAY 'LORD OPEN HIS EYES' (6:17) — see mountain full of fire"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "korah_earth_swallowed",
+    title: "Korah — The Earth Opened for the Gathered Murmurers",
+    character: "Korah",
+    book: "Numbers",
+    chapter: 16,
+    verses: "31-33",
+    kjvText: "And it came to pass, as he had made an end of speaking all these words, that the ground clave asunder that was under them: And the earth opened her mouth, and swallowed them up, and their houses, and all the men that appertained unto Korah, and all their goods. They, and all that appertained to them, went down alive into the pit, and the earth closed upon them: and they perished from among the congregation.",
+    situationTags: ["Korah Dathan Abiram", "gathered against Moses", "ye take too much", "seek priesthood", "earth opened", "went down alive into pit", "murmuring"],
+    keywords: ["korah", "earth opened mouth", "swallowed", "went down alive pit", "take too much", "Dathan Abiram"],
+    summary: "Levite Korah plus Dathan/Abiram gather 250 princes 'ye take too much upon you' (16:3), challenge Aaron's priesthood. Moses falls face, says LORD will shew. Earth cleaves, swallows houses, fire consumes 250, censers hammered to altar cover.",
+    actions: ["Said 'ye take too much' (16:3)", "Moses fell on face and prayed (16:4)", "God clave ground (16:31-33)"],
+    outcome: "Children spared that stood not (26:11 — Samuel comes of Korah). Censers memorial 'no stranger come near' (16:40).",
+    outcomeRef: { book: "Numbers", chapter: 16, verses: "32-35" },
+    strategy: {
+      name: "The Cleft Ground",
+      steps: [
+        "1. HEAR 'YE TAKE TOO MUCH' (16:3) — mutiny masks desire for priesthood (16:10)",
+        "2. FALL ON FACE (16:4) — let God shew who is His (16:5)",
+        "3. LET EARTH SHEW: Don't avenge — ground cleaves (16:31)"
+      ]
+    },
+    crossRefs: [{ book: "Numbers", chapter: 26, verses: "11", note: "Notwithstanding the children of Korah died not" }]
+  },
+  {
+    id: "achan_wedge_gold",
+    title: "Achan — The Babylonish Garment That Lost Ai",
+    character: "Achan",
+    book: "Joshua",
+    chapter: 7,
+    verses: "19-21",
+    kjvText: "And Joshua said unto Achan, My son, give, I pray thee, glory to the LORD God of Israel, and make confession unto him; and tell me now what thou hast done; hide it not from me. And Achan answered Joshua, and said, Indeed I have sinned against the LORD God of Israel, and thus and thus have I done: When I saw among the spoils a goodly Babylonish garment, and two hundred shekels of silver, and a wedge of gold of fifty shekels weight, then I coveted them, and took them; and, behold, they are hid in the earth in the midst of my tent, and the silver under it.",
+    situationTags: ["accursed thing", "Babylonish garment", "wedge gold", "coveted saw", "hid in tent", "Ai defeat", "give glory and confess"],
+    keywords: ["achan", "babylonish garment", "wedge gold", "coveted took", "hid tent", "ai", "accursed"],
+    summary: "After Jericho (devoted), Israel smitten at little Ai (30 die) because one man saw Babylonish robe, 200 shekels, 50 shekel wedge, coveted and hid under tent. Lot falls on Achan who confesses 'I saw, coveted, took, hid'.",
+    actions: ["Saw, coveted, took, hid (7:21) — 4 verbs", "Confessed 'Indeed I have sinned... thus and thus have I done' (7:20)", "Was stoned in valley of Achor (7:25)"],
+    outcome: "After purging, Ai taken by ambush (8:10-23); valley of Achor becomes door of hope (Hos 2:15).",
+    outcomeRef: { book: "Joshua", chapter: 7, verses: "25-26" },
+    strategy: {
+      name: "The Wedge in the Tent",
+      steps: [
+        "1. HEAR 'GIVE GLORY AND MAKE CONFESSION; HIDE NOT' (7:19)",
+        "2. CONFESS SEQUENCE: 'I SAW, COVETED, TOOK, HID' (7:21) — break chain",
+        "3. PURGE BEFORE NEXT AI: Corporate loss from private wedge (7:12-13)"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "rehoboam_young_men",
+    title: "Rehoboam — Followed Young Counsel, Lost the Kingdom",
+    character: "Rehoboam",
+    book: "1 Kings",
+    chapter: 12,
+    verses: "6-13",
+    kjvText: "And king Rehoboam consulted with the old men, that stood before Solomon his father while he yet lived, and said, How do ye advise that I may answer this people? And they spake unto him, saying, If thou wilt be a servant unto this people this day, and wilt serve them, and answer them, and speak good words to them, then they will be thy servants for ever. But he forsook the counsel of the old men ... and consulted with the young men that were grown up with him, and which stood before him:",
+    situationTags: ["forsook old counsel", "young men grown up with him", "my little finger thicker than father's loins", "whips to scorpions", "servant then servants forever", "succession failure"],
+    keywords: ["rehoboam", "old men counsel", "young men grown up", "forsook counsel", "little finger", "scorpions"],
+    summary: "Shechem crowd asks 'thy father heavy yoke, lighten'. Old men say 'be servant, speak good words, they will be thy servants forever' (12:7). Young peers say 'my little finger thicker than my father's loins, chastise with scorpions' (12:10-11). He answers roughly like young men. Ten tribes rent.",
+    actions: ["Consulted old men (12:6) then forsook their counsel (12:8)", "Consulted young grown up with him (12:8)", "Answered after 3 days roughly (12:13-14)"],
+    outcome: "Kingdom splits to Jeroboam; Rehoboam retains only Judah (12:19-20).",
+    outcomeRef: { book: "1 Kings", chapter: 12, verses: "19" },
+    strategy: {
+      name: "The Forked Counsel",
+      steps: [
+        "1. HEAR OLD: 'BE SERVANT... SPEAK GOOD WORDS... SERVANTS FOREVER' (12:7)",
+        "2. SEE YOUNG: 'LITTLE FINGER THICKER... SCORPIONS' (12:11) — machismo tax",
+        "3. DON'T FORSAKE OLD FOR GROWN-UP PEERS (12:8)"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "moses_struck_rock",
+    title: "Moses Strikes the Rock — Speak, Don't Strike, and the Cost",
+    character: "Moses",
+    book: "Numbers",
+    chapter: 20,
+    verses: "8-12",
+    kjvText: "Take the rod, and gather thou the assembly together, thou, and Aaron thy brother, and speak ye unto the rock before their eyes; and it shall give forth his water, and thou shalt bring forth to them water out of the rock: so thou shalt give the congregation and their beasts drink. ... And Moses lifted up his hand, and with his rod he smote the rock twice: and the water came out abundantly, and the congregation drank, and their beasts also. And the LORD spake unto Moses and Aaron, Because ye believed me not, to sanctify me in the eyes of the children of Israel, therefore ye shall not bring this congregation into the land which I have given them.",
+    situationTags: ["speak to rock", "smote twice", "believed not", "sanctify not", "shall not bring into land", "waters Meribah", "anger disqualifies"],
+    keywords: ["speak rock", "smote rock twice", "believed not", "sanctify me", "not bring congregation land", "meribah"],
+    summary: "Kadesh, no water, people chide. LORD says 'speak to rock'. Moses says 'Hear now, ye rebels; must we fetch water?' and smites twice. Water flows but God says 'because ye believed me not to sanctify me... ye shall not bring congregation into land'.",
+    actions: ["Was told 'speak ye unto rock' (20:8)", "Said 'must WE fetch' and smote twice (20:10-11)", "Heard 'ye shall not bring in' (20:12)"],
+    outcome: "Aaron dies Hor, Moses dies Nebo seeing but not entering (Deut 34:4).",
+    outcomeRef: { book: "Numbers", chapter: 20, verses: "12" },
+    strategy: {
+      name: "The Speak Don't Strike",
+      steps: [
+        "1. HEAR 'SPEAK YE UNTO ROCK' (20:8) — second rock is speak, not strike (1 Cor 10:4)",
+        "2. STOP 'MUST WE FETCH?' (20:10) — don't take glory/anger into obedience",
+        "3. SANCTIFY ME BEFORE EYES (20:12)"
+      ]
+    },
+    crossRefs: [{ book: "1 Corinthians", chapter: 10, verses: "4", note: "that Rock was Christ — smitten once" }]
+  },
+  {
+    id: "joseph_famine_admin",
+    title: "Joseph — The Seven-Year Storehouse Administrator",
+    character: "Joseph",
+    book: "Genesis",
+    chapter: 41,
+    verses: "46-49",
+    kjvText: "And Joseph was thirty years old when he stood before Pharaoh king of Egypt. And Joseph went out from the presence of Pharaoh, and went throughout all the land of Egypt. And in the seven plenteous years the earth brought forth by handfuls. And he gathered up all the food of the seven plenteous years, which were in the land of Egypt, and laid up the food in the cities: every city laid he up the food of the field, which was round about.",
+    situationTags: ["thirty years old", "seven plenteous handfuls", "gathered up all food", "laid up in cities", "storehouse", "administration", "CFO", "famine prep"],
+    keywords: ["joseph thirty years", "seven plenteous", "gathered food", "laid up cities", "storehouse", "went throughout land"],
+    summary: "Promoted at 30 from prison to second Pharaoh, Joseph not just dreams but executes: traverses land, gathers 1/5th (41:34), stores city by city during plenty by handfuls, 'without number as sand' (41:49), then rations in famine and saves Egypt, Canaan, and brothers.",
+    actions: ["Was 30 when he stood before Pharaoh (41:46)", "Went throughout all land of Egypt (41:46) — survey", "Gathered up all food of 7 plenteous and laid up in cities (41:48) — decentralized store"],
+    outcome: "When famine came people came to Joseph; silver, cattle, land consolidated for Pharaoh (47:14-20) yet people fed; Jacob's house preserved.",
+    outcomeRef: { book: "Genesis", chapter: 47, verses: "13-14" },
+    strategy: {
+      name: "The Seven-Year Granary",
+      steps: [
+        "1. STAND AT 30 AND GO THROUGHOUT LAND (41:46) — map reality",
+        "2. GATHER IN PLENTY BY HANDFULS (41:47-48) — surplus discipline",
+        "3. LAY UP IN CITIES (41:48) — decentralized resilience",
+        "4. OPEN IN FAMINE: Steward surplus to save nations (47:14)"
+      ]
+    },
+    crossRefs: [{ book: "Genesis", chapter: 41, verses: "33-36", note: "Look out a man discreet and wise, and set him over the land; take up fifth part" }]
+  },
+  {
+    id: "jacob_wages_ten_times",
+    title: "Jacob Under Laban — Wages Changed Ten Times, God Saw Affliction",
+    character: "Jacob",
+    book: "Genesis",
+    chapter: 31,
+    verses: "7-9",
+    kjvText: "And your father hath deceived me, and changed my wages ten times; but God suffered him not to hurt me. If he said thus, The speckled shall be thy wages; then all the cattle bare speckled: and if he said thus, The ringstraked shall be thy hire; then bare all the cattle ringstraked. Thus God hath taken away the cattle of your father, and given them to me.",
+    situationTags: ["changed wages ten times", "deceived me", "God suffered not to hurt", "speckled ringstraked", "taken away cattle", "20 years", "God saw affliction"],
+    keywords: ["jacob wages ten times", "laban deceived", "speckled ringstraked", "God taken cattle", "changed wages"],
+    summary: "Jacob works 7 yrs for Rachel, gets Leah, 7 more, then 6 for cattle. Laban changes wages 10 times (31:41), Jacob endures heat by day frost by night (31:40). God transfers speckled/ringstraked to Jacob; Laban pursues, God warns 'Take heed speak not good or bad' (31:24).",
+    actions: ["Said 'changed my wages ten times; but God suffered him not to hurt' (31:7)", "Endured 20 years, heat frost (31:40-41)", "Appealed 'Except God of my father had been with me... God hath seen affliction' (31:42)"],
+    outcome: "Heap Mizpah — 'The LORD watch between me and thee, when we are absent one from another' (31:49). Jacob goes free with family.",
+    outcomeRef: { book: "Genesis", chapter: 31, verses: "42" },
+    strategy: {
+      name: "The Ten-Times Wages",
+      steps: [
+        "1. NAME 'CHANGED MY WAGES TEN TIMES' (31:7) — doc exploitation",
+        "2. CLAIM 'GOD SUFFERED HIM NOT TO HURT ME' (31:7) — protection over protest",
+        "3. PLEAD 'GOD HATH SEEN MY AFFLICTION' (31:42) — let God transfer cattle"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "miriam_leprosy",
+    title: "Miriam — Prophetess Leprous for Speaking Against Moses",
+    character: "Miriam",
+    book: "Numbers",
+    chapter: 12,
+    verses: "1-10",
+    kjvText: "And Miriam and Aaron spake against Moses because of the Ethiopian woman whom he had married: for he had married an Ethiopian woman. And they said, Hath the LORD indeed spoken only by Moses? hath he not spoken also by us? And the LORD heard it. ... And the LORD came down in the pillar of the cloud, and stood in the door of the tabernacle, and called Aaron and Miriam: and they both came forth. ... And the anger of the LORD was kindled against them; and he departed. And the cloud departed from off the tabernacle; and, behold, Miriam became leprous, white as snow:",
+    situationTags: ["spake against Moses", "Ethiopian woman", "hath he not spoken by us", "LORD heard it", "meekest man", "leprous white as snow", "prophetess"],
+    keywords: ["miriam leprous", "Ethiopian woman", "spoken only by moses", "Lord heard", "white snow", "pillar cloud"],
+    summary: "Prophetess who led tambourines (Ex 15:20) later with Aaron says 'Hath LORD spoken only by Moses? hath he not spoken by us?' Moses described as meekest (12:3). LORD summons, declares mouth to mouth vs visions, asks 'were ye not afraid to speak against my servant?' Miriam alone white leprous.",
+    actions: ["Spake against brother over Ethiopian wife (12:1-2)", "Moses meek, did not defend (12:3)", "Moses prayed 'Heal her now, O God, I beseech thee' (12:13)"],
+    outcome: "Shut out camp 7 days, people journeyed not till brought in again (12:14-15). Aaron acknowledges folly.",
+    outcomeRef: { book: "Numbers", chapter: 12, verses: "13-15" },
+    strategy: {
+      name: "The White Snow Rebuke",
+      steps: [
+        "1. HEAR 'HATH HE NOT SPOKEN BY US?' — pride of co-prophet (12:2)",
+        "2. HEAR 'MY SERVANT MOSES...MOUTH TO MOUTH' (12:7-8) — honour delegated authority",
+        "3. PRAY 'HEAL HER NOW' (12:13) — intercede for critic when leprous"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "aaron_golden_calf",
+    title: "Aaron — The Golden Calf Under Crowd Pressure",
+    character: "Aaron",
+    book: "Exodus",
+    chapter: 32,
+    verses: "21-24",
+    kjvText: "And Moses said unto Aaron, What did this people unto thee, that thou hast brought so great a sin upon them? And Aaron said, Let not the anger of my lord wax hot: thou knowest the people, that they are set on mischief. And they said unto me, Make us gods, which shall go before us: for as for this Moses, the man that brought us up out of the land of Egypt, we wot not what is become of him. And I said unto them, Whosoever hath any gold, let them break it off. So they gave it me: then I cast it into the fire, and there came out this calf.",
+    situationTags: ["golden calf", "people set on mischief", "make us gods", "cast into fire out came calf", "second in command fails", "crowd pressure", "Aaron"],
+    keywords: ["aaron calf", "people set mischief", "make us gods", "cast fire calf", "great sin"],
+    summary: "Moses 40 days on mount, people to Aaron 'make us gods'. Aaron asks gold, fashions calf with graving tool (32:4), builds altar 'Tomorrow feast to LORD' blending. Moses returns, Aaron excuses: cast gold fire, calf came out. Levites purge 3k, Moses intercedes.",
+    actions: ["Said 'thou knowest people set on mischief' (32:22) — blame", "Said 'I cast into fire, there came out calf' (32:24) — minimize agency", "Was spared via Moses intercession (Deut 9:20)"],
+    outcome: "Moses breaks tablets, makes drink powder, intercedes; LORD repents of evil (32:14). Aaron restored to priesthood — grace for failed deputy.",
+    outcomeRef: { book: "Deuteronomy", chapter: 9, verses: "20" },
+    strategy: {
+      name: "The Calf That Came Out",
+      steps: [
+        "1. NAME 'PEOPLE SET ON MISCHIEF' BUT DON'T OBEY IT (32:22)",
+        "2. OWN 'THERE CAME OUT THIS CALF' LIE (32:24) — leadership owns tool, not fire",
+        "3. NEED MEDIATOR: Moses stood in breach (32:30-32)"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "gibeonites_keep_covenant",
+    title: "The Gibeonites — Deceived Yet Covenant Kept",
+    character: "Gibeonites and Joshua",
+    book: "Joshua",
+    chapter: 9,
+    verses: "14-19",
+    kjvText: "And the men took of their victuals, and asked not counsel at the mouth of the LORD. And Joshua made peace with them, and made a league with them, to let them live: and the princes of the congregation sware unto them. ... And it came to pass at the end of three days, after they had made a league with them, that they heard that they were their neighbours, and that they dwelt among them.",
+    situationTags: ["old sacks", "clouted shoes", "mouldy bread", "asked not at mouth LORD", "sware", "murmured but kept", "hewers wood drawers water"],
+    keywords: ["gibeonites", "mouldy bread", "asked not counsel", "sware oath", "hewers wood", "deceived"],
+    summary: "Gibeonites, fearing ban, send tattered envoys 'from far country' with old sacks, clouted shoes, mouldy bread. Joshua asks not at LORD's mouth, makes league and swears. 3 days later truth known; princes keep oath despite murmuring — becomes hewers of wood/drawers water for altar. Later Saul breaks covenant and Saulides pay (2 Sam 21:1).",
+    actions: ["Took victuals and asked not at LORD's mouth (9:14) — failure", "Sware by LORD to let live (9:15,19)", "Kept oath though deceived (9:19) — 'we have sworn... now not touch'"],
+    outcome: "Gibeon becomes Nethinims serving temple; integrity precedent. 5 Amorite kings attack Gibeon, Joshua saves via sun standing still (10:12-13).",
+    outcomeRef: { book: "Joshua", chapter: 9, verses: "19" },
+    strategy: {
+      name: "The Mouldy Bread Oath",
+      steps: [
+        "1. CONFESS 'ASKED NOT AT MOUTH OF LORD' (9:14) — due diligence before league",
+        "2. KEEP OATH THOUGH DECEIVED: 'Because we sware' (9:19) — integrity over advantage",
+        "3. MAKE HEWERS OF WATER: Turn deceit into service (9:21)"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "centurion_word_only",
+    title: "The Centurion — Faith That Says Speak Word Only",
+    character: "Centurion of Capernaum",
+    book: "Matthew",
+    chapter: 8,
+    verses: "8-10",
+    kjvText: "The centurion answered and said, Lord, I am not worthy that thou shouldest come under my roof: but speak the word only, and my servant shall be healed. For I am a man under authority, having soldiers under me: and I say to this man, Go, and he goeth; and to another, Come, and he cometh; and to my servant, Do this, and he doeth it. When Jesus heard it, he marvelled, and said to them that followed, Verily I say unto you, I have not found so great faith, no, not in Israel.",
+    situationTags: ["not worthy roof", "speak word only", "man under authority", "go and he goeth", "marvelled great faith", "servant healed", "centurion"],
+    keywords: ["centurion word only", "not worthy roof", "man under authority", "great faith israel", "marvelled"],
+    summary: "Roman officer with 100 men understands authority chains. Won't invite Jesus for purity/humility, says 'speak word only' — analogizes: Jesus commands sickness like he commands soldiers. Jesus marvels: not found so great faith in Israel.",
+    actions: ["Said 'not worthy under roof, speak word only' (8:8)", "Reasoned 'man under authority... Go, and he goeth' (8:9)", "Believed from afar"],
+    outcome: "Servant healed selfsame hour (8:13). Paradigm: Gentile faith foreshadows many from east/west sit with Abraham (8:11).",
+    outcomeRef: { book: "Matthew", chapter: 8, verses: "13" },
+    strategy: {
+      name: "The Word-Only Faith",
+      steps: [
+        "1. CONFESS 'NOT WORTHY ROOF' (8:8) — humility",
+        "2. REASON 'MAN UNDER AUTHORITY' (8:9) — understand chain of command",
+        "3. CLAIM 'SPEAK WORD ONLY' (8:8) — ask for utterance not presence"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "syrophoenician_crumbs",
+    title: "Syrophoenician — Yet the Dogs Eat the Crumbs",
+    character: "Syrophoenician woman",
+    book: "Mark",
+    chapter: 7,
+    verses: "27-29",
+    kjvText: "But Jesus said unto her, Let the children first be filled: for it is not meet to take the children's bread, and to cast it unto the dogs. And she answered and said unto him, Yes, Lord: yet the dogs under the table eat of the children's crumbs. And he said unto her, For this saying go thy way; the devil is gone out of thy daughter.",
+    situationTags: ["dogs", "children's bread", "crumbs under table", "Yes Lord yet", "for this saying", "Syrophenician Greek", "daughter vexed devil"],
+    keywords: ["syrophenician crumbs", "dogs table", "children bread", "yet dogs eat crumbs", "for this saying"],
+    summary: "Greek Gentile, mother of demon-tossed daughter falls at feet, begs. Jesus tests: 'Let children first be filled... not meet cast to dogs.' She agrees and advances: 'Yes, Lord: yet dogs under table eat crumbs.' Jesus: for this saying, devil gone.",
+    actions: ["Fell at his feet (7:25)", "Answered 'Yes, Lord: yet dogs eat crumbs' (7:28) — agrees with test and argues mercy", "Heard 'for this saying go thy way' (7:29)"],
+    outcome: "Found daughter laid upon bed, devil gone (7:30). Great faith (Matt 15:28).",
+    outcomeRef: { book: "Mark", chapter: 7, verses: "30" },
+    strategy: {
+      name: "The Crumbs Argument",
+      steps: [
+        "1. FALL AT FEET THOUGH GENTILE DOG (7:25)",
+        "2. SAY 'YES, LORD: YET...' (7:28) — agree with diagnosis, claim crumbs",
+        "3. CARRY 'FOR THIS SAYING GO THY WAY' (7:29) — word suffices"
+      ]
+    },
+    crossRefs: [{ book: "Matthew", chapter: 15, verses: "28", note: "O woman, great is thy faith: be it unto thee even as thou wilt" }]
+  },
+  {
+    id: "paralytic_roof_friends",
+    title: "Paralytic Through Roof — When Four Friends Tear a Roof",
+    character: "Paralytic and four friends",
+    book: "Mark",
+    chapter: 2,
+    verses: "3-5",
+    kjvText: "And they come unto him, bringing one sick of the palsy, which was borne of four. And when they could not come nigh unto him for the press, they uncovered the roof where he was: and when they had broken it up, they let down the bed wherein the sick of the palsy lay. When Jesus saw their faith, he said unto the sick of the palsy, Son, thy sins be forgiven thee.",
+    situationTags: ["borne of four", "could not come for press", "uncovered roof broken up", "let down bed", "when he saw their faith", "sins forgiven"],
+    keywords: ["borne four", "uncovered roof", "let down bed", "saw their faith", "sick palsy", "press"],
+    summary: "Capernaum house packed, no door. Four carry friend, cannot enter, climb, uncover tiles, dig, lower bed with ropes exactly before Jesus. He saw THEIR faith (friends) and said 'Son, thy sins be forgiven' then 'Arise, take up bed'. Scribes murmur but proof in walk.",
+    actions: ["Borne of four (2:3)", "Could not come nigh for press — uncovered roof and brake it up (2:4)", "Let down bed where He was (2:4)"],
+    outcome: "Forgiven and 'arose, took up bed' (2:12). Many amazed 'we never saw it on this fashion'.",
+    outcomeRef: { book: "Mark", chapter: 2, verses: "11-12" },
+    strategy: {
+      name: "The Roof Removal",
+      steps: [
+        "1. BE BORNE OF FOUR (2:3) — community carries when you can't walk",
+        "2. UNCOVER ROOF FOR PRESS (2:4) — creative access when door closed",
+        "3. LET DOWN BEFORE HIM (2:4) — so He sees THEIR faith (2:5)"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "alabaster_sinner",
+    title: "Alabaster Box — Tears That Washed Feet When Simon Gave No Water",
+    character: "Woman which was a sinner",
+    book: "Luke",
+    chapter: 7,
+    verses: "37-48",
+    kjvText: "And, behold, a woman in the city, which was a sinner, when she knew that Jesus sat at meat in the Pharisee's house, brought an alabaster box of ointment, And stood at his feet behind him weeping, and began to wash his feet with tears, and did wipe them with the hairs of her head, and kissed his feet, and anointed them with the ointment. ... And he said unto her, Thy sins are forgiven. Thy faith hath saved thee; go in peace.",
+    situationTags: ["alabaster box", "sinner city", "stood behind weeping", "wash with tears", "wipe with hairs", "kissed feet", "Simon gave no water no kiss no oil", "much forgiven loveth much"],
+    keywords: ["alabaster box", "woman sinner city", "wash tears", "hairs head", "kissed feet", "simon no water", "faith saved peace"],
+    summary: "Pharisee Simon invites but gives no water/kiss/oil. Sinner with alabaster weeps on feet, wipes with hair, kisses, anoints. Simon thinks 'if prophet knew what manner of woman'. Jesus tells two debtors 500 vs 50 pence — much forgiven loves much.",
+    actions: ["Brought alabaster though uninvited (7:37)", "Stood behind weeping, wash with tears, wipe with hair, kiss, anoint (7:38)", "Heard 'Thy sins are forgiven... Thy faith hath saved thee; go in peace' (7:48,50)"],
+    outcome: "Go in peace; much forgiven proved by much love (7:47).",
+    outcomeRef: { book: "Luke", chapter: 7, verses: "50" },
+    strategy: {
+      name: "The Behind-Him Weeping",
+      steps: [
+        "1. BRING ALABASTER UNINVITED (7:37) — extravagant entry",
+        "2. STAND BEHIND WEEPING: Wash with tears, wipe with hair, kiss (7:38) — vs Simon's no water (7:44)",
+        "3. HEAR 'MUCH FORGIVEN, LOVETH MUCH' (7:47) — go in peace"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "mary_magdalene_seven",
+    title: "Mary Magdalene — Seven Devils Out to First Witness of Risen",
+    character: "Mary Magdalene",
+    book: "Luke",
+    chapter: 8,
+    verses: "1-2",
+    kjvText: "And it came to pass afterward, that he went throughout every city and village, preaching and shewing the glad tidings of the kingdom of God: and the twelve were with him, And certain women, which had been healed of evil spirits and infirmities, Mary called Magdalene, out of whom went seven devils, And Joanna the wife of Chuza Herod's steward, and Susanna, and many others, which ministered unto him of their substance.",
+    situationTags: ["seven devils", "Magdalene", "healed evil spirits", "ministered of substance", "stood at cross", "first witness", "apostle to apostles", "wept at tomb"],
+    keywords: ["mary magdalene seven devils", "healed evil spirits", "ministered substance", "stood cross", "first witness risen"],
+    summary: "Mary of Magdala — seven devils out, travels with Jesus funding ministry (8:3), stands at cross (John 19:25), first to tomb while dark (20:1), weeps, angels ask 'why weepest', hears 'Mary' (20:16), is sent 'Go to my brethren' (20:17).",
+    actions: ["Was healed of seven devils (8:2)", "Ministered of substance (8:3) — generosity after deliverance", "Stood at cross and at tomb weeping (John 19:25; 20:11)", "Heard 'Mary' and ran to tell 'I have seen LORD' (20:16-18)"],
+    outcome: "Becomes apostle to apostles (20:18). Deliverance proves call.",
+    outcomeRef: { book: "John", chapter: 20, verses: "16-18" },
+    strategy: {
+      name: "The Seven to Sent",
+      steps: [
+        "1. BE HEALED OF SEVEN DEVILS (Luke 8:2) — name deliverance",
+        "2. MINISTER OF SUBSTANCE (8:3) — resource after rescue",
+        "3. STAND AT CROSS AND WEEP AT TOMB (John 19:25; 20:11) — stay till 'Mary' (20:16)",
+        "4. GO TO BRETHREN: 'I have seen the Lord' (20:18)"
+      ]
+    },
+    crossRefs: [{ book: "John", chapter: 20, verses: "16", note: "Jesus saith unto her, Mary. She turned herself, and saith unto him, Rabboni" }]
+  },
+  {
+    id: "joseph_flight_egypt",
+    title: "Joseph of Nazareth — Quiet Obedience Into Egypt as Refugee",
+    character: "Joseph (husband of Mary)",
+    book: "Matthew",
+    chapter: 2,
+    verses: "13-15",
+    kjvText: "And when they were departed, behold, the angel of the Lord appeareth to Joseph in a dream, saying, Arise, and take the young child and his mother, and flee into Egypt, and be thou there until I bring thee word: for Herod will seek the young child to destroy him. When he arose, he took the young child and his mother by night, and departed into Egypt:",
+    situationTags: ["angel in dream", "arise take child flee", "be thou there until word", "Herod seek to destroy", "by night", "refugee", "quiet obedience", "carpenter"],
+    keywords: ["joseph dream flee egypt", "take young child mother", "by night", "herod seek destroy", "until bring word"],
+    summary: "Carpenter Joseph not speaking, but repeatedly told in dreams: marry (1:20), flee to Egypt, return to Israel (2:19), turn aside to Nazareth (2:22). Each time he arose by night and did. Preserves Christ through refugee years.",
+    actions: ["Heard 'Arise, take child and flee to Egypt' (2:13)", "Arose and took by night (2:14) — immediate night obedience", "Was there until death of Herod (2:15) — stayed until word"],
+    outcome: "Returns after Herod, fulfills 'Out of Egypt have I called my son' (2:15, Hos 11:1). Protects without words.",
+    outcomeRef: { book: "Matthew", chapter: 2, verses: "19-23" },
+    strategy: {
+      name: "The By Night Obedience",
+      steps: [
+        "1. HEAR IN DREAM 'ARISE, FLEE' (2:13)",
+        "2. ARISE BY NIGHT AND TAKE (2:14) — no delay",
+        "3. BE THERE UNTIL I BRING THEE WORD (2:13) — stay in Egypt until next dream"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "john_prison_doubt",
+    title: "John the Baptist — Art Thou He That Should Come? Doubt in Prison",
+    character: "John the Baptist",
+    book: "Luke",
+    chapter: 7,
+    verses: "19-23",
+    kjvText: "And John calling unto him two of his disciples sent them to Jesus, saying, Art thou he that should come? or look we for another? When the men were come unto him, they said, John Baptist hath sent us unto thee, saying, Art thou he that should come? or look we for another? And in that same hour he cured many of their infirmities and plagues, and of evil spirits; and unto many that were blind he gave sight. Then Jesus answering said unto them, Go your way, and tell John what things ye have seen and heard; how that the blind see, the lame walk, the lepers are cleansed, the deaf hear, the dead are raised, to the poor the gospel is preached.",
+    situationTags: ["art thou he", "should come or look for another", "prison doubt", "strong then wavering", "blind see lame walk dead raised", "tell John what seen heard"],
+    keywords: ["john art thou he", "should come", "look for another", "prison doubt", "blind see lame walk", "tell john"],
+    summary: "Greatest born of women who cried 'Behold Lamb' (John 1:29) now in Herod's prison for reproving Herodias, sends disciples 'Art thou he?' Jesus doesn't rebuke but shows Isaiah 35/61 healings and says 'tell John what ye have seen'. Adds 'blessed is he whosoever not offended in me' (7:23).",
+    actions: ["Sent two to ask 'Art thou he that should come?' (7:19) — honest doubt", "Heard report 'blind see... poor preached' (7:22)", "Was told 'blessed not offended in me' (7:23)"],
+    outcome: "Jesus then declares 'Among those born of women there is not greater prophet than John' (7:28) though doubting — honors faith even wavering.",
+    outcomeRef: { book: "Luke", chapter: 7, verses: "28" },
+    strategy: {
+      name: "The Art-Thou-He",
+      steps: [
+        "1. SEND 'ART THOU HE?' FROM PRISON (7:19) — strongest doubt honestly",
+        "2. LOOK AT 'BLIND SEE, DEAD RAISED' (7:22) — evidence over exile feelings",
+        "3. HEAR 'BLESSED NOT OFFENDED IN ME' (7:23) — don't stumble over silence"
+      ]
+    },
+    crossRefs: [{ book: "Matthew", chapter: 11, verses: "28", note: "Come unto me, all ye that labour" }]
+  },
+  {
+    id: "thief_paradise",
+    title: "Thief on the Cross — Today Thou Shalt Be With Me in Paradise",
+    character: "Thief on the cross",
+    book: "Luke",
+    chapter: 23,
+    verses: "39-43",
+    kjvText: "And one of the malefactors which were hanged railed on him, saying, If thou be Christ, save thyself and us. But the other answering rebuked him, saying, Dost not thou fear God, seeing thou art in the same condemnation? And we indeed justly; for we receive the due reward of our deeds: but this man hath done nothing amiss. And he said unto Jesus, Lord, remember me when thou comest into thy kingdom. And Jesus said unto him, Verily I say unto thee, To day shalt thou be with me in paradise.",
+    situationTags: ["malefactor railed", "other rebuked", "we justly due reward", "nothing amiss", "remember me when comest kingdom", "today paradise", "last minute salvation"],
+    keywords: ["malefactor", "other rebuked fear god", "we justly", "remember me kingdom", "today paradise"],
+    summary: "Two thieves flanking dying Jesus. One rails, other rebukes mate, confesses 'we indeed justly... this man nothing amiss' and prays 'remember me when comest into kingdom'. Jesus promises 'Today... with me in paradise' — no baptism, no works, immediate.",
+    actions: ["Rebuked fellow — 'Dost not thou fear God?' (23:40)", "Confessed 'we indeed justly... this man nothing amiss' (23:41)", "Prayed 'Lord, remember me when comest into kingdom' (23:42)"],
+    outcome: "Heard 'Today shalt thou be with me in paradise' (23:43) — last-hour faith suffices.",
+    outcomeRef: { book: "Luke", chapter: 23, verses: "43" },
+    strategy: {
+      name: "The Remember Me Faith",
+      steps: [
+        "1. REBUKE RAILING: 'Dost not thou fear God?' (23:40)",
+        "2. CONFESS 'WE JUSTLY... NOTHING AMISS' (23:41)",
+        "3. SAY 'REMEMBER ME WHEN COMEST KINGDOM' (23:42) — ask remembrance, receive 'TODAY' (23:43)"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "peter_beach_restoration",
+    title: "Peter — Three Questions on the Beach After Three Denials",
+    character: "Peter",
+    book: "John",
+    chapter: 21,
+    verses: "15-17",
+    kjvText: "So when they had dined, Jesus saith to Simon Peter, Simon, son of Jonas, lovest thou me more than these? He saith unto him, Yea, Lord; thou knowest that I love thee. He saith unto him, Feed my lambs. He saith to him again the second time, Simon, son of Jonas, lovest thou me? He saith unto him, Yea, Lord; thou knowest that I love thee. He saith unto him, Feed my sheep. He saith unto him the third time, Simon, son of Jonas, lovest thou me? Peter was grieved because he said unto him the third time, Lovest thou me? And he said unto him, Lord, thou knowest all things; thou knowest that I love thee. Jesus saith unto him, Feed my sheep.",
+    situationTags: ["charcoal fire", "lovest thou me thrice", "more than these", "grieved third time", "knowest all things", "feed lambs sheep", "beach breakfast", "restoration"],
+    keywords: ["lovest thou me", "feed my lambs sheep", "grieved third time", "knowest all things", "charcoal fire", "breakfast"],
+    summary: "Charcoal fire on beach (contrast court charcoal John 18:18) matches denial fire. Jesus cooks breakfast, asks 3x love matching 3 denials. 2x agapao, third phileo — meets Peter where he is. Each answer commissions feed. Ends 'Follow me' (21:19,22).",
+    actions: ["Answered 'Yea, Lord; thou knowest that I love thee' (21:15-16)", "Was grieved at third (21:17)", "Said 'Lord, thou knowest all things' (21:17) — appeal to omniscience"],
+    outcome: "Restored to feed sheep, Pentecost preaches 3k (Acts 2:41), 'follow me' even to martyr death signified (21:18-19).",
+    outcomeRef: { book: "John", chapter: 21, verses: "17-19" },
+    strategy: {
+      name: "The Charcoal Fire Commission",
+      steps: [
+        "1. COME TO CHARCOAL FIRE BREAKFAST (21:9,12) — return to scene of denial",
+        "2. ANSWER 'LOVEST THOU ME?' THRICE (21:15-17) — 3 confessions for 3 denials",
+        "3. HEAR 'FEED MY LAMBS/SHEEP' (21:15-17) — failure not final, feed after fall"
+      ]
+    },
+    crossRefs: [{ book: "John", chapter: 18, verses: "18", note: "servants stood, having made a fire of coals — Peter warmed himself" }]
+  },
+  {
+    id: "euodia_syntyche",
+    title: "Euodia and Syntyche — Two Women Entreated to Agree in the Lord",
+    character: "Euodia and Syntyche",
+    book: "Philippians",
+    chapter: 4,
+    verses: "2-3",
+    kjvText: "I beseech Euodia, and beseech Syntyche, that they be of the same mind in the Lord. And I intreat thee also, true yokefellow, help those women which laboured with me in the gospel, with Clement also, and with other my fellowlabourers, whose names are in the book of life.",
+    situationTags: ["beseech same mind Lord", "true yokefellow help", "laboured with me in gospel", "fellowlabourers book of life", "conflict in church", "Philippian women"],
+    keywords: ["euodia syntyche", "same mind Lord", "true yokefellow", "laboured gospel", "beseech"],
+    summary: "Paul's joyful letter pauses to beg two named women who laboured with him (likely house-church leaders/hosts, cf. Lydia Acts 16) to be of same mind in the Lord, asking true yokefellow (Syzygus) to help them.",
+    actions: ["Laboured with Paul in gospel (4:3)", "Needed help to agree — publicly besought (4:2)", "Accepted 'true yokefellow help' mediation (4:3)"],
+    outcome: "Pattern for church conflict: direct plea, mediator, appeal to shared labour and book of life (4:3).",
+    outcomeRef: { book: "Philippians", chapter: 4, verses: "3" },
+    strategy: {
+      name: "The Same Mind Beseech",
+      steps: [
+        "1. NAME PAIR: 'I beseech Euodia, and beseech Syntyche' (4:2) — don't ghost conflict",
+        "2. PLEAD 'SAME MIND IN THE LORD' (4:2)",
+        "3. CALL TRUE YOKEFELLOW TO HELP (4:3) — mediation, not gossip"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "diotrephes_preeminence",
+    title: "Diotrephes — Loves Preeminence, Casts Out Brethren",
+    character: "Diotrephes",
+    book: "3 John",
+    chapter: 1,
+    verses: "9-10",
+    kjvText: "I wrote unto the church: but Diotrephes, who loveth to have the preeminence among them, receiveth us not. Wherefore, if I come, I will remember his deeds which he doeth, prating against us with malicious words: and not content therewith, neither doth he himself receive the brethren, and forbiddeth them that would, and casteth them out of the church.",
+    situationTags: ["loveth preeminence", "receiveth us not", "prating malicious words", "receiveth not brethren", "forbiddeth them that would", "casteth out church", "toxic leader"],
+    keywords: ["diotrephes preeminence", "receiveth not", "prating malicious", "casteth out church", "forbiddeth"],
+    summary: "Last church portrait before Revelation: Diotrephes loves first place, rejects apostle's letter, prates malicious, controls by refusing missionaries and excommunicating those who would host them. John says 'I will remember his deeds'.",
+    actions: ["Loved preeminence, received us not (9)", "Prated against apostles with malicious words (10)", "Cast out them that would receive brethren (10)"],
+    outcome: "John exhorts Gaius 'follow not that which is evil, but good' (11) and commends Demetrius with good report (12). Toxic rule contrasted with hospitality.",
+    outcomeRef: { book: "3 John", chapter: 1, verses: "11-12" },
+    strategy: {
+      name: "The Preeminence Warning",
+      steps: [
+        "1. NAME 'LOVETH PREEMINENCE, RECEIVETH US NOT' (9) — spot control",
+        "2. MARK 'PRATING MALICIOUS WORDS' AND 'CASTETH OUT' (10) — words then policy",
+        "3. FOLLOW NOT EVIL BUT GOOD; ENSURE DEMETRIUS REPORT (11-12)"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "unjust_steward_shrewd",
+    title: "Unjust Steward — Shrewd Debt Reduction Before Audit",
+    character: "Unjust Steward",
+    book: "Luke",
+    chapter: 16,
+    verses: "3-8",
+    kjvText: "Then the steward said within himself, What shall I do? for my lord taketh away from me the stewardship: because I cannot dig; to beg I am ashamed. I am resolved what to do, that, when I am put out of the stewardship, they may receive me into their houses. So he called every one of his lord's debtors unto him, and said unto the first, How much owest thou unto my lord? And he said, An hundred measures of oil. And he said unto him, Take thy bill, and sit down quickly, and write fifty.",
+    situationTags: ["steward waste", "taketh stewardship away", "cannot dig ashamed beg", "resolved what to do", "receive into houses", "take bill write quickly", "shrewd unrighteous mammon"],
+    keywords: ["unjust steward", "cannot dig ashamed beg", "what shall I do", "take bill write fifty", "shrewd mammon"],
+    summary: "Steward accused of waste, told 'give account, mayest be no longer steward' (16:2). Thinks 'cannot dig, to beg ashamed', resolves to make friends via unrighteous mammon before firing: calls debtors, discounts oil 100→50, wheat 100→80. Lord commends shrewd, not dishonest: 'children of this world wiser than children of light'. Point: use fleeting mammon to make eternal friends (16:9).",
+    actions: ["Said 'What shall I do?... stewardship taken' (16:3)", "Resolved 'that... they may receive me into houses' (16:4)", "Called debtors, 'Take thy bill, sit quickly write fifty' (16:6)"],
+    outcome: "Lord commended shrewd (16:8). Teaching: 'Make friends of mammon of unrighteousness... when ye fail, they receive you into everlasting habitations' (16:9).",
+    outcomeRef: { book: "Luke", chapter: 16, verses: "8-9" },
+    strategy: {
+      name: "The Sit Quickly Shrewd",
+      steps: [
+        "1. ASK 'WHAT SHALL I DO? STEWARDSHIP TAKEN' (16:3)",
+        "2. RESOLVE 'THEY MAY RECEIVE ME INTO HOUSES' (16:4) — invest in people before audit",
+        "3. CALL DEBTORS, 'TAKE BILL, SIT QUICKLY, WRITE FIFTY' (16:6) — capitalize short window"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "rich_fool_barns",
+    title: "Rich Fool — Thou Fool, This Night Thy Soul Required",
+    character: "Rich Fool",
+    book: "Luke",
+    chapter: 12,
+    verses: "16-21",
+    kjvText: "And he spake a parable unto them, saying, The ground of a certain rich man brought forth plentifully: And he thought within himself, saying, What shall I do, because I have no room where to bestow my fruits? And he said, This will I do: I will pull down my barns, and build greater; and there will I bestow all my fruits and my goods. And I will say to my soul, Soul, thou hast much goods laid up for many years; take thine ease, eat, drink, and be merry. But God said unto him, Thou fool, this night thy soul shall be required of thee: then whose shall those things be, which thou hast provided? So is he that layeth up treasure for himself, and is not rich toward God.",
+    situationTags: ["ground plentifully", "no room bestow fruits", "pull down barns build greater", "soul much goods many years", "eat drink merry", "thou fool this night required", "not rich toward God"],
+    keywords: ["rich fool barns", "ground plentifully", "pull down build greater", "soul much goods", "this night required", "not rich toward god"],
+    summary: "Man asks Jesus arbitrate inheritance; Jesus warns covetousness. Rich's ground yields bounty, thinks only 'What shall I do? No room' — soliloquy 'I will pull down, build greater, say to soul... take ease, eat, drink, merry'. God: 'Thou fool, this night required; whose shall those things be?'",
+    actions: ["Thought within 'What shall I do, no room?' (12:17)", "Said 'I will pull down... build greater' (12:18) — expansion without distribution", "Said to soul 'much goods many years, take ease' (12:19)"],
+    outcome: "This night required (12:20). So layeth up for self, not rich toward God. Contrast widow's mite giving all (Mark 12:44).",
+    outcomeRef: { book: "Luke", chapter: 12, verses: "20-21" },
+    strategy: {
+      name: "The Bigger Barn Fallacy",
+      steps: [
+        "1. SEE 'GROUND BROUGHT PLENTIFULLY' IS GRACE NOT GENIUS (12:16)",
+        "2. HEAR 'THOU FOOL, THIS NIGHT REQUIRED' (12:20) — audit tonight",
+        "3. BE RICH TOWARD GOD NOT GREATER BARNS (12:21)"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "unforgiving_servant_10k",
+    title: "Unforgiving Servant — Forgiven Ten Thousand Talents, Throttles for Hundred Pence",
+    character: "Unforgiving servant",
+    book: "Matthew",
+    chapter: 18,
+    verses: "27-35",
+    kjvText: "Then the lord of that servant was moved with compassion, and loosed him, and forgave him the debt. But the same servant went out, and found one of his fellowservants, which owed him an hundred pence: and he laid hands on him, and took him by the throat, saying, Pay me that thou owest.",
+    situationTags: ["ten thousand talents", "moved compassion loosed forgave", "hundred pence", "took by throat pay me", "delivered to tormentors", "so likewise shall Father do"],
+    keywords: ["ten thousand talents", "compassion loosed forgave", "hundred pence", "took throat pay", "tormentors"],
+    summary: "King reckons 10k talents (≈ 200k years wages, impossible). Servant 'have patience', lord moved compassion, forgave all. Same goes, finds fellow 100 pence (~100 days), takes by throat, puts in prison. Lord hears, wroth, delivers to tormentors 'till should pay all'. Ends 'So likewise shall my heavenly Father do... if ye from hearts forgive not' (18:35).",
+    actions: ["Was moved compassion and forgave ten thousand (18:27)", "Same servant took fellow by throat 'Pay me that thou owest' (18:28)", "Would not forgive though besought (18:29-30)"],
+    outcome: "Delivered to tormentors (18:34). Lesson: forgiven much must forgive much. Contrasts prodigal father's welcome vs elder brother and this steward.",
+    outcomeRef: { book: "Matthew", chapter: 18, verses: "34-35" },
+    strategy: {
+      name: "The Throat Grab",
+      steps: [
+        "1. RECALL 'FORGAVE THEE TEN THOUSAND' (18:27,32) — quantify grace",
+        "2. RELEASE HUNDRED PENCE 'HAVE PATIENCE' (18:29) — don't throttle fellow",
+        "3. FEAR 'DELIVERED TO TORMENTORS' (18:34) — unforgiveness jails forgiven"
+      ]
+    },
+    crossRefs: [{ book: "Matthew", chapter: 6, verses: "14-15", note: "if ye forgive not... neither Father forgive" }]
+  },
+  {
+    id: "rachel_barren_envy",
+    title: "Rachel — Envious Barrenness, Give Me Children or I Die",
+    character: "Rachel",
+    book: "Genesis",
+    chapter: 30,
+    verses: "1-2",
+    kjvText: "And when Rachel saw that she bare Jacob no children, Rachel envied her sister; and said unto Jacob, Give me children, or else I die. And Jacob's anger was kindled against Rachel: and he said, Am I in God's stead, who hath withheld from thee the fruit of the womb?",
+    situationTags: ["envied sister", "give me children or I die", "angry husband Am I in God's stead", "withheld fruit womb", "mandrakes", "Rachel Joseph Benjamin"],
+    keywords: ["rachel envied", "give me children die", "Am I in God's stead", "withheld fruit womb", "mandrakes", "barren"],
+    summary: "Loved Rachel barren, hated Leah fruitful. Rachel envies, demands of Jacob 'Give me children or I die'. Jacob angry 'Am I in God's stead?' She gives Bilhah handmaid; 'God hath judged me' births Dan/Naphtali; mandrakes bargain; God hearkens, opens, bears Joseph 'God shall add another' and Benjamin dying bearing — named Ben-oni/Benjamin.",
+    actions: ["Envied sister and said 'Give me children or I die' (30:1)", "Heard 'Am I in God's stead?' (30:2) — redirect to God", "Gave Bilhah but later God hearkened and opened (30:22)"],
+    outcome: "Joseph born (30:24), Benjamin born at Bethlehem — Rachel weeps (Jer 31:15, Matt 2:18). Envy to answer.",
+    outcomeRef: { book: "Genesis", chapter: 30, verses: "22-24" },
+    strategy: {
+      name: "The Give Me Children Cry",
+      steps: [
+        "1. NAME 'RACHEL ENVIED HER SISTER' (30:1) — envy poisons",
+        "2. HEAR 'AM I IN GOD'S STEAD?' (30:2) — husband not God",
+        "3. WAIT TILL 'GOD HEARKENED...AND OPENED' (30:22) — God remembers"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "job_wife_curse",
+    title: "Job's Wife — Curse God, and Die",
+    character: "Job's wife",
+    book: "Job",
+    chapter: 2,
+    verses: "9-10",
+    kjvText: "Then said his wife unto him, Dost thou still retain thine integrity? curse God, and die. But he said unto her, Thou speakest as one of the foolish women speaketh. What? shall we receive good at the hand of God, and shall we not receive evil? In all this did not Job sin with his lips.",
+    situationTags: ["dost still retain integrity", "curse God and die", "speakest as foolish women", "receive good and not evil", "Job sin not with lips"],
+    keywords: ["job wife curse god die", "retain integrity", "foolish women", "receive good evil"],
+    summary: "After losing children/wealth, Job covered with boils scraping with potsherd in ashes. Wife, also grieving children, cracks 'curse God, and die'. Job answers 'Thou speakest as foolish women... shall we receive good at hand of God and not evil? In all this did not Job sin with lips' (2:10).",
+    actions: ["Heard 'curse God and die' (2:9)", "Answered 'shall we receive good and not evil?' (2:10)", "Sinned not with lips (2:10)"],
+    outcome: "Wife remains, later children restored (42:10-13) — grief pressure vs integrity model for spouses in suffering.",
+    outcomeRef: { book: "Job", chapter: 42, verses: "10" },
+    strategy: {
+      name: "The Curse-and-Die Temptation",
+      steps: [
+        "1. HEAR 'DOST STILL RETAIN INTEGRITY? CURSE AND DIE' (2:9) — grief voice",
+        "2. ANSWER 'SPEAKEST AS FOOLISH... SHALL WE RECEIVE GOOD AND NOT EVIL?' (2:10)",
+        "3. SIN NOT WITH LIPS (2:10) — integrity in spouse split"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "jonah_gourd_worm",
+    title: "Jonah — Angry at Mercy, Under a Withered Gourd",
+    character: "Jonah",
+    book: "Jonah",
+    chapter: 4,
+    verses: "6-11",
+    kjvText: "And the LORD God prepared a gourd, and made it to come up over Jonah, that it might be a shadow over his head, to deliver him from his grief. So Jonah was exceeding glad of the gourd. But God prepared a worm when the morning rose the next day, and it smote the gourd that it withered. And it came to pass, when the sun did arise, that God prepared a vehement east wind; and the sun beat upon the head of Jonah, that he fainted, and wished in himself to die, and said, It is better for me to die than to live.",
+    situationTags: ["gourd shadow", "exceeding glad gourd", "worm smote withered", "vehement east wind", "fainted wish die", "better die than live", "angry at mercy", "120,000 Nineveh sixscore thousand"],
+    keywords: ["jonah gourd", "worm withered", "east wind", "fainted wish die", "better die", "120 thousand"],
+    summary: "Second chapter Jonah obeys, Nineveh repents 40 days, God repents. Jonah angry 'I knew thou art gracious' (4:2), asks death. Sits east booth, God gives gourd shade — exceeding glad — then worm eats gourd, east wind beats, he faints 'better die'. God: 'should not I spare Nineveh... sixscore thousand that cannot discern?' (4:11).",
+    actions: ["Was exceeding glad of gourd (4:6)", "Wished death when gourd withered and wind (4:8)", "Heard 'should not I spare?' (4:11)"],
+    outcome: "Lesson: mercy bigger than prophet's comfort. Mirrors elder brother prodigal.",
+    outcomeRef: { book: "Jonah", chapter: 4, verses: "11" },
+    strategy: {
+      name: "The Gourd and Worm",
+      steps: [
+        "1. BE EXCEEDING GLAD OF GOURD (4:6) — appreciate shade",
+        "2. DON'T WISH DEATH WHEN WORM SMITES (4:7-8) — handle withered comfort",
+        "3. HEAR 'SHOULD NOT I SPARE NINEVEH?' (4:11) — mercy over gourd"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "david_numbered_israel",
+    title: "David Numbers Israel — Pride That Counts and Pays 70,000",
+    character: "David",
+    book: "2 Samuel",
+    chapter: 24,
+    verses: "1-15",
+    kjvText: "And again the anger of the LORD was kindled against Israel, and he moved David against them to say, Go, number Israel and Judah. And the king said to Joab the captain of the host, Go now through all the tribes of Israel... that I may know the number of the people.",
+    situationTags: ["Go number Israel", "Joab why will he be cause of trespass", "number people", "pride counting", "three years famine three months flee pestilence", "threshingfloor Araunah"],
+    keywords: ["david number israel", "go number", "joab trespass", "number people", "threshingfloor araunah"],
+    summary: "Late reign, David says 'Go number' to know strength; Joab warns 'why will he be cause of trespass?' (2 Sam 24:3, 1 Chron 21:3). David insists. Nine months census, Gad prophet offers 3: famine, flee, or pestilence — David chooses pestilence 'let us fall into hand of LORD'. 70k die. Angel stays hand at Araunah's threshingfloor; David buys and builds altar 'I will not offer to LORD of that which doth cost me nothing' (24:24).",
+    actions: ["Said 'Go number Israel' (24:1-2) against Joab counsel (1 Chron 21:3)", "Heart smote after numbering (24:10)", "Chose 'fall into hand of LORD for great are mercies' (1 Chron 21:13)", "Bought threshingfloor for 50 shekels and built altar (24:24)"],
+    outcome: "Plague stays (24:16); place becomes temple site (2 Chron 3:1). Counting pride becomes worship cost.",
+    outcomeRef: { book: "2 Samuel", chapter: 24, verses: "24-25" },
+    strategy: {
+      name: "The Numbering Cost",
+      steps: [
+        "1. HEED JOAB 'WHY BE CAUSE OF TRESPASS?' (1 Chron 21:3) — don't count to boast",
+        "2. SAY 'LET US FALL INTO HAND OF LORD, GREAT MERCIES' (1 Chron 21:13) — choose mercy over exercise",
+        "3. BUY THRESHINGFLOOR 'NOT OF THAT WHICH COST NOTHING' (2 Sam 24:24)"
+      ]
+    },
+    crossRefs: [{ book: "1 Chronicles", chapter: 21, verses: "3", note: "why will he be a cause of trespass to Israel" }]
+  },
+  {
+    id: "phinehas_zeal",
+    title: "Phinehas — Zeal That Stayed Plague With a Javelin",
+    character: "Phinehas",
+    book: "Numbers",
+    chapter: 25,
+    verses: "7-13",
+    kjvText: "And when Phinehas, the son of Eleazar, the son of Aaron the priest, saw it, he rose up from among the congregation, and took a javelin in his hand; And he went after the man of Israel into the tent, and thrust both of them through, the man of Israel, and the woman through her belly. So the plague was stayed from the children of Israel. ... Wherefore say, Behold, I give unto him my covenant of peace:",
+    situationTags: ["zeal", "javelin in hand", "thrust through belly", "plague stayed", "covenant of peace", "atonement", "jealousy"],
+    keywords: ["phinehas javelin", "thrust belly", "plague stayed", "covenant peace", "zeal"],
+    summary: "Baal-peor: Israel whores with Moab, 24k plague. Prince Zimri brings Midianite Cozbi before Moses weeping at tabernacle. Phinehas, grandson of Aaron, leaves congregation, takes javelin, thrusts both through. Plague stayed. God gives covenant of peace and everlasting priesthood.",
+    actions: ["Saw it, rose from among congregation (25:7)", "Took javelin and thrust (25:7-8) — zeal acts", "Made atonement — 'he was zealous for his God' (25:13)"],
+    outcome: "Plague stayed, covenant of peace and everlasting priesthood (25:12-13). Contrast Eli who restrained not.",
+    outcomeRef: { book: "Numbers", chapter: 25, verses: "11-13" },
+    strategy: {
+      name: "The Javelin Zeal",
+      steps: [
+        "1. RISE FROM CONGREGATION WHEN SEEING BRAZEN SIN (25:7)",
+        "2. TAKE JAVELIN: Zeal not talk (25:7)",
+        "3. STAY PLAGUE: 'He was zealous... and made atonement' (25:13) — covenant of peace"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "joab_murders_abner_amasa",
+    title: "Joab — Killer of Abner and Amasa to Keep Command",
+    character: "Joab",
+    book: "2 Samuel",
+    chapter: 3,
+    verses: "27-30",
+    kjvText: "And when Abner was returned to Hebron, Joab took him aside in the gate to speak with him quietly, and smote him there under the fifth rib, that he died, for the blood of Asahel his brother. ... And afterward when David heard it, he said, I and my kingdom are guiltless before the LORD for ever from the blood of Abner the son of Ner:",
+    situationTags: ["took aside in gate quietly", "smote fifth rib", "blood of Asahel", "guiltless", "Amasa beard kiss", "murder to keep power", "Joab"],
+    keywords: ["joab abner", "gate quietly", "fifth rib", "blood asahel", "amasa beard", "guiltless"],
+    summary: "Joab murders Abner (who made peace with David) to avenge Asahel and keep command. Later murders Amasa same way: took beard to kiss, smote fifth rib (20:9-10). David says 'I and kingdom guiltless' (3:28) but deathbed tells Solomon reckon (1 Kings 2:5-6).",
+    actions: ["Took aside in gate to speak quietly and smote under fifth rib (3:27)", "Took Amasa by beard to kiss and smote (20:9-10)", "Shed war blood in peace (1 Kings 2:5)"],
+    outcome: "Solomon orders Benaiah executes Joab at altar (1 Kings 2:29-34). Power murders end at horns of altar.",
+    outcomeRef: { book: "1 Kings", chapter: 2, verses: "5-6" },
+    strategy: {
+      name: "The Gate Quiet Murder",
+      steps: [
+        "1. SEE 'TOOK ASIDE IN GATE TO SPEAK QUIETLY' (3:27) — ambition masks as chat",
+        "2. MARK 'SMOTE FIFTH RIB' TWICE (3:27; 20:10) — pattern keeper kills successors",
+        "3. END AT ALTAR: Joab dies clinging horns (1 Kings 2:30-31)"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "huldah_prophetess",
+    title: "Huldah — Prophetess Consulted When the Book Was Found",
+    character: "Huldah",
+    book: "2 Kings",
+    chapter: 22,
+    verses: "14-20",
+    kjvText: "So Hilkiah the priest, and Ahikam, and Achbor, and Shaphan, and Asahiah, went unto Huldah the prophetess, the wife of Shallum the son of Tikvah, the son of Harhas, keeper of the wardrobe; (now she dwelt in Jerusalem in the college;) and they communed with her. And she said unto them, Thus saith the LORD God of Israel, Tell the man that sent you to me,",
+    situationTags: ["keeper of wardrobe wife", "dwelt in college", "communed with her", "Tell the man", "humble and contrite", "rent clothes"],
+    keywords: ["huldah prophetess", "keeper wardrobe", "college", "tell the man", "communed her"],
+    summary: "When Josiah's men find Book, they go not to Jeremiah/Zephaniah but to Huldah in college. She declares wrath poured on this place for forsaking, but to Josiah 'because thine heart was tender, thou didst rend clothes and weep... I have heard, thou shalt be gathered in peace'.",
+    actions: ["Dwelt in college but sought when book found (22:14)", "Said 'Tell the man that sent you... Thus saith LORD' (22:15-16)", "Declared tender heart rewarded peace (22:19)"],
+    outcome: "Josiah makes covenant, nation follows (23:3). Huldah's word shapes reformation.",
+    outcomeRef: { book: "2 Kings", chapter: 22, verses: "19-20" },
+    strategy: {
+      name: "The College Prophetess",
+      steps: [
+        "1. GO UNTO HULDAH WHEN BOOK FOUND (22:14) — seek prophetess in college",
+        "2. HEAR 'TELL THE MAN THAT SENT YOU' (22:15) — direct word",
+        "3. RECEIVE 'BECAUSE THINE HEART WAS TENDER... RENT AND WEEP' (22:19) — tenderness spares"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "jeremiah_letter_exiles",
+    title: "Jeremiah's Letter — Build Houses in Babylon",
+    character: "Jeremiah",
+    book: "Jeremiah",
+    chapter: 29,
+    verses: "4-7",
+    kjvText: "Thus saith the LORD of hosts, the God of Israel, unto all that are carried away captives, whom I have caused to be carried away from Jerusalem unto Babylon; Build ye houses, and dwell in them; and plant gardens, and eat the fruit of them; Take ye wives, and beget sons and daughters... and seek the peace of the city whither I have caused you to be carried away captives, and pray unto the LORD for it: for in the peace thereof shall ye have peace.",
+    situationTags: ["carried away whither I have caused", "build houses dwell", "plant gardens eat fruit", "take wives beget", "seek peace of city", "pray for it", "exile strategy"],
+    keywords: ["jeremiah letter exiles", "build houses plant gardens", "seek peace city", "pray for it", "carried away"],
+    summary: "Exiles expect quick return; false prophets say 2 years. Jeremiah sends letter: 70 years (29:10). Meanwhile 'Build houses, plant gardens, take wives, beget... seek peace of city whither I caused you carried, and pray for it'. Purpose of exile is build, not boycott.",
+    actions: ["Sent letter 'whom I have caused to be carried away' (29:4) — sovereignty in exile", "Said 'Build houses... plant gardens' (29:5) — invest in Babylon", "Said 'seek peace of city and pray... in peace thereof shall ye have peace' (29:7)"],
+    outcome: "After 70, God gives 'thoughts of peace... expected end' (29:11). Daniel builds there (Dan 6). Exiles who built return to build (Ezra).",
+    outcomeRef: { book: "Jeremiah", chapter: 29, verses: "10-11" },
+    strategy: {
+      name: "The Exile City Peace",
+      steps: [
+        "1. HEAR 'WHOM I HAVE CAUSED TO BE CARRIED AWAY' (29:4) — God in Babylon",
+        "2. BUILD HOUSES AND PLANT GARDENS (29:5) — plant where you didn't plan",
+        "3. SEEK PEACE OF CITY AND PRAY FOR IT (29:7) — in its peace ye have peace"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "ezekiel_watchman_eat_scroll",
+    title: "Ezekiel — Watchman Who Ate the Scroll Sweet as Honey, Bitter in Belly",
+    character: "Ezekiel",
+    book: "Ezekiel",
+    chapter: 3,
+    verses: "1-17",
+    kjvText: "Moreover he said unto me, Son of man, eat that thou findest; eat this roll, and go speak unto the house of Israel. So I opened my mouth, and he caused me to eat that roll. And he said unto me, Son of man, cause thy belly to eat, and fill thy bowels with this roll that I give thee. Then did I eat it; and it was in my mouth as honey for sweetness. ... Son of man, I have made thee a watchman unto the house of Israel: therefore hear the word at my mouth, and give them warning from me.",
+    situationTags: ["eat this roll", "mouth honey sweetness", "belly fill bowels", "watchman", "hear at my mouth give warning", "blood require at hand"],
+    keywords: ["ezekiel eat roll", "mouth honey sweetness", "watchman house israel", "hear mouth warning", "blood require"],
+    summary: "By Chebar, Ezekiel eats scroll — sweet mouth, then sits 7 days astonished. God makes watchman: 'hear word at my mouth, give them warning; if thou warn not... blood will I require at thine hand' (3:17-18).",
+    actions: ["Ate roll it was honey sweetness in mouth (3:3)", "Filled bowels with roll (3:3)", "Accepted watchman 'hear at my mouth and warn' (3:17)"],
+    outcome: "Warns rebellious house whether will hear or forbear (3:11,27). Sweet scroll becomes exile burden.",
+    outcomeRef: { book: "Ezekiel", chapter: 3, verses: "17-18" },
+    strategy: {
+      name: "The Watchman's Mouth",
+      steps: [
+        "1. EAT ROLL: 'Mouth as honey for sweetness' (3:3) — ingest before preach",
+        "2. FILL BOWELS (3:3) — word not just taste but digest",
+        "3. BE WATCHMAN: 'Hear at my mouth and give warning' (3:17) — blood on watchman if silent"
+      ]
+    },
+    crossRefs: [{ book: "Revelation", chapter: 10, verses: "9-10", note: "Take it, and eat it up; and it shall make thy belly bitter, but it shall be in thy mouth sweet as honey" }]
+  },
+  {
+    id: "daniel_dream_nebuchadnezzar",
+    title: "Daniel — Tells the Dream He Was Not Told",
+    character: "Daniel",
+    book: "Daniel",
+    chapter: 2,
+    verses: "26-28",
+    kjvText: "The king answered and said to Daniel, whose name was Belteshazzar, Art thou able to make known unto me the dream which I have seen, and the interpretation thereof? Daniel answered in the presence of the king, and said, The secret which the king hath demanded cannot the wise men, the astrologers, the magicians, the soothsayers, shew unto the king; But there is a God in heaven that revealeth secrets, and maketh known to the king Nebuchadnezzar what shall be in the latter days. Thy dream, and the visions of thy head upon thy bed, are these;",
+    situationTags: ["Art thou able", "cannot wise men shew", "there is a God in heaven revealeth secrets", "dream and interpretation", "what shall be latter days"],
+    keywords: ["daniel dream interpretation", "Art thou able", "cannot wise men", "God heaven revealeth secrets", "latter days"],
+    summary: "Nebuchadnezzar demands dream + interpretation or be cut pieces. Daniel asks time, prays night with Hananiah/Mishael/Azariah — 'Then was secret revealed in night vision' (2:19). Gives credit: 'There is a God in heaven that revealeth secrets' (2:28). Tells image of gold/silver/brass/iron/clay smashed by stone cut without hands (kingdom never destroyed).",
+    actions: ["Prayed night with friends for mercies concerning secret (2:17-18)", "Thanked 'God hath made known what we desired' (2:23)", "Said 'There is a God in heaven that revealeth secrets' (2:28)", "Blessed before interpreting"],
+    outcome: "Nebuchadnezzar falls 'there is no other God that can deliver after this sort' (3:29), promotes Daniel chief of governors (2:48).",
+    outcomeRef: { book: "Daniel", chapter: 2, verses: "47-48" },
+    strategy: {
+      name: "The God-in-Heaven Secret",
+      steps: [
+        "1. DESIRE MERCY WITH FRIENDS IN NIGHT (2:17-18) — prayer before prediction",
+        "2. SAY 'THERE IS A GOD IN HEAVEN THAT REVEALETH SECRETS' (2:28) — deflect credit",
+        "3. TELL BOTH DREAM AND 'WHAT SHALL BE LATTER DAYS' (2:28) — stone cut without hands"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "esther_fast_feast",
+    title: "Esther — Asked to Fast Three Days Before the Feast",
+    character: "Esther",
+    book: "Esther",
+    chapter: 4,
+    verses: "16-17",
+    kjvText: "Go, gather together all the Jews that are present in Shushan, and fast ye for me, and neither eat nor drink three days, night or day: I also and my maidens will fast likewise; and so will I go in unto the king, which is not according to the law: and if I perish, I perish. So Mordecai went his way, and did according to all that Esther had commanded him.",
+    situationTags: ["fast three days night day", "I and maidens fast likewise", "go in not according to law", "if I perish perish", "gather all Jews present"],
+    keywords: ["esther fast three days", "maidens fast", "not according law", "if I perish perish", "gather jews"],
+    summary: "Esther's deeper layer beyond courage: corporate 3-day total fast (no water) before strategy. She doesn't just pray herself — mobilizes all Jews present in Shushan and her maidens likewise. Then two feasts before request (5:4-8), patient advocacy, not rush.",
+    actions: ["Commanded 'gather all Jews... fast three days, night or day' (4:16)", "Fasted likewise with maidens (4:16)", "Went in 'not according to law... if I perish perish' (4:16)", "Made feast before petition (5:4)"],
+    outcome: "King extends sceptre, holds 2 feasts, exposes Haman second feast (7:3-6), gallows reversal.",
+    outcomeRef: { book: "Esther", chapter: 5, verses: "2-3" },
+    strategy: {
+      name: "The Three-Day Fast Before Feast",
+      steps: [
+        "1. GATHER AND FAST THREE DAYS, NIGHT OR DAY (4:16) — total fast before address",
+        "2. FORM 'I AND MAIDENS LIKEWISE' (4:16) — community core",
+        "3. GO 'NOT ACCORDING TO LAW' AND 'IF I PERISH' (4:16) — resolve",
+        "4. MAKE FEAST BEFORE ASK (5:4-8) — hospitality before request"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "jael_peg_hammer",
+    title: "Jael — Tent Peg Through the Temple While He Slept",
+    character: "Jael",
+    book: "Judges",
+    chapter: 4,
+    verses: "21-22",
+    kjvText: "Then Jael Heber's wife took a nail of the tent, and took an hammer in her hand, and went softly unto him, and smote the nail into his temples, and fastened it into the ground: for he was fast asleep and weary. So he died. And, behold, as Barak pursued Sisera, Jael came out to meet him, and said unto him, Come, and I will shew thee the man whom thou seekest.",
+    situationTags: ["nail of tent", "hammer in hand", "went softly", "smote temples", "fast asleep and weary", "Heber's wife", "Jael"],
+    keywords: ["jael nail tent", "hammer hand", "smote temples", "fast asleep weary", "heber wife"],
+    summary: "Sisera flees Deborah's battle to Heber's tent, asks water; Jael gives milk, covers. He sleeps weary. She takes peg and hammer, goes softly, smites nail into temples into ground. Barak arrives, she shows slain.",
+    actions: ["Took nail of tent and hammer in hand (4:21)", "Went softly unto him (4:21)", "Smote nail into temples and fastened to ground (4:21)"],
+    outcome: "Deborah sings 'Blessed above women shall Jael be' (Judg 5:24). Deliverance via domestic tool.",
+    outcomeRef: { book: "Judges", chapter: 5, verses: "24-27" },
+    strategy: {
+      name: "The Soft Peg",
+      steps: [
+        "1. TAKE NAIL OF TENT AND HAMMER (4:21) — use domestic tool",
+        "2. GO SOFTLY WHEN HE IS FAST ASLEEP AND WEARY (4:21)",
+        "3. SMITE TEMPLES AND FASTEN TO GROUND (4:21) — finish terror"
+      ]
+    },
+    crossRefs: [{ book: "Judges", chapter: 5, verses: "24", note: "Blessed above women shall Jael the wife of Heber be" }]
+  },
+  {
+    id: "peninnah_provoking",
+    title: "Peninnah — The Rival Who Provoked Sore to Make Her Fret",
+    character: "Peninnah",
+    book: "1 Samuel",
+    chapter: 1,
+    verses: "6-7",
+    kjvText: "And her adversary also provoked her sore, for to make her fret, because the LORD had shut up her womb. And as he did so year by year, when she went up to the house of the LORD, so she provoked her; therefore she wept, and did not eat.",
+    situationTags: ["adversary provoked sore", "make her fret", "LORD had shut womb", "year by year", "house of LORD provoked", "wept did not eat", "Peninnah"],
+    keywords: ["peninnah provoked sore", "make fret", "shut womb", "year by year", "wept not eat", "adversary"],
+    summary: "Elkanah loves Hannah, gives worthy portion, but Peninnah with children provokes sore year by year at Shiloh to make Hannah fret because LORD shut womb. Hannah weeps, eats not; Eli mistakes silent prayer for drunkenness. God hears after temple weeping.",
+    actions: ["Provoked her sore year by year at house of LORD (1:6-7)", "Hannah wept and did not eat (1:7)", "Hannah prayed 'in bitterness of soul' (1:10) and vowed"],
+    outcome: "Samuel born (1:20); Peninnah fades; Hannah's song magnifies (1 Sam 2:1-10).",
+    outcomeRef: { book: "1 Samuel", chapter: 1, verses: "20" },
+    strategy: {
+      name: "The Adversary's Provoke",
+      steps: [
+        "1. NAME 'ADVERSARY PROVOKED HER SORE YEAR BY YEAR' (1:6-7) — chronic taunt",
+        "2. TURN 'WEPT AND DID NOT EAT' INTO POURING SOUL (1:10,15)",
+        "3. VOW TO RELEASE GIFT (1:11)"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "naomi_mara_bitter",
+    title: "Naomi — Call Me Mara, for the Almighty Hath Dealt Very Bitterly",
+    character: "Naomi",
+    book: "Ruth",
+    chapter: 1,
+    verses: "20-21",
+    kjvText: "And she said unto them, Call me not Naomi, call me Mara: for the Almighty hath dealt very bitterly with me. I went out full, and the LORD hath brought me home again empty: why then call ye me Naomi, seeing the LORD hath testified against me, and the Almighty hath afflicted me?",
+    situationTags: ["call me Mara", "Almighty dealt bitterly", "went out full home empty", "testified against me", "afflicted", "Naomi bitter"],
+    keywords: ["naomi mara", "dealt bitterly", "went out full empty", "Almighty afflicted", "call not naomi"],
+    summary: "Naomi loses husband Elimelech, sons Mahlon/Chilion in Moab, returns to Bethlehem with Ruth at barley harvest. Says 'Call me Mara - bitter'. Ruth gleans, Boaz redeems. Mara becomes mother-in-law of redeemer line.",
+    actions: ["Said 'Call me not Naomi, call me Mara' (1:20) — honest bitter", "Went out full, brought home empty (1:21)", "Was brought home to Bethlehem in harvest (1:22) and later advised Ruth's threshing-floor (3:1-4)"],
+    outcome: "Mara's emptiness births Obed, David's grandfather (4:14-17). 'Blessed be LORD which hath not left thee without kinsman' (4:14).",
+    outcomeRef: { book: "Ruth", chapter: 4, verses: "14-17" },
+    strategy: {
+      name: "The Mara to Blessed",
+      steps: [
+        "1. SAY 'CALL ME MARA: ALMIGHTY DEALT BITTERLY' (1:20) — name bitter",
+        "2. RETURN TO BETHLEHEM AT HARVEST (1:22) — empty but positioned",
+        "3. ADVISE RUTH AT THRESHINGFLOOR (3:1-4) — mentor next generation"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "boaz_kinsman_refuses",
+    title: "The Nearer Kinsman — I Cannot Redeem, Lest I Mar My Inheritance",
+    character: "Nearer kinsman and Boaz",
+    book: "Ruth",
+    chapter: 4,
+    verses: "6-8",
+    kjvText: "And the kinsman said, I cannot redeem it for myself, lest I mar mine own inheritance: redeem thou my right to thyself; for I cannot redeem it. Now this was the manner in former time in Israel concerning redeeming and concerning changing, for to confirm all things; a man plucked off his shoe, and gave it to his neighbour: and this was a testimony in Israel.",
+    situationTags: ["cannot redeem", "mar mine own inheritance", "plucked off shoe", "testimony in Israel", "nearer kinsman refuses", "Boaz redeems"],
+    keywords: ["kinsman cannot redeem", "mar inheritance", "plucked shoe", "testimony israel", "boaz redeem"],
+    summary: "Boaz at gate with elders calls nearer kinsman: redeem Elimelech parcel + Ruth Moabitess to raise dead's name? First says 'I will redeem' then hears 'and Ruth' and says cannot lest mar inheritance. Plucks shoe, gives to Boaz as testimony.",
+    actions: ["Offered redeem - kinsman says cannot lest mar inheritance (4:6)", "Plucked off shoe as testimony (4:7-8)", "Boaz takes Ruth to raise name of dead (4:10)"],
+    outcome: "Boaz marries Ruth (4:13), Obed born, David lineage. Refuser unnamed, Boaz remembered.",
+    outcomeRef: { book: "Ruth", chapter: 4, verses: "13-14" },
+    strategy: {
+      name: "The Shoe Plucked",
+      steps: [
+        "1. HEAR 'I CANNOT REDEEM LEST I MAR MINE OWN' (4:6) — cost-count refuser",
+        "2. WITNESS SHOE PLUCKED AS TESTIMONY (4:7-8) — legal transfer",
+        "3. REDEEM THOUGH STRANGER INCLUDED (4:10) — Boaz pays full price"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "david_spear_bottle",
+    title: "David Spares Saul Again — Took Spear and Cruse, Not Life",
+    character: "David",
+    book: "1 Samuel",
+    chapter: 26,
+    verses: "11-12",
+    kjvText: "The LORD forbid that I should stretch forth mine hand against the LORD'S anointed: but, I pray thee, take thou now the spear that is at his bolster, and the cruse of water, and let us go. So David took the spear and the cruse of water from Saul's bolster; and they gat them away, and no man saw it, nor knew it, neither awaked: for they were all asleep; because a deep sleep from the LORD was fallen upon them.",
+    situationTags: ["spear bolster", "cruse of water", "deep sleep from LORD", "forbid stretch hand anointed", "took spear not life", "second spare"],
+    keywords: ["david spear cruse", "bolster", "deep sleep lord", "forbid anointed", "took spear water"],
+    summary: "Second sparing: Saul hunts with 3000, camps. David and Abishai creep at night, find Saul asleep, spear at bolster, Abner asleep, deep sleep from LORD on all. Abishai says 'God delivered, let me smite at once' (26:8). David forbids, takes spear and cruse only, cries across valley to Abner.",
+    actions: ["Said 'LORD forbid I stretch hand against anointed; take spear and cruse' (26:11)", "Took spear and cruse from bolster while deep sleep fallen (26:12)", "Cried to Abner and Saul from afar (26:14-17) — proof spare"],
+    outcome: "Saul says 'I have sinned... thou shalt do great things and prevail' (26:21,25). Deeper vindication than cave.",
+    outcomeRef: { book: "1 Samuel", chapter: 26, verses: "25" },
+    strategy: {
+      name: "The Spear at Bolster",
+      steps: [
+        "1. REFUSE 'LET ME SMITE AT ONCE' (26:8) — second temptation harder",
+        "2. TAKE SPEAR AND CRUSE NOT LIFE (26:11-12) — proof over kill",
+        "3. CRY FROM AFAR TO ARMY (26:14) — let enemy testify spare"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "naboth_vineyard",
+    title: "Naboth — I Will Not Give Inheritance of My Fathers",
+    character: "Naboth",
+    book: "1 Kings",
+    chapter: 21,
+    verses: "2-15",
+    kjvText: "And Ahab spake unto Naboth, saying, Give me thy vineyard, that I may have it for a garden of herbs, because it is near unto my house: and I will give thee for it a better vineyard than it; or, if it seem good to thee, I will give thee the worth of it in money. And Naboth said to Ahab, The LORD forbid it me, that I should give the inheritance of my fathers unto thee.",
+    situationTags: ["give me thy vineyard", "inheritance of fathers", "LORD forbid", "better vineyard or money", "Jezebel letters seal", "set Naboth on high", "false witnesses", "stoned"],
+    keywords: ["naboth vineyard", "inheritance fathers", "give vineyard herbs", "jezebel letters", "stoned naboth"],
+    summary: "Ahab covets Jezreel vineyard near palace, offers better or money. Naboth refuses 'LORD forbid give inheritance of fathers'. Ahab sullen on bed. Jezebel writes letters in Ahab's seal to elders 'proclaim fast, set Naboth on high, set two sons of Belial, thou didst blaspheme God and king, carry out and stone'. Naboth stoned.",
+    actions: ["Said 'LORD forbid that I should give inheritance of fathers unto thee' (21:3) — boundary", "Ahab heavy, Jezebel writes in king's name and seal (21:8)", "Elders set false witnesses and stoned (21:13)"],
+    outcome: "Elijah meets Ahab in vineyard: 'Hast thou killed and also taken? dogs shall lick thy blood' (21:19). Jezebel eaten by dogs (21:23; 2 Kings 9:33).",
+    outcomeRef: { book: "1 Kings", chapter: 21, verses: "19" },
+    strategy: {
+      name: "The Inheritance Not Sold",
+      steps: [
+        "1. SAY 'LORD FORBID GIVE INHERITANCE OF FATHERS' (21:3) — lineage over cash",
+        "2. ENDURE LETTERS SEALED IN KING'S NAME (21:8) — fraud at top",
+        "3. GOD SENDS ELIJAH TO VINEYARD: 'HAST KILLED AND ALSO TAKEN?' (21:19)"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "micaiah_truth_teller",
+    title: "Micaiah — I Will Speak What the LORD Saith",
+    character: "Micaiah",
+    book: "1 Kings",
+    chapter: 22,
+    verses: "13-17",
+    kjvText: "And the messenger that was gone to call Micaiah spake unto him, saying, Behold now, the words of the prophets declare good unto the king with one mouth: let thy word, I pray thee, be like the word of one of them, and speak that which is good. And Micaiah said, As the LORD liveth, what the LORD saith unto me, that will I speak. ... And he said, I saw all Israel scattered upon the hills, as sheep that have not a shepherd: and the LORD said, These have no master: let them return every man to his house in peace.",
+    situationTags: ["words with one mouth", "speak that which is good", "As LORD liveth what LORD saith", "saw Israel scattered sheep without shepherd", "400 prophets", "Zedekiah smote cheek"],
+    keywords: ["micaiah", "what lord saith speak", "one mouth good", "scattered sheep shepherd", "400 prophets", "smote cheek"],
+    summary: "Jehoshaphat and Ahab seek Ramoth-gilead. 400 prophets say 'Go up'. Micaiah summoned, pressured 'speak good like them'. Says 'what LORD saith that will I speak'. Shows vision: Israel scattered as no shepherd. Is smitten on cheek by Zedekiah, put on bread and water till peace.",
+    actions: ["Refused 'speak good like one mouth' (22:13-14)", "Said 'As LORD liveth...that will I speak' (22:14)", "Said 'I saw Israel scattered as sheep without shepherd' (22:17)"],
+    outcome: "Ahab disregards, disguises, dies arrow between joints (22:34-38). Micaiah jailed but vindicated.",
+    outcomeRef: { book: "1 Kings", chapter: 22, verses: "34-35" },
+    strategy: {
+      name: "The One Mouth Refuse",
+      steps: [
+        "1. HEAR 'LET THY WORD BE LIKE ONE OF THEM' (22:13) — pressure to parrot 400",
+        "2. ANSWER 'AS LORD LIVETH, WHAT LORD SAITH THAT WILL I SPEAK' (22:14)",
+        "3. SAY 'I SAW SCATTERED SHEEP WITHOUT SHEPHERD' (22:17) — truth at cheek-smite cost"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "joash_hidden_nurse",
+    title: "Joash — Hidden Six Years in the House of the LORD",
+    character: "Joash and Jehosheba",
+    book: "2 Kings",
+    chapter: 11,
+    verses: "2-3",
+    kjvText: "But Jehosheba, the daughter of king Joram, sister of Ahaziah, took Joash the son of Ahaziah, and stole him from among the king's sons which were slain; and they hid him, even him and his nurse, in the bedchamber from Athaliah, so that he was not slain. And he was with her hid in the house of the LORD six years. And Athaliah did reign over the land.",
+    situationTags: ["stole from among slain", "hid him and his nurse in bedchamber", "hid six years house of LORD", "Athaliah reigned", "Jehosheba"],
+    keywords: ["joash hidden", "jehosheba stole", "bedchamber athaliah", "six years house lord", "nurse"],
+    summary: "Athaliah queen mother kills all seed royal after Ahaziah. Jehosheba (wife of priest Jehoiada), steals baby Joash from slain, hides him and his nurse in bedchamber, then house of LORD six years while Athaliah reigns.",
+    actions: ["Took Joash from among slain and stole him (11:2)", "Hid him and nurse in bedchamber (11:2)", "Hid six years in house of LORD (11:3) — long hidden"],
+    outcome: "At 7 crowned in temple, Athaliah slain (11:12-16), covenant renewed (11:17). Line preserved to Christ.",
+    outcomeRef: { book: "2 Kings", chapter: 11, verses: "12" },
+    strategy: {
+      name: "The Bedchamber Hide",
+      steps: [
+        "1. STEAL FROM AMONG SLAIN (11:2) — rescue remnant when queen mother kills",
+        "2. HIDE IN BEDCHAMBER FROM ATHALIAH (11:2)",
+        "3. HIDE SIX YEARS IN HOUSE OF LORD (11:3) — hidden till 7th year crowning"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "uzziah_leprosy_forehead",
+    title: "Uzziah — Strong Till Leprosy Rose in His Forehead in the Temple",
+    character: "Uzziah",
+    book: "2 Chronicles",
+    chapter: 26,
+    verses: "16-19",
+    kjvText: "But when he was strong, his heart was lifted up to his destruction: for he transgressed against the LORD his God, and went into the temple of the LORD to burn incense upon the altar of incense. And Azariah the priest went in after him, and with him fourscore priests of the LORD, that were valiant men: And they withstood Uzziah the king, and said unto him, It appertaineth not unto thee, Uzziah, to burn incense unto the LORD, but to the priests the sons of Aaron, that are consecrated to burn incense: go out of the sanctuary; for thou hast trespassed; neither shall it be for thine honour from the LORD God. Then Uzziah was wroth, and had a censer in his hand to burn incense: and while he was wroth with the priests, the leprosy even rose up in his forehead before the priests in the house of the LORD, from beside the incense altar.",
+    situationTags: ["when he was strong heart lifted", "went into temple burn incense", "fourscore valiant priests withstood", "pertaineth not unto thee", "wroth censer hand", "leprosy rose in forehead"],
+    keywords: ["uzziah strong heart lifted", "burn incense temple", "fourscore valiant priests", "pertaineth not thee", "leprosy forehead"],
+    summary: "Uzziah 52-year king strong, invents engines, till heart lifted. Enters temple to burn incense as priest. 80 valiant priests with Azariah withstood 'pertaineth not unto thee' and 'go out... thou hast trespassed'. Wroth, leprosy rises in forehead by altar. Thrust out, dwelt in several house, Jotham judges.",
+    actions: ["When strong, transgressed and went in to burn incense (26:16)", "Was withstood by fourscore valiant priests (26:17-18)", "Was wroth with censer in hand when leprosy rose (26:19)"],
+    outcome: "Levper to death (26:21), Isaiah sees LORD in year Uzziah died (Isa 6:1) — leper-king removed, prophet sees.",
+    outcomeRef: { book: "2 Chronicles", chapter: 26, verses: "21" },
+    strategy: {
+      name: "The Censer Leprosy",
+      steps: [
+        "1. MARK 'WHEN HE WAS STRONG, HEART LIFTED UP TO DESTRUCTION' (26:16)",
+        "2. HEAR 'IT APPERTAINETH NOT UNTO THEE' — fourscore valiant withstood (26:18)",
+        "3. SEE LEPROSY RISE IN FOREHEAD IN TEMPLE (26:19) — usurped honor not given"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "hezekiah_pride_treasure",
+    title: "Hezekiah — Showed All His Treasures to Babylon",
+    character: "Hezekiah",
+    book: "2 Kings",
+    chapter: 20,
+    verses: "13-15",
+    kjvText: "And Hezekiah hearkened unto them, and shewed them all the house of his precious things, the silver, and the gold, and the spices, and precious ointment, and all the house of his armour, and all that was found in his treasures: there was nothing in his house, nor in all his dominion, that Hezekiah shewed them not. Then came Isaiah the prophet unto king Hezekiah, and said unto him, What said these men? and from whence came they unto thee? And Hezekiah said, They are come from far, even from Babylon. And Isaiah said, What have they seen in thine house? And Hezekiah answered, All that is in mine house have they seen: there is nothing among my treasures that I have not shewed them.",
+    situationTags: ["shewed all house precious things", "silver gold spices armour", "nothing not shewed", "what have they seen", "all have they seen", "from Babylon"],
+    keywords: ["hezekiah shewed treasures", "precious things", "spices armour", "nothing not shewed", "babylon envoys"],
+    summary: "After healing and sun dial, Babylon sends letters and present (20:12). Hezekiah glad, opens entire treasury, armoury to envoys. Isaiah asks 'what have they seen?' 'All'. Prophecy: all carried to Babylon, sons eunuchs. Hezekiah says 'good is word... peace in my days' (20:19).",
+    actions: ["Hearkened and shewed all house of precious things — nothing not shewed (20:13)", "Answered 'All that is in house have they seen' (20:15)", "Heard 'Behold, days come that all... shall be carried into Babylon' (20:17)"],
+    outcome: "Carried after his days; 'is it not good, if peace be in my days?' (20:19) — shortsighted relief.",
+    outcomeRef: { book: "2 Kings", chapter: 20, verses: "17-19" },
+    strategy: {
+      name: "The Showed All",
+      steps: [
+        "1. SEE HEARKENED AND SHEWED ALL... NOTHING NOT SHEWED (20:13) — display after deliverance",
+        "2. HEAR 'WHAT HAVE THEY SEEN?' 'ALL' (20:15)",
+        "3. HEAR 'ALL CARRIED INTO BABYLON' (20:17) — shown becomes seized"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "ezra_tears_mixed",
+    title: "Ezra — Rent Garment, Plucked Hair for Mixed Marriages",
+    character: "Ezra",
+    book: "Ezra",
+    chapter: 9,
+    verses: "3-6",
+    kjvText: "And when I heard this thing, I rent my garment and my mantle, and plucked off the hair of my head and of my beard, and sat down astonied. Then were assembled unto me every one that trembled at the words of the God of Israel, because of the transgression of those that had been carried away; and I sat astonied until the evening sacrifice. And at the evening sacrifice I arose up from my heaviness; and having rent my garment and my mantle, I fell upon my knees, and spread out my hands unto the LORD my God, And said, O my God, I am ashamed and blush to lift up my face to thee, my God: for our iniquities are increased over our head, and our trespass is grown up unto the heavens.",
+    situationTags: ["rent garment mantle", "plucked hair head beard", "sat astonied", "trembled at words", "until evening sacrifice", "fell knees spread hands", "ashamed blush", "iniquities over head"],
+    keywords: ["ezra rent garment", "plucked hair", "sat astonied", "trembled words", "evening sacrifice", "ashamed blush"],
+    summary: "Return exiles intermarry with Canaanites. Ezra hears, rents garment/mantle, plucks hair/beard, sits astonied till evening sacrifice with tremblers. Then falls on knees, spreads hands: 'ashamed and blush... iniquities over head, trespass grown to heavens' (9:6). Leads confession and separation.",
+    actions: ["Rent garment and mantle, plucked hair head and beard (9:3)", "Sat astonied until evening sacrifice (9:4)", "Fell on knees, spread hands, prayed ashamed and blush (9:5-6)"],
+    outcome: "People weep sore, covenant to put away strange wives (10:1-5). Revival through corporate repentance.",
+    outcomeRef: { book: "Ezra", chapter: 10, verses: "1" },
+    strategy: {
+      name: "The Rent Mantle Intercession",
+      steps: [
+        "1. RENT GARMENT AND PLUCK HAIR AT REPORT (9:3)",
+        "2. SIT ASTONIED UNTIL EVENING SACRIFICE WITH TREMBLERS (9:4)",
+        "3. FALL ON KNEES, SPREAD HANDS, SAY 'ASHAMED AND BLUSH' (9:6)"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "ezekiel_not_mourn",
+    title: "Ezekiel — Sigh, but Not with Bitter Mourning for Thy Wife",
+    character: "Ezekiel",
+    book: "Ezekiel",
+    chapter: 24,
+    verses: "16-18",
+    kjvText: "Son of man, behold, I take away from thee the desire of thine eyes with a stroke: yet neither shalt thou mourn nor weep, neither shall thy tears run down. Forbear to cry, make no mourning for the dead, bind the tire of thine head upon thee, and put on thy shoes upon thy feet, and cover not thy lips, and eat not the bread of men. So I spake unto the people in the morning: and at even my wife died; and on the morrow I did as I was commanded.",
+    situationTags: ["desire of eyes stroke", "neither mourn nor weep tears run", "forbear to cry no mourning", "bind tire head shoes feet", "cover not lips", "at even wife died on morrow did as commanded", "sign"],
+    keywords: ["ezekiel desire eyes", "neither mourn weep", "forbear cry", "bind tire", "at even wife died", "not mourn sign"],
+    summary: "God takes desire of eyes with stroke, commands prophet not to mourn outwardly — keep turban/shoes, bound, no lip cover, no bread of men. People ask 'wilt thou not tell us what these things are to us?' He says as I silent so temple desire taken and ye shall not mourn but pine in iniquities.",
+    actions: ["Heard 'I take away desire of thine eyes with stroke' (24:16)", "Heard 'neither mourn nor weep, forbear to cry' (24:16-17)", "Spake morning, at even wife died, on morrow did as commanded (24:18) — obeyed sign"],
+    outcome: "Sign to exiles: sanctuary profaned, ye shall do as done — not mourn but pine (24:21-23). Private grief for public prophecy.",
+    outcomeRef: { book: "Ezekiel", chapter: 24, verses: "24" },
+    strategy: {
+      name: "The Unmourned Desire",
+      steps: [
+        "1. HEAR 'I TAKE AWAY DESIRE OF THINE EYES WITH A STROKE' (24:16)",
+        "2. OBEY 'NEITHER MOURN NOR WEEP' (24:16-17) — sign not stoic",
+        "3. DO 'ON MORROW AS COMMANDED' WHEN 'AT EVEN MY WIFE DIED' (24:18)"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "daniel_prince_persia_21",
+    title: "Daniel — 21 Days Hindered by the Prince of Persia",
+    character: "Daniel",
+    book: "Daniel",
+    chapter: 10,
+    verses: "12-13",
+    kjvText: "Then said he unto me, Fear not, Daniel: for from the first day that thou didst set thine heart to understand, and to chasten thyself before thy God, thy words were heard, and I am come for thy words. But the prince of the kingdom of Persia withstood me one and twenty days: but, lo, Michael, one of the chief princes, came to help me; and I remained there with the kings of Persia.",
+    situationTags: ["Fear not from first day heart to understand", "chasten thyself", "words were heard", "prince Persia withstood 21 days", "Michael chief princes came to help"],
+    keywords: ["daniel prince persia 21", "from first day heart understand", "chasten thyself", "withstood 21 days", "michael helped"],
+    summary: "Daniel mourns 3 weeks (10:2-3), prays by Tigris, sees glory, falls. Man says 'from first day thy words were heard, I am come for thy words, but prince of Persia withstood 21 days, Michael came to help, I remained with kings of Persia'.",
+    actions: ["Set heart to understand and chasten thyself from first day (10:12)", "Words heard though answer hindered (10:12)", "Persisted 21 days though prince withstood"],
+    outcome: "Sees vision of latter days (11-12). Lesson: heaven hears day 1 though delivery hindered 21.",
+    outcomeRef: { book: "Daniel", chapter: 10, verses: "12-13" },
+    strategy: {
+      name: "The 21-Day Withstanding",
+      steps: [
+        "1. HEAR 'FROM FIRST DAY...THY WORDS WERE HEARD' (10:12)",
+        "2. KNOW 'PRINCE OF PERSIA WITHSTOOD 21 DAYS' (10:13) — warfare delays but not denial",
+        "3. SEE MICHAEL COME TO HELP (10:13) — chief prince aids"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "asaph_sanctuary_envy",
+    title: "Asaph — Envious at Prosperity Till He Went Into Sanctuary",
+    character: "Asaph",
+    book: "Psalm",
+    chapter: 73,
+    verses: "2-3",
+    kjvText: "But as for me, my feet were almost gone; my steps had well nigh slipped. For I was envious at the foolish, when I saw the prosperity of the wicked. ... Until I went into the sanctuary of God; then understood I their end.",
+    situationTags: ["feet almost gone", "steps well nigh slipped", "envious at foolish", "prosperity wicked", "until went into sanctuary", "then understood their end", "Asaph"],
+    keywords: ["asaph feet gone", "envious foolish", "prosperity wicked", "until sanctuary", "understood end"],
+    summary: "Worship leader Asaph envies wicked smooth prosperity, sees violence, pride, eyes stand out with fatness, questions 'how doth God know? Verily I cleansed heart in vain' (73:13). Finds answer not in data but sanctuary: then understood end, slippery places, desolation, 'nevertheless I am continually with thee' (73:23).",
+    actions: ["Confessed 'feet almost gone... envious at foolish' (73:2-3)", "Went into sanctuary of God (73:17)", "Then understood their end (73:17-18)", "Ended 'Whom have I in heaven but thee? and none upon earth desire I beside' (73:25)"],
+    outcome: "From envy to 'nevertheless... thou holdest my right hand... afterward receive me to glory' (73:23-24).",
+    outcomeRef: { book: "Psalm", chapter: 73, verses: "16-17" },
+    strategy: {
+      name: "The Sanctuary Turn",
+      steps: [
+        "1. CONFESS 'FEET ALMOST GONE... ENVIOUS' (73:2-3)",
+        "2. GO 'UNTIL I WENT INTO SANCTUARY' (73:17) — change venue not view",
+        "3. THEN UNDERSTAND END: Set in slippery places (73:18) — see destiny over display"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "elihu_youth_corrects",
+    title: "Elihu — Youth Who Waited Then Spoke Because Days Should Speak",
+    character: "Elihu",
+    book: "Job",
+    chapter: 32,
+    verses: "6-9",
+    kjvText: "And Elihu the son of Barachel the Buzite answered and said, I am young, and ye are very old; wherefore I was afraid, and durst not shew you mine opinion. I said, Days should speak, and multitude of years should teach wisdom. But there is a spirit in man: and the inspiration of the Almighty giveth them understanding. Great men are not always wise: neither do the aged understand judgment.",
+    situationTags: ["I am young ye very old", "was afraid durst not shew opinion", "Days should speak multitude years teach", "spirit in man inspiration Almighty giveth understanding", "Great men not always wise"],
+    keywords: ["elihu young very old", "afraid durst not", "days should speak", "spirit in man", "great men not always wise"],
+    summary: "Three friends fail; Elihu 31-37 waits because young, wrath kindled at Job justifying self and friends not answering. Says 'I am young, ye very old; wherefore afraid... Days should speak but spirit in man... Great men not always wise'. Speaks of God's greatness, prepares for whirlwind.",
+    actions: ["Waited because old, was afraid to shew opinion (32:6)", "Said 'Days should speak... multitude years should teach' (32:7)", "Said 'But there is a spirit in man: inspiration... giveth understanding' (32:8)"],
+    outcome: "Prepares way for God's whirlwind answer (38:1), rebukes both sides with reverence. Model for young confronting elders.",
+    outcomeRef: { book: "Job", chapter: 32, verses: "8-9" },
+    strategy: {
+      name: "The Spirit Not Age",
+      steps: [
+        "1. CONFESS 'I AM YOUNG, YE VERY OLD... WAS AFRAID' (32:6) — honour age by waiting",
+        "2. CLAIM 'THERE IS A SPIRIT IN MAN: INSPIRATION GIVETH UNDERSTANDING' (32:8) — age not monopoly",
+        "3. SAY 'GREAT MEN NOT ALWAYS WISE' (32:9) — critique without contempt"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "mary_fiat",
+    title: "Mary — Be It Unto Me According to Thy Word",
+    character: "Mary of Nazareth",
+    book: "Luke",
+    chapter: 1,
+    verses: "38-44",
+    kjvText: "And Mary said, Behold the handmaid of the Lord; be it unto me according to thy word. And the angel departed from her. ... And it came to pass, that, when Elisabeth heard the salutation of Mary, the babe leaped in her womb; and Elisabeth was filled with the Holy Ghost:",
+    situationTags: ["handmaid of Lord", "be it unto me according to thy word", "angel departed", "babe leaped womb", "filled Holy Ghost", "Mary fiat"],
+    keywords: ["mary be it unto me", "handmaid lord", "according thy word", "babe leaped", "fiat"],
+    summary: "Teenage Nazarene, betrothed, Gabriel: 'thou shalt conceive... called Son of Highest'. Asks 'how shall this be, seeing I know not a man?' (1:34). Told Spirit overshadows, nothing impossible (1:37). Answers 'Behold handmaid... be it according to thy word'. Hastens to hill country, Elisabeth filled, babe leaps, Magnificat (1:46-55).",
+    actions: ["Asked 'how shall this be?' (1:34)", "Answered 'Behold handmaid... be it unto me according to thy word' (1:38)", "Went with haste to Elisabeth (1:39-40)"],
+    outcome: "Magnificat 'my soul doth magnify' (1:46), sword prophecy 'yea, sword shall pierce through thy own soul' (2:35). Treasured sayings (2:19,51).",
+    outcomeRef: { book: "Luke", chapter: 1, verses: "46-48" },
+    strategy: {
+      name: "The Be-It-Unto-Me",
+      steps: [
+        "1. ASK 'HOW SHALL THIS BE?' (1:34) — question not doubt",
+        "2. SAY 'BEHOLD HANDMAID... BE IT ACCORDING TO THY WORD' (1:38)",
+        "3. GO WITH HASTE TO ELISABETH (1:39) — let leaping confirm"
+      ]
+    },
+    crossRefs: [{ book: "Luke", chapter: 1, verses: "46-47", note: "My soul doth magnify the Lord, and my spirit hath rejoiced" }]
+  },
+  {
+    id: "rachel_weeping_innocents",
+    title: "Rachel Weeping for Innocents — Bethlehem's Slaughter",
+    character: "Rachel (Bethlehem mothers)",
+    book: "Matthew",
+    chapter: 2,
+    verses: "16-18",
+    kjvText: "Then Herod, when he saw that he was mocked of the wise men, was exceeding wroth, and sent forth, and slew all the children that were in Bethlehem, and in all the coasts thereof, from two years old and under, according to the time which he had diligently enquired of the wise men. Then was fulfilled that which was spoken by Jeremy the prophet, saying, In Rama was there a voice heard, lamentation, and weeping, and great mourning, Rachel weeping for her children, and would not be comforted, because they are not.",
+    situationTags: ["mocked of wise men", "exceeding wroth", "slew all children two years under", "according to time diligently enquired", "Rachel weeping would not be comforted"],
+    keywords: ["rachel weeping children", "herod slew children bethlehem", "two years under", "mocked wise men", "would not comforted"],
+    summary: "Wise men mocked via not returning Herod sends sword to Bethlehem 2 years and under per time diligently enquired (2:7). Fulfills Jer 31:15 'Rachel weeping... would not be comforted, because they are not.' Joseph already fled to Egypt by night (2:14).",
+    actions: ["Herod mocked, was exceeding wroth (2:16)", "Slew all children two and under (2:16)", "Rachel voice heard lamentation, would not be comforted (2:18)"],
+    outcome: "Joseph returns after Herod death to Nazareth (2:22-23). God hides Son via flight, lets innocents die — sovereignty and grief coexist.",
+    outcomeRef: { book: "Matthew", chapter: 2, verses: "23" },
+    strategy: {
+      name: "The Rachel Would Not",
+      steps: [
+        "1. MARK 'ACCORDING TO TIME DILIGENTLY ENQUIRED' (2:7,16) — data used to murder",
+        "2. HEAR 'RACHEL WEEPING... WOULD NOT BE COMFORTED' (2:18) — allow not-comforted grief",
+        "3. HOLD FLIGHT AND SLAUGHTER TOGETHER (2:14 vs 2:16) — preservation and loss co-exist"
+      ]
+    },
+    crossRefs: [{ book: "Jeremiah", chapter: 31, verses: "15", note: "A voice was heard in Ramah, lamentation, and bitter weeping; Rahel weeping" }]
+  },
+  {
+    id: "fishers_leave_nets",
+    title: "Fishers — Straightway Left Nets and Followed",
+    character: "Peter, Andrew, James, John",
+    book: "Matthew",
+    chapter: 4,
+    verses: "19-22",
+    kjvText: "And he saith unto them, Follow me, and I will make you fishers of men. And they straightway left their nets, and followed him. And going on from thence, he saw other two brethren, James the son of Zebedee, and John his brother, in a ship with Zebedee their father, mending their nets; and he called them. And they immediately left the ship and their father, and followed him.",
+    situationTags: ["Follow me fishers of men", "straightway left nets", "immediately left ship and father", "mending nets", "Zebedee father"],
+    keywords: ["follow me fishers men", "straightway left nets", "immediately left ship father", "mending nets", "zebedee"],
+    summary: "Galilee shore, Jesus calls Simon/Andrew casting net, James/John mending nets in ship with Zebedee. Promises 'I will make you fishers of men'. Straightway, immediately leave nets, ship, father.",
+    actions: ["Heard 'Follow me, I will make you fishers of men' (4:19)", "Straightway left nets and followed him (4:20)", "Immediately left ship and their father (4:22)"],
+    outcome: "Fishers become apostles; Zebedee left with mending. Following precedes making.",
+    outcomeRef: { book: "Matthew", chapter: 4, verses: "22" },
+    strategy: {
+      name: "The Straightway Nets",
+      steps: [
+        "1. HEAR 'FOLLOW ME, I WILL MAKE YOU' (4:19) — call precedes craft",
+        "2. STRAIGHTWAY LEAVE NETS (4:20) — no notice period",
+        "3. IMMEDIATELY LEAVE SHIP AND FATHER (4:22) — family business second"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "matthew_receipt_custom",
+    title: "Matthew — Left the Receipt of Custom and Made a Feast",
+    character: "Matthew (Levi)",
+    book: "Matthew",
+    chapter: 9,
+    verses: "9-13",
+    kjvText: "And as Jesus passed forth from thence, he saw a man, named Matthew, sitting at the receipt of custom: and he saith unto him, Follow me. And he arose, and followed him. And it came to pass, as Jesus sat at meat in the house, behold, many publicans and sinners came and sat down with him and his disciples. But when the Pharisees saw it, they said unto his disciples, Why eateth your Master with publicans and sinners? But when Jesus heard that, he said unto them, They that be whole need not a physician, but they that are sick. But go ye and learn what that meaneth, I will have mercy, and not sacrifice: for I am not come to call the righteous, but sinners to repentance.",
+    situationTags: ["sitting at receipt custom", "Follow me arose followed", "sat at meat house many publicans sinners sat down", "Why eateth with publicans", "whole need not physician sick", "mercy not sacrifice"],
+    keywords: ["matthew receipt custom", "follow me arose", "publicans sinners sat down", "physician sick", "mercy not sacrifice"],
+    summary: "Matthew sits at Tel Aviv customs booth (Capernaum tax), Jesus says 'Follow me' — arose and followed (9:9). Immediately hosts feast: many publicans/sinners come sit down with Him. Pharisees murmur. Jesus: 'Whole need not physician... I will have mercy, not sacrifice... not come to call righteous, but sinners'. Later writes Gospel.",
+    actions: ["Saw man sitting at receipt, said 'Follow me' (9:9)", "Arose and followed him (9:9)", "Made feast: many publicans/sinners came sit down (9:10)"],
+    outcome: "Author of first Gospel — taxer becomes tester. 'I will have mercy, not sacrifice' (9:13).",
+    outcomeRef: { book: "Matthew", chapter: 9, verses: "13" },
+    strategy: {
+      name: "The Receipt Left",
+      steps: [
+        "1. HEAR 'FOLLOW ME' AT RECEIPT OF CUSTOM (9:9) — call at desk",
+        "2. ARISE AND FOLLOW HIM (9:9) — leave booth",
+        "3. MAKE FEAST: Many publicans/sinners sit down (9:10) — bring crew to Jesus"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "leper_i_will_clean",
+    title: "Leper — Lord, If Thou Wilt, Thou Canst Make Me Clean: I Will",
+    character: "Leper",
+    book: "Mark",
+    chapter: 1,
+    verses: "40-42",
+    kjvText: "And there came a leper to him, beseeching him, and kneeling down to him, and saying unto him, If thou wilt, thou canst make me clean. And Jesus, moved with compassion, put forth his hand, and touched him, and saith unto him, I will; be thou clean. And as soon as he had spoken, immediately the leprosy departed from him, and he was cleansed.",
+    situationTags: ["came beseeching kneeling", "If thou wilt thou canst make clean", "moved with compassion put forth hand touched him", "I will be thou clean", "immediately departed"],
+    keywords: ["leper beseeching kneeling", "If thou wilt clean", "moved compassion touched", "I will be clean"],
+    summary: "Leper violates Levitical distance, comes beseeching kneeling. Says not 'can He?' but 'If thou wilt...can'. Jesus breaks law to touch leper before word — moved compassion, put forth hand, touched, says 'I will; be thou clean'. Immediately leprosy departs though should make Him unclean — touch reverses.",
+    actions: ["Came beseeching and kneeling, said 'If thou wilt, thou canst' (1:40)", "Was touched though leprous (1:41)", "Heard 'I will; be thou clean' (1:41)"],
+    outcome: "Immediately cleansed (1:42). Charged 'say nothing... shew thyself to priest' (1:44) but blazes abroad.",
+    outcomeRef: { book: "Mark", chapter: 1, verses: "42-45" },
+    strategy: {
+      name: "The Touched Leper",
+      steps: [
+        "1. COME BSEECHING KNEELING: 'IF THOU WILT, THOU CANST' (1:40) — will before can",
+        "2. BE TOUCHED BEFORE CLEANSED (1:41) — He touches while leprous",
+        "3. HEAR 'I WILL; BE THOU CLEAN' (1:41) — immediately departs (1:42)"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "bethesda_no_man",
+    title: "Bethesda — 38 Years, Wilt Thou Be Made Whole? I Have No Man",
+    character: "Impotent man at Bethesda",
+    book: "John",
+    chapter: 5,
+    verses: "5-8",
+    kjvText: "And a certain man was there, which had an infirmity thirty and eight years. When Jesus saw him lie, and knew that he had been now a long time in that case, he saith unto him, Wilt thou be made whole? The impotent man answered him, Sir, I have no man, when the water is troubled, to put me into the pool: but while I am coming, another steppeth down before me. Jesus saith unto him, Rise, take up thy bed, and walk. And immediately the man was made whole, and took up his bed, and walked:",
+    situationTags: ["infirmity 38 years", "Wilt thou be made whole", "I have no man when water troubled", "another steppeth down before me", "Rise take up bed walk", "immediately made whole"],
+    keywords: ["bethesda 38 years", "wilt thou whole", "I have no man", "another steppeth before", "rise take bed"],
+    summary: "Five porches, angel troubles water, first in healed. One man 38y, Jesus asks 'Wilt thou be made whole?' He does not say yes but excuse: 'I have no man...another steppeth down before me'. Jesus bypasses pool: 'Rise, take up thy bed, and walk'. Immediately whole on Sabbath, carries bed, Jews persecute.",
+    actions: ["Had infirmity 38 years (5:5)", "Answered 'I have no man...another before me' (5:7)", "Heard 'Rise, take up bed, and walk' (5:8) — obeyed"],
+    outcome: "Immediately made whole and took up bed (5:9). Later warned 'sin no more lest worse' (5:14).",
+    outcomeRef: { book: "John", chapter: 5, verses: "8-9" },
+    strategy: {
+      name: "The No-Man Pool Bypass",
+      steps: [
+        "1. HEAR 'WILT THOU BE MADE WHOLE?' (5:6) — answer yes not excuse",
+        "2. CONFESS 'I HAVE NO MAN... ANOTHER BEFORE ME' (5:7) — helperless competition",
+        "3. OBEY 'RISE, TAKE UP BED, AND WALK' (5:8) — bypass pool"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "siloam_who_sinned",
+    title: "Blind Sent to Siloam — Who Did Sin, That He Was Born Blind?",
+    character: "Man born blind",
+    book: "John",
+    chapter: 9,
+    verses: "1-7",
+    kjvText: "And as Jesus passed by, he saw a man which was blind from his birth. And his disciples asked him, saying, Master, who did sin, this man, or his parents, that he was born blind? Jesus answered, Neither hath this man sinned, nor his parents: but that the works of God should be made manifest in him. ... When he had thus spoken, he spat on the ground, and made clay of the spittle, and he anointed the eyes of the blind man with the clay, And said unto him, Go, wash in the pool of Siloam, (which is by interpretation, Sent.) He went his way therefore, and washed, and came seeing.",
+    situationTags: ["blind from birth", "who did sin this man or parents", "Neither hath this man sinned", "works of God manifest", "spat clay anointed eyes", "Go wash Siloam Sent", "came seeing"],
+    keywords: ["blind born", "who sinned", "neither sinned", "works God manifest", "clay anointed", "siloam sent"],
+    summary: "Disciples theology: birth defect must be fault — who sinned? Jesus 'Neither... but that works of God should be manifest'. Spits, makes clay, anoints eyes, sends 'Go wash in Siloam - Sent'. He goes, washes, came seeing. Parents fear Jews (9:22), cast out (9:34), Jesus finds 'Dost thou believe on Son of God?' (9:35).",
+    actions: ["Heard 'Neither hath this man sinned... works of God manifest in him' (9:3)", "Received clay anointing (9:6)", "Went and washed in Siloam and came seeing (9:7)"],
+    outcome: "Cast out by Pharisees (9:34), believed 'Lord, I believe' and worshipped (9:38). Theology corrected via washing.",
+    outcomeRef: { book: "John", chapter: 9, verses: "35-38" },
+    strategy: {
+      name: "The Siloam Sent",
+      steps: [
+        "1. HEAR 'NEITHER SINNED, BUT WORKS OF GOD MANIFEST' (9:3)",
+        "2. RECEIVE CLAY ANOINTED EYES (9:6)",
+        "3. GO WASH IN POOL OF SILOAM - SENT (9:7) — obey sent place"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "nain_widow_son",
+    title: "Nain — Widow's Only Son Meets Jesus at the Gate",
+    character: "Widow of Nain",
+    book: "Luke",
+    chapter: 7,
+    verses: "12-15",
+    kjvText: "Now when he came nigh to the gate of the city, behold, there was a dead man carried out, the only son of his mother, and she was a widow: and much people of the city was with her. And when the Lord saw her, he had compassion on her, and said unto her, Weep not. And he came and touched the bier: and they that bare him stood still. And he said, Young man, I say unto thee, Arise. And he that was dead sat up, and began to speak. And he delivered him to his mother.",
+    situationTags: ["gate of city", "only son widow", "much people", "when Lord saw had compassion", "Weep not", "touched bier bearers stood still", "Young man arise", "delivered him to his mother"],
+    keywords: ["nain gate", "only son widow", "had compassion weep not", "touched bier", "young man arise", "delivered mother"],
+    summary: "Nain gate: funeral procession — dead carried out meets Life coming in. Only son of widow (repeat of Zarephath). Lord saw, had compassion, says 'Weep not', touches bier (unclean), bearers still, says 'Young man, arise'. Dead sits up, speaks, delivered to mother.",
+    actions: ["Lord saw widow and had compassion (7:13)", "Heard 'Weep not' (7:13)", "Touched bier though unclean (7:14)", "Heard 'Young man, arise' (7:14)"],
+    outcome: "Fear on all: 'God hath visited his people' (7:16). Gate gate encounter — death out, life in.",
+    outcomeRef: { book: "Luke", chapter: 7, verses: "16" },
+    strategy: {
+      name: "The Gate Intersection",
+      steps: [
+        "1. MEET AT GATE: Death carried out meets Life coming in (7:12)",
+        "2. HEAR 'WEEP NOT' FROM COMPASSION (7:13)",
+        "3. TOUCH BIER: Bearers stood still (7:14)",
+        "4. HEAR 'YOUNG MAN, ARISE' AND BE DELIVERED TO MOTHER (7:14-15)"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "transfiguration_mountain",
+    title: "Transfiguration — Shining Face on High Mountain Before the Cross",
+    character: "Peter, James, John",
+    book: "Matthew",
+    chapter: 17,
+    verses: "1-5",
+    kjvText: "And after six days Jesus taketh Peter, James, and John his brother, and bringeth them up into an high mountain apart, And was transfigured before them: and his face did shine as the sun, and his raiment was white as the light. And, behold, there appeared unto them Moses and Elias talking with him. Then answered Peter, and said unto Jesus, Lord, it is good for us to be here: if thou wilt, let us make here three tabernacles; one for thee, and one for Moses, and one for Elias. While he yet spake, behold, a bright cloud overshadowed them: and behold a voice out of the cloud, which said, This is my beloved Son, in whom I am well pleased; hear ye him.",
+    situationTags: ["high mountain apart", "transfigured face shine sun", "raiment white light", "Moses Elias talking", "let us make three tabernacles", "bright cloud overshadowed", "This is my beloved Son hear ye him"],
+    keywords: ["transfigured", "face shine sun", "white light", "moses elias", "three tabernacles", "bright cloud", "beloved son hear"],
+    summary: "Six days after 'take up cross' talk, three taken to high mountain apart, see face shine as sun, raiment white, Moses/Elias (Law/Prophets) talk of decease at Jerusalem (Luke 9:31). Peter offers three tabernacles to equalize. Bright cloud interrupts 'while he yet spake' — 'This is beloved Son... hear ye Him' (not them). Alone, face fallen.",
+    actions: ["Taken up into high mountain apart (17:1)", "Was transfigured before them (17:2)", "Heard 'This is beloved Son... hear ye him' (17:5) over tabernacle equality"],
+    outcome: "Charged tell no man till risen (17:9). Glory before Calvary sustains.",
+    outcomeRef: { book: "Matthew", chapter: 17, verses: "7-9" },
+    strategy: {
+      name: "The High Mountain Light",
+      steps: [
+        "1. BE TAKEN UP INTO HIGH MOUNTAIN APART (17:1) — after cross saying",
+        "2. SEE FACE SHINE AS SUN (17:2) — glimpse before suffering",
+        "3. HEAR 'THIS IS BELOVED SON... HEAR YE HIM' (17:5) — cloud corrects tabernacle"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "foot_washing_towel",
+    title: "Towel and Basin — The Master Girds and Washes Feet",
+    character: "Jesus Christ",
+    book: "John",
+    chapter: 13,
+    verses: "4-15",
+    kjvText: "He riseth from supper, and laid aside his garments; and took a towel, and girded himself. After that he poureth water into a bason, and began to wash the disciples' feet, and to wipe them with the towel wherewith he was girded. ... If I then, your Lord and Master, have washed your feet; ye also ought to wash one another's feet. For I have given you an example, that ye should do as I have done to you.",
+    situationTags: ["riseth from supper", "laid aside garments", "took towel girded", "poureth water bason", "wash feet wipe towel", "Lord and Master washed", "example do as I have done"],
+    keywords: ["riseth supper towel girded", "wash feet bason", "Lord Master washed", "example as I done"],
+    summary: "Night Betrayed, supper, feet unwashed. Jesus rises, lays aside garments (as later cross), girds towel slave, pours water, washes 24 feet including Judas. Peter refuses 'never wash my feet' then 'also hands and head'. Ends 'If I Lord and Master have washed... ye ought' — example mandate.",
+    actions: ["Rose from supper, laid aside garments, took towel girded (13:4)", "Poured water into bason, began to wash feet (13:5)", "Said 'ye ought to wash one another's feet... example' (13:14-15)"],
+    outcome: "Says 'If ye know these things, happy are ye if ye do them' (13:17). Servant not greater than lord (13:16).",
+    outcomeRef: { book: "John", chapter: 13, verses: "14-17" },
+    strategy: {
+      name: "The Girded Towel",
+      steps: [
+        "1. RISE FROM SUPPER, LAY ASIDE GARMENTS, TAKE TOWEL AND GIRD (13:4)",
+        "2. POUR WATER AND WASH FEET THOUGH LORD AND MASTER (13:5,14)",
+        "3. DO 'AS I HAVE DONE TO YOU' (13:15) — happy if ye do (13:17)"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "malchus_ear_sword",
+    title: "Malchus — Peter's Sword Cuts Ear, Jesus Heals",
+    character: "Peter and Malchus",
+    book: "John",
+    chapter: 18,
+    verses: "10-11",
+    kjvText: "Then Simon Peter having a sword drew it, and smote the high priest's servant, and cut off his right ear. The servant's name was Malchus. Then said Jesus unto Peter, Put up thy sword into the sheath: the cup which my Father hath given me, shall I not drink it?",
+    situationTags: ["having a sword drew it", "smote servant cut off right ear", "Malchus name", "Put up sword into sheath", "cup Father hath given shall I not drink"],
+    keywords: ["peter sword malchus", "cut off right ear", "put up sheath", "cup father drink"],
+    summary: "Gethsemane band with torches, Judas kisses. Peter draws sword (of two Luke 22:38), smites Malchus high priest servant right ear off. Jesus 'Put up... shall I not drink cup?' He touches and heals ear (Luke 22:51), says 'all they that take sword shall perish' (Matt 26:52) and 'how then shall scriptures be fulfilled?' (26:54).",
+    actions: ["Drew sword and smote Malchus cutting right ear (18:10)", "Heard 'Put up thy sword into sheath... cup... shall I not drink?' (18:11)", "Saw Jesus touch and heal ear (Luke 22:51)"],
+    outcome: "Ear restored, Peter later denies but repents. Zeal without cup drinking wounds.",
+    outcomeRef: { book: "Luke", chapter: 22, verses: "51" },
+    strategy: {
+      name: "The Sheath Command",
+      steps: [
+        "1. DRAWN SWORD CUTS RIGHT EAR (18:10) — zeal misaimed",
+        "2. HEAR 'PUT UP SWORD INTO SHEATH' (18:11)",
+        "3. DRINK 'CUP WHICH MY FATHER HATH GIVEN' (18:11) — not sword but cup"
+      ]
+    },
+    crossRefs: [{ book: "Luke", chapter: 22, verses: "51", note: "he touched his ear, and healed him" }]
+  },
+  {
+    id: "simon_cyrene_cross",
+    title: "Simon of Cyrene — Compelled to Bear His Cross",
+    character: "Simon of Cyrene",
+    book: "Mark",
+    chapter: 15,
+    verses: "21-22",
+    kjvText: "And they compel one Simon a Cyrenian, who passed by, coming out of the country, the father of Alexander and Rufus, to bear his cross. And they bring him unto the place Golgotha, which is, being interpreted, The place of a skull.",
+    situationTags: ["compel Simon Cyrenian", "passed by coming out country", "father Alexander Rufus", "to bear his cross", "Golgotha skull"],
+    keywords: ["simon cyrene compel", "bear cross", "alexander rufus", "passed by country", "golgotha skull"],
+    summary: "Via Dolorosa, Jesus scourged, cannot carry. Romans compel passerby Simon Cyrenian (freeman from North Africa, father of Rufus Rom 16:13) coming out of country, to bear cross behind Jesus (Luke 23:26). Brings to Golgotha.",
+    actions: ["Passed by coming out of country (15:21) — not seeking", "Was compelled to bear his cross (15:21) — involuntary then voluntary (Luke 23:26 bear after)", "Brought to Golgotha with Him"],
+    outcome: "Family becomes Christian: 'Rufus chosen in Lord, and his mother and mine' (Rom 16:13). Compelled bearer becomes household of faith.",
+    outcomeRef: { book: "Mark", chapter: 15, verses: "21" },
+    strategy: {
+      name: "The Compelled Bearer",
+      steps: [
+        "1. COME 'PASSING BY COMING OUT OF COUNTRY' (15:21) — arrive at road",
+        "2. BE COMPELLED TO BEAR HIS CROSS (15:21) — involuntary call becomes identity",
+        "3. BRING TO GOLGOTHA (15:22) — carry to skull place, then know resurrection"
+      ]
+    },
+    crossRefs: [{ book: "Romans", chapter: 16, verses: "13", note: "Salute Rufus chosen in the Lord, and his mother and mine" }]
+  },
+  {
+    id: "rhoda_gate_joy",
+    title: "Rhoda — Joy Too Great to Open the Gate",
+    character: "Rhoda",
+    book: "Acts",
+    chapter: 12,
+    verses: "13-15",
+    kjvText: "And as Peter knocked at the door of the gate, a damsel came to hearken, named Rhoda. And when she knew Peter's voice, she opened not the gate for gladness, but ran in, and told how Peter stood before the gate. And they said unto her, Thou art mad. But she constantly affirmed that it was even so. Then said they, It is his angel. But Peter continued knocking: and when they had opened the door, and saw him, they were astonished.",
+    situationTags: ["knocked at door of gate", "damsel named Rhoda came to hearken", "knew voice opened not for gladness", "ran in told Peter stood before gate", "Thou art mad", "It is his angel", "Peter continued knocking"],
+    keywords: ["rhoda gate", "knocked door", "opened not gladness", "thou art mad", "his angel", "peter knocking"],
+    summary: "Peter angelic exit (chains fell Acts 12:7-10, iron gate opens), goes to Mary's house where church prays without ceasing. Knocks at gate, Rhoda hearkens, knows voice, for gladness leaves gate shut, runs to tell 'Peter stood before gate'. Pray-ers say 'thou art mad... it is his angel'. Peter continues knocking till they see and astonished.",
+    actions: ["Came to hearken when Peter knocked (12:13)", "Knew voice, opened not for gladness but ran in (12:14) — joy error", "Constantly affirmed though called mad (12:15)"],
+    outcome: "Gate opened, Peter tells to shew James/brethren (12:17). Prayer answered beyond belief.",
+    outcomeRef: { book: "Acts", chapter: 12, verses: "16-17" },
+    strategy: {
+      name: "The Unopened-for-Gladness",
+      steps: [
+        "1. HEARKEN AT KNOCK OF GATE (12:13)",
+        "2. KNOW VOICE YET 'OPENED NOT FOR GLADNESS' (12:14) — joy can delay opening",
+        "3. CONSTANTLY AFFIRM THOUGH CALLED MAD (12:15) — 'it is even so'"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "demetrius_silversmith",
+    title: "Demetrius the Silversmith — Great Is Diana, Our Craft in Danger",
+    character: "Demetrius",
+    book: "Acts",
+    chapter: 19,
+    verses: "24-27",
+    kjvText: "For a certain man named Demetrius, a silversmith, which made silver shrines for Diana, brought no small gain unto the craftsmen; Whom he called together with the workmen of like occupation, and said, Sirs, ye know that by this craft we have our wealth. Moreover ye see and hear, that not alone at Ephesus, but almost throughout all Asia, this Paul hath persuaded and turned away much people, saying that they be no gods, which are made with hands: So that not only this our craft is in danger to be set at nought; but also that the temple of the great goddess Diana should be despised, and her magnificence should be destroyed, whom all Asia and the world worshippeth.",
+    situationTags: ["made silver shrines Diana", "brought no small gain craftsmen", "by this craft we have wealth", "Paul persuaded turned away much people", "be no gods made with hands", "craft in danger", "magnificence destroyed", "all Asia world worshippeth"],
+    keywords: ["demetrius silversmith", "silver shrines diana", "no small gain", "craft wealth", "craft danger", "made with hands"],
+    summary: "Ephesus, Paul 2 years school Tyrannus, miracles aprons. Demetrius, guild leader shrine maker, calls craftsmen 'by this craft we have wealth...Paul says they be no gods made with hands — so craft danger and Diana despised whom Asia/world worships'. Stirs 'Great is Diana' 2 hrs theatre cry, seizes Gaius/Aristarchus, town clerk stills.",
+    actions: ["Made shrines brought no small gain (19:24)", "Called craftsmen 'by this craft we have wealth... craft danger' (19:25-27) — economics masquerading as piety", "Stirred city to confusion (19:29,32)"],
+    outcome: "Gospel prevails; 'mightily grew word and prevailed' (19:20). Economic idol exposed.",
+    outcomeRef: { book: "Acts", chapter: 19, verses: "20" },
+    strategy: {
+      name: "The Shrine Gain Riot",
+      steps: [
+        "1. SEE 'WHICH MADE SHRINES... NO SMALL GAIN' (19:24)",
+        "2. HEAR 'BY THIS CRAFT WE HAVE WEALTH... CRAFT IN DANGER' (19:25-27) — profit as theology",
+        "3. SAY 'THEY BE NO GODS MADE WITH HANDS' (19:26) — gospel vs manufacture"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "onesimus_restored",
+    title: "Onesimus — Unprofitable Runaway Made Profitable",
+    character: "Onesimus",
+    book: "Philemon",
+    chapter: 1,
+    verses: "10-16",
+    kjvText: "I beseech thee for my son Onesimus, whom I have begotten in my bonds: Which in time past was to thee unprofitable, but now profitable to thee and to me: Whom I have sent again: thou therefore receive him, that is, mine own bowels: ... For perhaps he therefore departed for a season, that thou shouldest receive him for ever; Not now as a servant, but above a servant, a brother beloved, specially to me, but how much more unto thee, both in the flesh, and in the Lord.",
+    situationTags: ["my son Onesimus begotten in bonds", "in time past unprofitable now profitable", "mine own bowels", "perhaps departed for a season receive forever", "not now servant above servant brother beloved"],
+    keywords: ["onesimus unprofitable profitable", "begotten bonds", "mine own bowels", "departed season forever", "brother beloved"],
+    summary: "Colossian slave Onesimus robs Philemon, flees to Rome, meets imprisoned Paul, begotten in bonds. Paul sends back with letter: 'in time past unprofitable, but now profitable to thee and me... receive him as mine own bowels... perhaps departed for season that thou shouldest receive him forever, not as servant but brother beloved'. Asks charge to Paul (Philem 18).",
+    actions: ["Was unprofitable, became profitable (10-11) — pun names Useful", "Was begotten in Paul's bonds (10)", "Was sent again to be received as bowels/brother (12,16)"],
+    outcome: "Philemon obeys, Onesimus later bishop at Ephesus (Ignatius). Col 4:9 'Onesimus, faithful brother'. Restoration model for master-slave.",
+    outcomeRef: { book: "Philemon", chapter: 1, verses: "15-16" },
+    strategy: {
+      name: "The Unprofitable Made Profitable",
+      steps: [
+        "1. MARK 'IN TIME PAST UNPROFITABLE, BUT NOW PROFITABLE' (11) — useless past not final",
+        "2. RECEIVE 'AS MINE OWN BOWELS... ABOVE SERVANT, BROTHER BELOVED' (12,16)",
+        "3. SEE 'PERHAPS DEPARTED FOR SEASON THAT THOU RECEIVE FOREVER' (15) — providence in flight"
+      ]
+    },
+    crossRefs: [{ book: "Colossians", chapter: 4, verses: "9", note: "With Onesimus, a faithful and beloved brother" }]
+  },
+  {
+    id: "epaphroditus_nigh_death",
+    title: "Epaphroditus — Nigh Unto Death for the Work of Christ",
+    character: "Epaphroditus",
+    book: "Philippians",
+    chapter: 2,
+    verses: "25-30",
+    kjvText: "Yet I supposed it necessary to send to you Epaphroditus, my brother, and companion in labour, and fellowsoldier, but your messenger, and he that ministered to my wants. For he longed after you all, and was full of heaviness, because that ye had heard that he had been sick. For indeed he was sick nigh unto death: but God had mercy on him; and not on him only, but on me also, lest I should have sorrow upon sorrow. ... Because for the work of Christ he was nigh unto death, not regarding his life, to supply your lack of service toward me.",
+    situationTags: ["brother companion labour fellowsoldier", "your messenger ministered wants", "longed full heaviness because heard he had been sick", "sick nigh unto death God had mercy", "not regarding his life", "for work of Christ nigh death"],
+    keywords: ["epaphroditus brother fellowsoldier", "ministered wants", "nigh death mercy", "not regarding life", "work christ"],
+    summary: "Philippian pastor Epaphroditus carries gift to Roman prison Paul, serves wants, falls sick nigh death while away. Longs and heavy because church heard. God had mercy. Paul sends back lest sorrow upon sorrow. Says 'receive him with joy... hold in reputation: because for work of Christ he was nigh unto death, not regarding his life'.",
+    actions: ["Served as brother/companion/fellowsoldier/messenger who ministered to wants (2:25)", "Was sick nigh unto death but God had mercy (2:27)", "Longed and was full heaviness because ye heard he sick (2:26)", "Was nigh death not regarding life for work of Christ (2:30)"],
+    outcome: "Received with joy, held in reputation (2:29-30). Survival is mercy, ministry continues.",
+    outcomeRef: { book: "Philippians", chapter: 2, verses: "29-30" },
+    strategy: {
+      name: "The Nigh-Unto-Death Ministry",
+      steps: [
+        "1. BE BROTHER/COMPANION/FELLOWSOLDIER/MESSENGER (2:25)",
+        "2. KNOW 'NIGH UNTO DEATH: BUT GOD HAD MERCY' (2:27) — sickness not failure",
+        "3. HONOUR 'FOR WORK OF CHRIST... NOT REGARDING HIS LIFE' (2:30)"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "patmos_for_word",
+    title: "John on Patmos — Companion in Tribulation for the Word of God",
+    character: "John",
+    book: "Revelation",
+    chapter: 1,
+    verses: "9-11",
+    kjvText: "I John, who also am your brother, and companion in tribulation, and in the kingdom and patience of Jesus Christ, was in the isle that is called Patmos, for the word of God, and for the testimony of Jesus Christ. I was in the Spirit on the Lord's day, and heard behind me a great voice, as of a trumpet, Saying, I am Alpha and Omega, the first and the last: and, What thou seest, write in a book, and send it unto the seven churches which are in Asia;",
+    situationTags: ["brother companion in tribulation", "kingdom and patience of Jesus Christ", "isle called Patmos", "for word of God and testimony", "in Spirit on Lord's day", "great voice as trumpet", "Alpha and Omega", "write in book send to seven churches"],
+    keywords: ["patmos companion tribulation", "word of god testimony", "isle patmos", "in spirit lord day", "alpha omega", "seven churches"],
+    summary: "Aged apostle exiled under Domitian to Patmos rock for word/testimony. Says 'brother and companion in tribulation and patience'. In Spirit on Lord's day, hears trumpet 'I am Alpha...', sees risen Christ among candlesticks (1:12-18), writes to seven churches.",
+    actions: ["Was in isle Patmos for word of God and testimony (1:9)", "Was in Spirit on Lord's day (1:10)", "Heard great voice as trumpet 'What thou seest write' (1:11) and saw Son of man"],
+    outcome: "Wrote Revelation — 'which things must shortly come to pass' (1:1), 'even so, come, Lord Jesus' (22:20). Exile becomes revelation.",
+    outcomeRef: { book: "Revelation", chapter: 1, verses: "11-12" },
+    strategy: {
+      name: "The Patmos In-Spirit",
+      steps: [
+        "1. BE 'IN ISLE PATMOS FOR WORD OF GOD' (1:9) — exile for testimony",
+        "2. BE 'IN SPIRIT ON LORD'S DAY' (1:10) — worship in banishment",
+        "3. WRITE WHAT THOU SEEST AND SEND TO SEVEN CHURCHES (1:11) — patmos to churches"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "vashti_refuses",
+    title: "Vashti — She Refused to Come at the King's Command",
+    character: "Vashti",
+    book: "Esther",
+    chapter: 1,
+    verses: "11-12",
+    kjvText: "To bring Vashti the queen before the king with the crown royal, to shew the people and the princes her beauty: for she was fair to look on. But the queen Vashti refused to come at the king's commandment by his chamberlains: therefore was the king very wroth, and his anger burned in him.",
+    situationTags: ["refused to come at king's commandment", "crown royal shew beauty", "fair to look on", "very wroth anger burned", "Vashti", "boundary", "refusal"],
+    keywords: ["vashti refused", "king commandment chamberlains", "crown royal beauty", "very wroth", "refused come"],
+    summary: "Persian queen summoned to show beauty with crown at 180-day feast to be object. Vashti refuses. King wroth, anger burned, counsel says 'Vashti hath not done wrong to king only' (1:16). Deposed by decree, Esther later rises through same gate.",
+    actions: ["Refused to come at king's commandment by chamberlains (1:12) — boundary", "Accepted loss of crown over compliance (1:19)", "Created opening for Esther's providence"],
+    outcome: "Deposed (1:19) — but refusal models cost of boundary; Esther's later courage redeems queen's office.",
+    outcomeRef: { book: "Esther", chapter: 1, verses: "19" },
+    strategy: {
+      name: "The Refused Crown",
+      steps: [
+        "1. HEAR 'TO BRING VASHTI...TO SHEW HER BEAUTY' (1:11) — objectification ask",
+        "2. REFUSE TO COME AT KING'S COMMANDMENT (1:12) — boundary not rebellion",
+        "3. ACCEPT 'VERY WROTH' LOSSES CROWN (1:12,19) — costly no"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "shimei_cursing_exile",
+    title: "Shimei — Cursing the King While Fleeing Absalom",
+    character: "Shimei",
+    book: "2 Samuel",
+    chapter: 16,
+    verses: "10-12",
+    kjvText: "And the king said, What have I to do with you, ye sons of Zeruiah? so let him curse, because the LORD hath said unto him, Curse David. Who shall then say, Wherefore hast thou done so? And David said to Abishai, and to all his servants, Behold, my son, which came forth of my bowels, seeketh my life: how much more now may this Benjamite do it? let him alone, and let him curse; for the LORD hath bidden him. It may be that the LORD will look on mine affliction, and that the LORD will requite me good for his cursing this day.",
+    situationTags: ["let him curse", "LORD hath said Curse David", "Who shall say Wherefore hast thou done so", "let him alone", "affliction requite good for cursing", "Shimei Benjamite", "fleeing Absalom"],
+    keywords: ["shimei curse", "let him curse lord bidden", "wherefore hast thou done", "affliction requite good cursing", "barley castle"],
+    summary: "David flees Jerusalem barefoot weeping from Absalom, Shimei Benjamite runs along hill cursing, throwing stones and dust, calling 'thou bloody man, thou man of Belial'. Abishai offers 'let me take off his head' (16:9). David says 'let him alone, let him curse; for LORD hath bidden him... It may be LORD will requite me good' (16:11-12).",
+    actions: ["Said 'so let him curse, because LORD hath said Curse David' (16:10)", "Said 'Who shall then say Wherefore hast thou done so?' (16:10) — sovereignty", "Said 'let him alone, let him curse... LORD will requite good for cursing this day' (16:11-12)"],
+    outcome: "Shimei later begs mercy at Jordan (19:18-20); David spares with oath but Solomon later judges (1 Kings 2:36-46). Cursing endured becomes mercy opportunity.",
+    outcomeRef: { book: "2 Samuel", chapter: 16, verses: "12" },
+    strategy: {
+      name: "The Let Him Curse",
+      steps: [
+        "1. HEAR 'SO LET HIM CURSE, BECAUSE LORD HATH SAID' (16:10)",
+        "2. ANSWER ABISHAI 'LET HIM ALONE, LET HIM CURSE' (16:11) — restrain sword",
+        "3. HOPE 'IT MAY BE LORD WILL REQUITE GOOD FOR CURSING THIS DAY' (16:12)"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "agur_two_things",
+    title: "Agur — Two Things Required Before Death: Neither Poverty Nor Riches",
+    character: "Agur",
+    book: "Proverbs",
+    chapter: 30,
+    verses: "7-9",
+    kjvText: "Two things have I required of thee; deny me them not before I die: Remove far from me vanity and lies: give me neither poverty nor riches; feed me with food convenient for me: Lest I be full, and deny thee, and say, Who is the LORD? or lest I be poor, and steal, and take the name of my God in vain.",
+    situationTags: ["Two things required before I die", "deny not before I die", "Remove vanity lies", "neither poverty nor riches", "food convenient", "lest full deny Who is LORD", "lest poor steal take name vain", "Agur"],
+    keywords: ["agur two things", "neither poverty riches", "food convenient", "lest full deny", "lest poor steal"],
+    summary: "Agur son of Jakeh's oracle: asks God two things before death — remove vanity/lies and feed with convenient food, not poverty (steal, profane) nor riches (deny, Who is LORD?). Most balanced financial prayer in Bible.",
+    actions: ["Asked 'Two things... deny me not before I die' (30:7)", "Said 'Remove far from me vanity and lies' (30:8)", "Said 'give me neither poverty nor riches; feed me with food convenient' (30:8-9)"],
+    outcome: "Wisdom for stewardship — sufficiency without seduction. Complement to rich fool Barns and Just Weight.",
+    outcomeRef: { book: "Proverbs", chapter: 30, verses: "8-9" },
+    strategy: {
+      name: "The Neither Poverty Nor Riches",
+      steps: [
+        "1. ASK 'TWO THINGS BEFORE I DIE; DENY ME NOT' (30:7)",
+        "2. PRAY 'REMOVE VANITY AND LIES' (30:8) — integrity first",
+        "3. PRAY 'NEITHER POVERTY NOR RICHES; FOOD CONVENIENT' (30:8) — sufficiency not surplus"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "joseph_arimathea_tomb",
+    title: "Joseph of Arimathea — The Secret Disciple Who Bought the Tomb",
+    character: "Joseph of Arimathea",
+    book: "John",
+    chapter: 19,
+    verses: "38-39",
+    kjvText: "And after this Joseph of Arimathaea, being a disciple of Jesus, but secretly for fear of the Jews, besought Pilate that he might take away the body of Jesus: and Pilate gave him leave. He came therefore, and took the body of Jesus. And there came also Nicodemus, which at the first came to Jesus by night, and brought a mixture of myrrh and aloes, about an hundred pound weight.",
+    situationTags: ["disciple secretly for fear of Jews", "besought Pilate take away body", "Nicodemus which at first came by night", "hundred pound myrrh aloes", "good man just waited for kingdom", "boldly went in unto Pilate"],
+    keywords: ["joseph arimathea secret disciple", "besought pilate body", "nicodemus by night", "hundred pound myrrh", "fear jews"],
+    summary: "Joseph, councillor good and just (Luke 23:50), waited for kingdom, not consented to counsel (23:51), had not courage openly (Mark 15:43 'went in boldly'). At cross asks Pilate for body, unwraps place in own hewn tomb where never man laid (Luke 23:53). Nicodemus who came by night brings 100 lbs spices. Secret becomes bold at costliest hour.",
+    actions: ["Being disciple secretly for fear, yet besought Pilate for body (19:38)", "Went in boldly unto Pilate (Mark 15:43) — fear to bold", "Laid in own new tomb hewn, wrapped with spices (19:40-41; Matt 27:60)"],
+    outcome: "Fulfills Isaiah 53:9 'with the rich in his death'. Tomb becomes resurrection proof. Nicodemus night to day arc completes.",
+    outcomeRef: { book: "Matthew", chapter: 27, verses: "60" },
+    strategy: {
+      name: "The Secret Bold",
+      steps: [
+        "1. BE DISCIPLE SECRETLY FOR FEAR (19:38) — hidden season allowed",
+        "2. YET 'WENT IN BOLDLY' TO PILATE (Mark 15:43) — crisis boldness",
+        "3. BESOUGHT BODY AND GAVE OWN TOMB (19:38; 27:60) — costliest gift"
+      ]
+    },
+    crossRefs: [{ book: "Mark", chapter: 15, verses: "43", note: "Joseph...went in boldly unto Pilate, and craved the body of Jesus" }]
+  },
+  {
+    id: "gamaliel_refrain",
+    title: "Gamaliel — If This Counsel Be of Men It Will Come to Nought",
+    character: "Gamaliel",
+    book: "Acts",
+    chapter: 5,
+    verses: "34-39",
+    kjvText: "Then stood there up one in the council, a Pharisee, named Gamaliel, a doctor of the law, had in reputation among all the people, and commanded to put the apostles forth a little space; And said unto them, Ye men of Israel, take heed to yourselves what ye intend to do as touching these men. For before these days rose up Theudas, boasting himself to be somebody; to whom a number of men, about four hundred, joined themselves: who was slain; and all, as many as obeyed him, were scattered, and brought to nought. And after this man rose up Judas of Galilee... he also perished; and all, even as many as obeyed him, were dispersed. And now I say unto you, Refrain from these men, and let them alone: for if this counsel or this work be of men, it will come to nought: But if it be of God, ye cannot overthrow it; lest haply ye be found even to fight against God.",
+    situationTags: ["doctor of law had reputation", "take heed what ye intend", "Theudas four hundred scattered nought", "Judas Galilaeus dispersed", "Refrain let alone", "if of men will come to nought", "if be of God cannot overthrow", "lest fight against God", "Gamaliel"],
+    keywords: ["gamaliel doctor law reputation", "refrain let alone", "if of men nought", "if of god cannot overthrow", "theudas judas"],
+    summary: "Apostles jailed, angel releases to preach. Sanhedrin wants to slay (5:33). Gamaliel, Paul's teacher (Acts 22:3), stood: cites Theudas 400 scattered, Judas dispersed, says 'Refrain... let alone: if of men nought; but if of God cannot overthrow; lest ye fight God'. Council beats but lets go.",
+    actions: ["Commanded put apostles forth little space (5:34)", "Said 'take heed what ye intend' (5:35)", "Said 'Refrain... let alone: if of men nought; if of God cannot overthrow' (5:38-39)"],
+    outcome: "Council agrees, beats and commands not speak but apostles rejoice and cease not daily (5:40-42). Discernment saves council from God-fight.",
+    outcomeRef: { book: "Acts", chapter: 5, verses: "41-42" },
+    strategy: {
+      name: "The Refrain Test",
+      steps: [
+        "1. TAKE HEED WHAT YE INTEND AS TOUCHING THESE MEN (5:35)",
+        "2. CITE THEUDAS/JUDAS: Men movements scatter to nought (5:36-37)",
+        "3. SAY 'REFRAIN...LET ALONE: IF OF MEN NOUGHT; IF OF GOD CANNOT OVERTHROW' (5:38-39)"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "peter_sheet_vision",
+    title: "Peter's Sheet — What God Hath Cleansed, That Call Not Thou Common",
+    character: "Peter",
+    book: "Acts",
+    chapter: 10,
+    verses: "13-15",
+    kjvText: "And there came a voice to him, Rise, Peter; kill, and eat. But Peter said, Not so, Lord; for I have never eaten any thing that is common or unclean. And the voice spake unto him again the second time, What God hath cleansed, that call not thou common.",
+    situationTags: ["Rise Peter kill and eat", "Not so Lord never eaten common unclean", "What God hath cleansed call not common", "sheet four corners", "doubted in himself what this vision", "Cornelius", "prejudice"],
+    keywords: ["peter sheet", "rise kill eat", "not so lord common unclean", "god hath cleansed call not common", "four corners sheet"],
+    summary: "Peter prays noon on rooftop, hungry, trance: sheet four corners let down with fourfooted/creeping. Voice 'Rise, kill, eat' 3 times. Peter 'Not so, Lord; never eaten common'. Voice 'What God hath cleansed, call not common'. While doubts, Cornelius men knock. Peter goes, says 'ye know how unlawful... but God shewed I should call no man common or unclean' (10:28). Gentile Pentecost follows.",
+    actions: ["Prayed at sixth hour on housetop (10:9)", "Said 'Not so, Lord; never eaten common or unclean' (10:14)", "Heard 'What God hath cleansed, call not thou common' (10:15) thrice (10:16)", "Went to Cornelius though doubted (10:19-20)"],
+    outcome: "Holy Ghost falls on Gentiles while Peter preaches (10:44); 'Can any forbid water?' (10:47). Church learns inclusion.",
+    outcomeRef: { book: "Acts", chapter: 10, verses: "28" },
+    strategy: {
+      name: "The Sheet Thrice",
+      steps: [
+        "1. HEAR 'RISE, PETER; KILL, AND EAT' (10:13)",
+        "2. CONFESS 'NOT SO, LORD; NEVER EATEN COMMON' (10:14) — name prejudice",
+        "3. RECEIVE 'WHAT GOD HATH CLEANSED, CALL NOT THOU COMMON' (10:15) — 3 times",
+        "4. GO TO CORNELIUS THOUGH DOUBTED (10:20)"
+      ]
+    },
+    crossRefs: [{ book: "Acts", chapter: 10, verses: "28", note: "God hath shewed me that I should not call any man common or unclean" }]
+  },
+  {
+    id: "macedonian_call",
+    title: "The Macedonian Call — Come Over Into Macedonia, and Help Us",
+    character: "Paul",
+    book: "Acts",
+    chapter: 16,
+    verses: "6-10",
+    kjvText: "Now when they had gone throughout Phrygia and the region of Galatia, and were forbidden of the Holy Ghost to preach the word in Asia, After they were come to Mysia, they assayed to go into Bithynia: but the Spirit suffered them not. And they passing by Mysia came down to Troas. And a vision appeared to Paul in the night; There stood a man of Macedonia, and prayed him, saying, Come over into Macedonia, and help us. And after he had seen the vision, immediately we endeavoured to go into Macedonia, assuredly gathering that the Lord had called us for to preach the gospel unto them.",
+    situationTags: ["forbidden of Holy Ghost to preach in Asia", "Spirit suffered not Bithynia", "passing by Mysia", "vision man of Macedonia", "Come over help us", "immediately endeavoured", "assuredly gathering Lord had called us"],
+    keywords: ["macedonian call", "forbidden asia", "suffered not bithynia", "come over help us", "immediately endeavoured", "troas"],
+    summary: "Second journey: Paul assays Asia, forbidden; assays Bithynia, Spirit suffers not; passes by Mysia to Troas at sea's end. Night vision Macedonian man 'Come over and help us'. Immediately endeavoured to go, first we (Luke joins), to Philippi where Lydia and jailer saved.",
+    actions: ["Were forbidden of Holy Ghost to preach in Asia (16:6)", "Assayed Bithynia but Spirit suffered not (16:7)", "Saw 'Come over into Macedonia, help us' (16:9)", "Immediately endeavoured, assuredly gathering Lord had called (16:10)"],
+    outcome: "Europe entered: Lydia saved by riverside (16:14), demon cast, prison praise, jailer saved (16:25-34). Closed doors lead to Macedonia.",
+    outcomeRef: { book: "Acts", chapter: 16, verses: "14" },
+    strategy: {
+      name: "The Closed Asia To Macedonia",
+      steps: [
+        "1. BE FORBIDDEN IN ASIA AND SUFFERED NOT IN BITHYNIA (16:6-7) — closed doors",
+        "2. COME DOWN TO TROAS - END OF OPTIONS (16:8)",
+        "3. SEE 'COME OVER INTO MACEDONIA, HELP US' (16:9)",
+        "4. IMMEDIATELY ENDEAVOUR, ASSUREDLY GATHERING LORD HAD CALLED (16:10)"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "ananias_damascus_hands",
+    title: "Ananias of Damascus — Lord, I Have Heard How Much Evil",
+    character: "Ananias of Damascus",
+    book: "Acts",
+    chapter: 9,
+    verses: "13-17",
+    kjvText: "Then Ananias answered, Lord, I have heard by many of this man, how much evil he hath done to thy saints at Jerusalem: And here he hath authority from the chief priests to bind all that call on thy name. But the Lord said unto him, Go thy way: for he is a chosen vessel unto me, to bear my name before the Gentiles, and kings, and the children of Israel: For I will shew him how great things he must suffer for my name's sake. And Ananias went his way, and entered into the house; and putting his hands on him said, Brother Saul, the Lord, even Jesus, that appeared unto thee in the way as thou camest, hath sent me, that thou mightest receive thy sight, and be filled with the Holy Ghost.",
+    situationTags: ["Lord I have heard how much evil", "authority to bind all that call on thy name", "chosen vessel bear name before Gentiles kings", "how great things he must suffer", "Brother Saul", "putting hands receive sight be filled Holy Ghost"],
+    keywords: ["ananias damascus", "heard how much evil", "chosen vessel", "how great things suffer", "brother saul putting hands"],
+    summary: "Ananias devout blinded persecutor coming? Argues 'I have heard how much evil he hath done... hath authority to bind'. Lord: 'chosen vessel... bear name before Gentiles... I will shew how great things he must suffer'. Ananias goes, enters, puts hands, calls 'Brother Saul' — first brother, enemy to brother.",
+    actions: ["Answered 'Lord, I have heard how much evil... authority to bind all that call' (9:13-14)", "Heard 'Go thy way: he is chosen vessel... suffer' (9:15-16)", "Went his way, entered house, putting hands said 'Brother Saul' (9:17)"],
+    outcome: "Scales fall, baptized, preaches Christ in synagogues (9:18-20). Private obedience births apostle of Gentiles.",
+    outcomeRef: { book: "Acts", chapter: 9, verses: "18" },
+    strategy: {
+      name: "The Brother Saul Hands",
+      steps: [
+        "1. SAY 'LORD, I HAVE HEARD HOW MUCH EVIL' (9:13) — voice fear",
+        "2. HEAR 'GO THY WAY: HE IS CHOSEN VESSEL... MUST SUFFER' (9:15-16)",
+        "3. GO HIS WAY AND SAY 'BROTHER SAUL' WITH HANDS (9:17) — enemy to brother"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "lois_eunice_faith",
+    title: "Lois and Eunice — Unfeigned Faith Dwelt First in Thy Grandmother",
+    character: "Lois and Eunice",
+    book: "2 Timothy",
+    chapter: 1,
+    verses: "5-6",
+    kjvText: "When I call to remembrance the unfeigned faith that is in thee, which dwelt first in thy grandmother Lois, and thy mother Eunice; and I am persuaded that in thee also. Wherefore I put thee in remembrance that thou stir up the gift of God, which is in thee by the putting on of my hands.",
+    situationTags: ["unfeigned faith in thee", "dwelt first in grandmother Lois", "thy mother Eunice", "I am persuaded in thee also", "stir up gift of God", "putting on of hands", "Timothy"],
+    keywords: ["lois eunice unfeigned faith", "dwelt first grandmother", "persuaded in thee", "stir up gift", "putting hands"],
+    summary: "Timothy of Lystra, Jewess mother Eunice, Greek father absent (Acts 16:1). Paul recalls unfeigned (unhypocritical) faith that dwelt first in grandmother Lois, mother Eunice, now in thee. Encourages stir up gift by laying on of hands (1:6) though young and fearful (2 Tim 1:7 spirit of fear).",
+    actions: ["Called to remembrance unfeigned faith dwelt first in Lois and Eunice (1:5)", "Was persuaded faith in thee also (1:5)", "Stir up gift of God in thee by putting on hands (1:6)"],
+    outcome: "Timothy becomes faithful son 'my own son in faith' (1 Tim 1:2), stands in Ephesus. Generational faith transmits without father.",
+    outcomeRef: { book: "2 Timothy", chapter: 1, verses: "7" },
+    strategy: {
+      name: "The Grandmother Faith",
+      steps: [
+        "1. REMEMBER 'UNFEIGNED FAITH DWELT FIRST IN GRANDMOTHER LOIS AND MOTHER EUNICE' (1:5)",
+        "2. BE PERSUADED 'IN THEE ALSO' (1:5)",
+        "3. STIR UP GIFT OF GOD BY PUTTING ON OF HANDS (1:6) — fan into flame"
+      ]
+    },
+    crossRefs: [{ book: "Acts", chapter: 16, verses: "1", note: "son of a certain woman, which was a Jewess, and believed; but his father was a Greek" }]
+  },
+  {
+    id: "demas_forsakes_world",
+    title: "Demas — Hath Forsaken Me, Having Loved This Present World",
+    character: "Demas",
+    book: "2 Timothy",
+    chapter: 4,
+    verses: "10-11",
+    kjvText: "For Demas hath forsaken me, having loved this present world, and is departed unto Thessalonica; Crescens to Galatia, Titus unto Dalmatia. Only Luke is with me. Take Mark, and bring him with thee: for he is profitable to me for the ministry.",
+    situationTags: ["Demas hath forsaken me", "having loved this present world", "departed unto Thessalonica", "Only Luke is with me", "Take Mark profitable", "worldly love", "forsaken"],
+    keywords: ["demas forsaken loved present world", "departed thessalonica", "only luke with me", "take mark profitable"],
+    summary: "Paul's final letter contrasts Demas (once fellowlabourer Philem 24, Col 4:14) who now loves present world and departs to Thessalonica commercial hub, vs Luke remains, Mark now profitable after Pamphylia failure (Acts 15:38). Through-line: present world love vs profitable return.",
+    actions: ["Demas loved present world and forsook Paul (4:10)", "Only Luke remained (4:11)", "Paul recalled Mark profitable (4:11) — opposite arc"],
+    outcome: "Demas disappears from narrative; warning 'love not the world' (1 John 2:15). Mark restored, Luke faithful.",
+    outcomeRef: { book: "2 Timothy", chapter: 4, verses: "11" },
+    strategy: {
+      name: "The Loved Present World",
+      steps: [
+        "1. MARK 'DEMAS HATH FORSAKEN ME, HAVING LOVED THIS PRESENT WORLD' (4:10)",
+        "2. SEE 'DEPARTED UNTO THESSALONICA' — commerce over cross",
+        "3. CONTRAST 'ONLY LUKE IS WITH ME. TAKE MARK... PROFITABLE' (4:11) — forsaker vs restored"
+      ]
+    },
+    crossRefs: [{ book: "Colossians", chapter: 4, verses: "14", note: "Luke... and Demas, greet you — fellowlabourer" }, { book: "1 John", chapter: 2, verses: "15", note: "Love not the world, neither the things that are in the world" }]
+  },
+  {
+    id: "persistent_widow_judge",
+    title: "The Importunate Widow — Shall Not God Avenge His Own Elect?",
+    character: "Widow and unjust judge",
+    book: "Luke",
+    chapter: 18,
+    verses: "2-5",
+    kjvText: "Saying, There was in a city a judge, which feared not God, neither regarded man: And there was a widow in that city; and she came unto him, saying, Avenge me of mine adversary. And he would not for a while: but afterward he said within himself, Though I fear not God, nor regard man; Yet because this widow troubleth me, I will avenge her, lest by her continual coming she weary me.",
+    situationTags: ["judge feared not God nor regarded man", "widow came saying Avenge me of mine adversary", "would not for a while", "though I fear not God", "because widow troubleth me", "lest continual coming weary me"],
+    keywords: ["widow avenge adversary", "judge feared not god", "would not while", "troubleth me", "continual coming weary"],
+    summary: "Parable to men ought always to pray, not faint (18:1). Widow with adversary vs unjust judge who fears no God, regards no man, would not for a while. She comes continual. He self-talks 'Though I fear not... yet because she troubleth me, I will avenge lest weary me'. Jesus: 'And shall not God avenge his own elect, which cry day and night... though he bear long?' (18:7-8).",
+    actions: ["Came unto him saying 'Avenge me of mine adversary' (18:3)", "Came continually though he would not for a while (18:4)", "Troubled judge till he avenged lest weary me (18:5)"],
+    outcome: "God avenges his elect which cry day and night, will avenge speedily (18:7-8) — persistence not inconvenience.",
+    outcomeRef: { book: "Luke", chapter: 18, verses: "7-8" },
+    strategy: {
+      name: "The Troubleth Me Justice",
+      steps: [
+        "1. COME SAYING 'AVENGE ME OF MINE ADVERSARY' (18:3)",
+        "2. COME CONTINUALLY THOUGH 'HE WOULD NOT FOR A WHILE' (18:4-5)",
+        "3. HEAR 'SHALL NOT GOD AVENGE HIS OWN ELECT WHICH CRY DAY AND NIGHT?' (18:7)"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "friend_midnight_loaves",
+    title: "The Friend at Midnight — Though He Will Not Rise Because He Is Friend, Yet Because of Importunity",
+    character: "Friend at midnight",
+    book: "Luke",
+    chapter: 11,
+    verses: "5-8",
+    kjvText: "And he said unto them, Which of you shall have a friend, and shall go unto him at midnight, and say unto him, Friend, lend me three loaves; For a friend of mine in his journey is come to me, and I have nothing to set before him; And he from within shall answer and say, Trouble me not: the door is now shut, and my children are with me in bed; I cannot rise and give thee. I say unto you, Though he will not rise and give him, because he is his friend, yet because of his importunity he will rise and give him as many as he needeth.",
+    situationTags: ["go at midnight", "Friend lend me three loaves", "friend in journey nothing to set before him", "Trouble me not door shut children in bed cannot rise", "because he is friend will not rise yet because of importunity will rise"],
+    keywords: ["friend midnight three loaves", "trouble me not door shut", "cannot rise give", "importunity rise give"],
+    summary: "Parable after Lord's Prayer: man at midnight with journey-friend, nothing to set before him, goes to friend 'lend me three loaves'. Inside: 'Trouble me not, door shut, children in bed, cannot rise'. Though not for friendship, because of shameless importunity he will rise and give as many as needeth. Jesus: Ask/seek/knock... how much more Father give Holy Spirit to ask (11:13).",
+    actions: ["Went at midnight saying 'Friend, lend me three loaves' (11:5)", "Had 'friend in journey is come, I have nothing to set before him' (11:6)", "Persisted till importunity rose though door shut (11:8)"],
+    outcome: "Ask, seek, knock — given, found, opened (11:9). Father gives good gifts, Spirit to askers (11:13).",
+    outcomeRef: { book: "Luke", chapter: 11, verses: "9-13" },
+    strategy: {
+      name: "The Midnight Importunity",
+      steps: [
+        "1. HAVE 'FRIEND IN JOURNEY...NOTHING TO SET BEFORE' (11:6) — need beyond pantry",
+        "2. GO AT MIDNIGHT 'FRIEND, LEND ME THREE LOAVES' (11:5)",
+        "3. KEEP KNOCKING THOUGH 'DOOR SHUT...CANNOT RISE' (11:7) — importunity over friendship",
+        "4. ASK/SEEK/KNOCK TILL RISE (11:9-10)"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "ten_virgins_oil",
+    title: "Ten Virgins — Five Wise Took Oil in Their Vessels",
+    character: "Five wise virgins",
+    book: "Matthew",
+    chapter: 25,
+    verses: "3-10",
+    kjvText: "They that were foolish took their lamps, and took no oil with them: But the wise took oil in their vessels with their lamps. While the bridegroom tarried, they all slumbered and slept. And at midnight there was a cry made, Behold, the bridegroom cometh; go ye out to meet him. Then all those virgins arose, and trimmed their lamps. And the foolish said unto the wise, Give us of your oil; for our lamps are gone out. But the wise answered, saying, Not so; lest there be not enough for us and you: but go ye rather to them that sell, and buy for yourselves. And while they went to buy, the bridegroom came; and they that were ready went in with him to the marriage: and the door was shut.",
+    situationTags: ["foolish took lamps no oil with them", "wise took oil in vessels with lamps", "bridegroom tarried slumbered slept", "at midnight cry Behold bridegroom cometh", "trimmed lamps", "Give us of your oil lamps gone out", "Not so lest not enough", "they that were ready went in door was shut"],
+    keywords: ["virgins oil vessels", "foolish no oil", "wise oil vessels", "bridegroom tarried", "midnight cry", "door shut"],
+    summary: "Kingdom like 10 virgins to meet bridegroom: 5 fool take lamps no oil, 5 wise take oil in vessels with lamps. Tarried, all slumber. At midnight cry 'Behold bridegroom cometh'. Fool lamps gone out petition wise 'Give us of your oil'. Wise 'Not so... go buy'. While gone, came, ready went in, door shut. After: 'Lord, lord, open' — 'I know you not' (11-12). Watch therefore, know not day nor hour (13).",
+    actions: ["Foolish took lamps no oil, wise took oil in vessels (25:3-4)", "All slumbered while bridegroom tarried (25:5)", "At midnight cry arose trimmed lamps (25:6-7)", "Foolish asked 'Give us oil' — wise 'go buy' (25:8-9)"],
+    outcome: "Ready went in, door shut (25:10). 'Watch therefore, for ye know neither day nor hour' (25:13).",
+    outcomeRef: { book: "Matthew", chapter: 25, verses: "10-13" },
+    strategy: {
+      name: "The Vessels With Oil",
+      steps: [
+        "1. TAKE OIL IN VESSELS WITH LAMPS (25:4) — reserve not just flame",
+        "2. EXPECT 'WHILE BRIDEGROOM TARRIED THEY ALL SLUMBERED' (25:5)",
+        "3. HEAR 'AT MIDNIGHT CRY: BEHOLD BRIDEGROOM COMETH' (25:6) — trim quickly",
+        "4. BE THEY THAT WERE READY WENT IN (25:10) — door shuts after"
+      ]
+    },
+    crossRefs: []
+  },
+  {
+    id: "sower_soils",
+    title: "The Sower — Wayside, Stony, Thorny, and Good Ground Thirty Sixty Hundred",
+    character: "Sower",
+    book: "Matthew",
+    chapter: 13,
+    verses: "3-8",
+    kjvText: "Behold, a sower went forth to sow; And when he sowed, some seeds fell by the way side, and the fowls came and devoured them up: Some fell upon stony places, where they had not much earth: and forthwith they sprung up, because they had no deepness of earth: And when the sun was up, they were scorched; and because they had no root, they withered away. And some fell among thorns; and the thorns sprung up, and choked them: But other fell into good ground, and brought forth fruit, some an hundredfold, some sixtyfold, some thirtyfold.",
+    situationTags: ["Behold sower went forth to sow", "seeds fell by way side fowls devoured", "stony places no deepness earth sprung forthwith scorched no root withered", "fell among thorns sprung up choked them", "good ground brought forth fruit hundred sixty thirty"],
+    keywords: ["sower went forth", "way side fowls devoured", "stony no deepness", "thorns choked", "good ground hundred sixty thirty"],
+    summary: "Jesus' first parable with interpretation (13:18-23): sower sows word. Wayside hears not understand, wicked catcheth; Stony hears anon with joy but no root, tribulation/persecution offended, lasts awhile; Thorny hears, care of world and deceit of riches choke, becometh unfruitful; Good ground heareth and understandeth, beareth hundred/sixty/thirty. Who hath ears, hear (13:9).",
+    actions: ["Heard word by way side and understood not — fowls devoured (13:19)", "Stony anon joy no root — when sun scorched withered (13:20-21)", "Thorny choke with care of world deceit riches (13:22)", "Good ground heard understandeth and brought forth fruit (13:23)"],
+    outcome: "He that received seed into good ground is he that heareth and understandeth (13:23). Prepare ground before sowing.",
+    outcomeRef: { book: "Matthew", chapter: 13, verses: "23" },
+    strategy: {
+      name: "The Four Soils",
+      steps: [
+        "1. SEE WAYSIDE: 'WHEN ANY HEARETH AND UNDERSTANDETH NOT, WICKED CATCHETH' (13:19) — seek understanding",
+        "2. DEEPEN STONY: 'HATH NO ROOT... WHEN TRIBULATION ARISETH STRAIGHTWAY OFFENDED' (13:21)",
+        "3. WEED THORNY: 'CARE OF WORLD AND DECEIT OF RICHES CHOKE WORD' (13:22)",
+        "4. BE GOOD GROUND: 'HEARETH AND UNDERSTANDETH; BEARETH HUNDRED' (13:23)"
+      ]
+    },
+    crossRefs: [{ book: "Matthew", chapter: 13, verses: "19-23", note: "explained: wayside, stony, thorny, good ground" }]
   }
 ];
 
@@ -3713,7 +5906,13 @@ export const SITUATION_TAXONOMY = [
   "midnight", "trapped", "dead end", "outcast", "shame", "second chances", "failure",
   "debt", "creditor", "waiting", "delayed promise", "barrenness", "overwhelmed", "war",
   "wasted life", "rebellion", "addiction", "integrity", "workplace injustice"
-, "obedience","ridicule","surrender","wrestling","holy ground","second chances after failure","taking territory","redemption","reputation","wisdom","peacemaking","moral failure","guilt","healing","terminal illness","pit","mire","furnace","if not","running","prejudice","pride","humility","simple obedience","last meal","hospitality","blindness","persistent faith","only believe","seeking","storm","agony","forgiveness","resurrection","conversion","chains","martyrdom","forsaken","young leader","example","long waiting","temple prayer","enlarge","minority voice","friendship","betrayal by friend","anxiety","busy","enemy love","stewardship","succession","ravens","purpose","memorial prayer","good works", "failed parenting","legacy","sorrow name","old age doubt","dumbness","redemptive love","craftsmanship","torment","humbling","legion","shame hiding","remorse","doubt worship","living water","consolation","hidden years","succession","double portion","bribe","perverted judgment","vagabond","stealing hearts","greed","eleventh hour","occupy","tentmakers","restoration profitable","heart turned","born again","manna murmuring"];
+, "obedience","ridicule","surrender","wrestling","holy ground","second chances after failure","taking territory","redemption","reputation","wisdom","peacemaking","moral failure","guilt","healing","terminal illness","pit","mire","furnace","if not","running","prejudice","pride","humility","simple obedience","last meal","hospitality","blindness","persistent faith","only believe","seeking","storm","agony","forgiveness","resurrection","conversion","chains","martyrdom","forsaken","young leader","example","long waiting","temple prayer","enlarge","minority voice","friendship","betrayal by friend","anxiety","busy","enemy love","stewardship","succession","ravens","purpose","memorial prayer","good works", "failed parenting","legacy","sorrow name","old age doubt","dumbness","redemptive love","craftsmanship","torment","humbling","legion","shame hiding","remorse","doubt worship","living water","consolation","hidden years","succession","double portion","bribe","perverted judgment","vagabond","stealing hearts","greed","eleventh hour","occupy","tentmakers","restoration profitable","heart turned","born again","manna murmuring",
+  // added 2026-09 batch 1
+  "female leadership","unloved","tender eyed","hated","widow denied","more righteous than I","violation","folly in Israel","sackcloth on rock","loyal soldier","ark in tents","window","despised in heart","book found","rent clothes","worst king","among thorns","besought","leprous at gate","why sit till we die","Dothan","open eyes","horses chariots fire","Korah","earth opened","accursed thing","Babylonish garment","forsook old counsel","young men grown up","speak to rock","smote twice","storehouse","seven plenteous","changed wages ten times","God suffered not to hurt","spake against Moses","Ethiopian woman","golden calf","cast into fire out came calf","asked not at mouth LORD","mouldy bread","speak word only","man under authority","dogs crumbs","Yes Lord yet","borne of four","uncovered roof","saw their faith","alabaster box","wash with tears","seven devils","angel in dream","flee into Egypt","by night","art thou he","should come or look for another","remember me","today paradise","lovest thou me","feed lambs","same mind Lord","loveth preeminence","casteth out church","cannot dig ashamed beg","take bill write fifty","thou fool this night required","ten thousand talents","hundred pence took by throat","envied sister","give me children or I die","curse God and die","gourd worm","better die than live","Go number Israel","for cause of trespass","javelin","plague stayed","took aside in gate quietly","fifth rib","keeper of wardrobe","dwelt in college","build houses","seek peace city","eat roll honey","watchman","There is a God in heaven revealeth secrets","fast three days","if I perish",
+  // added 2026-09 batch 2
+  "nail of tent","hammer in hand","adversary provoked sore","make her fret","call me Mara","went out full home empty","cannot redeem","mar mine own inheritance","plucked off shoe","spear bolster","cruse of water","deep sleep from LORD","give me thy vineyard","inheritance of fathers","words with one mouth","speak that which is good","hid six years house of LORD","hid him and his nurse","when he was strong heart lifted","burn incense temple","leprosy rose in forehead","shewed all house precious things","nothing not shewed","rent garment mantle","plucked hair head beard","sat astonied","desire of eyes stroke","neither mourn nor weep","prince Persia withstood 21 days","went into sanctuary","then understood their end","I am young ye very old","spirit in man inspiration","handmaid of Lord","be it unto me","Rachel weeping would not be comforted","slew all children two years under","straightway left nets","fishers of men","sitting at receipt custom","If thou wilt thou canst make clean","I have no man when water troubled","Siloam Sent","only son widow gate","transfigured face shine sun","bright cloud beloved Son hear ye him","took towel girded","wash feet","cut off right ear","Put up sword sheath","compel Simon Cyrenian bear his cross","damsel named Rhoda","opened not for gladness","Thou art mad","silver shrines Diana","craft in danger","unprofitable now profitable","nigh unto death not regarding life","isle called Patmos for word of God",
+  // added 2026-09 batch 3 - curated core
+  "refused to come at king's commandment","let him curse LORD hath bidden","Two things required before I die","neither poverty nor riches","disciple secretly for fear","besought Pilate take away body","Refrain let alone","if of men will come to nought","What God hath cleansed call not common","Come over into Macedonia help us","forbidden of Holy Ghost to preach in Asia","Brother Saul putting hands","unfeigned faith","dwelt first in grandmother Lois","Demas hath forsaken loved present world","widow Avenge me adversary","because of importunity","wise took oil in vessels","sower went forth","good ground hundredfold"];
 
 export function searchStories(query, topN = 3) {
   if (!query) return STORIES.slice(0, topN);

@@ -146,6 +146,123 @@ export const VERSES = [
   // PROTECTION
   { book:"Psalm", chapter:91, verses:"1-2", text:"He that dwelleth in the secret place of the most High shall abide under the shadow of the Almighty. I will say of the LORD, He is my refuge and my fortress: my God; in him will I trust.", tags:["secret place","shadow Almighty","refuge fortress","protection"] },
   { book:"Proverbs", chapter:18, verses:"10", text:"The name of the LORD is a strong tower: the righteous runneth into it, and is safe.", tags:["name Lord strong tower","safe","protection"] },
+
+  // ADOPTION / ORPHAN / FATHERLESS
+  { book:"Esther", chapter:2, verses:"7", text:"And he brought up Hadassah, that is, Esther, his uncle's daughter: for she had neither father nor mother, and the maid was fair and beautiful; whom Mordecai, when her father and mother were dead, took for his own daughter.", tags:["adoption","father nor mother","took for his own daughter","orphan"] },
+  { book:"Ephesians", chapter:1, verses:"5", text:"Having predestinated us unto the adoption of children by Jesus Christ to himself, according to the good pleasure of his will,", tags:["adoption","predestinated","children","adoption of children"] },
+  { book:"Psalm", chapter:68, verses:"5", text:"A father of the fatherless, and a judge of the widows, is God in his holy habitation.", tags:["father of the fatherless","judge of the widows","fatherless","orphan"] },
+  { book:"James", chapter:1, verses:"27", text:"Pure religion and undefiled before God and the Father is this, To visit the fatherless and widows in their affliction, and to keep himself unspotted from the world.", tags:["visit fatherless widows","pure religion","fatherless","orphan"] },
+
+  // EXILE / BUILD IN BABYLON / SEEK PEACE OF CITY
+  { book:"Jeremiah", chapter:29, verses:"5-7", text:"Build ye houses, and dwell in them; and plant gardens, and eat the fruit of them; Take ye wives, and beget sons and daughters... And seek the peace of the city whither I have caused you to be carried away captives, and pray unto the LORD for it: for in the peace thereof shall ye have peace.", tags:["build houses","plant gardens","seek peace city","pray for it","exile","babylon","peace thereof"] },
+  { book:"Daniel", chapter:6, verses:"3", text:"Then this Daniel was preferred above the presidents and princes, because an excellent spirit was in him; and the king thought to set him over the whole realm.", tags:["excellent spirit","preferred","exile excellence","daniel"] },
+
+  // WAGES / EXPLOITATION / JUST PAY
+  { book:"Leviticus", chapter:19, verses:"13", text:"Thou shalt not defraud thy neighbour, neither rob him: the wages of him that is hired shall not abide with thee all night until the morning.", tags:["wages","hired","defraud not","not abide all night","just wages"] },
+  { book:"James", chapter:5, verses:"4", text:"Behold, the hire of the labourers who have reaped down your fields, which is of you kept back by fraud, crieth: and the cries of them which have reaped are entered into the ears of the Lord of sabaoth.", tags:["hire labourers","kept back by fraud","crieth","reaped","wages withheld"] },
+  { book:"Deuteronomy", chapter:24, verses:"14-15", text:"Thou shalt not oppress an hired servant that is poor and needy, whether he be of thy brethren, or of thy strangers that are in thy land within thy gates: At his day thou shalt give him his hire, neither shall the sun go down upon it; for he is poor, and setteth his heart upon it: lest he cry against thee unto the LORD, and it be sin unto thee.", tags:["oppress not hired servant","poor and needy","give him his hire","sun go down","wages","oppress not"] },
+
+  // CHURCH CONFLICT / PREEMINENCE
+  { book:"Philippians", chapter:4, verses:"2", text:"I beseech Euodia, and beseech Syntyche, that they be of the same mind in the Lord.", tags:["beseech Euodia Syntyche","same mind Lord","conflict","agree"] },
+  { book:"3 John", chapter:1, verses:"9", text:"I wrote unto the church: but Diotrephes, who loveth to have the preeminence among them, receiveth us not.", tags:["loveth preeminence","receiveth us not","Diotrephes","preeminence","toxic leader"] },
+
+  // LAST-MINUTE GRACE / PARADISE
+  { book:"Luke", chapter:23, verses:"43", text:"And Jesus said unto him, Verily I say unto thee, To day shalt thou be with me in paradise.", tags:["today paradise","remember me","thief","paradise","last minute grace"] },
+
+  // DOUBT IN PRISON
+  { book:"Luke", chapter:7, verses:"19", text:"And John calling unto him two of his disciples sent them to Jesus, saying, Art thou he that should come? or look we for another?", tags:["art thou he","should come or look for another","doubt","prison doubt","John"] },
+
+  // FINANCIAL FOLLY / COVETOUSNESS
+  { book:"Luke", chapter:12, verses:"20", text:"But God said unto him, Thou fool, this night thy soul shall be required of thee: then whose shall those things be, which thou hast provided?", tags:["thou fool","this night soul required","whose shall those things be","rich fool","covetousness"] },
+
+  // FORGIVENESS OF HUGE DEBT
+  { book:"Matthew", chapter:18, verses:"27", text:"Then the lord of that servant was moved with compassion, and loosed him, and forgave him the debt.", tags:["moved with compassion","loosed","forgave debt","ten thousand talents","forgiveness huge"] },
+
+  // FAITH OF OUTSIDERS
+  { book:"Matthew", chapter:8, verses:"10", text:"When Jesus heard it, he marvelled, and said to them that followed, Verily I say unto you, I have not found so great faith, no, not in Israel.", tags:["not found so great faith","marvelled","great faith","centurion","outsider faith"] },
+
+  // COMMUNITY CARRIES
+  { book:"Mark", chapter:2, verses:"5", text:"When Jesus saw their faith, he said unto the sick of the palsy, Son, thy sins be forgiven thee.", tags:["saw their faith","borne of four","sins forgiven","community faith","paralytic"] },
+
+  // SANCTUARY / ENVY CURE
+  { book:"Psalm", chapter:73, verses:"16-17", text:"When I thought to know this, it was too painful for me; Until I went into the sanctuary of God; then understood I their end.", tags:["thought too painful","went into sanctuary","understood their end","envy cure","sanctuary"] },
+
+  // DELAYED ANSWER / WARFARE
+  { book:"Daniel", chapter:10, verses:"12", text:"Then said he unto me, Fear not, Daniel: for from the first day that thou didst set thine heart to understand, and to chasten thyself before thy God, thy words were heard, and I am come for thy words.", tags:["fear not Daniel","first day heart to understand","chasten thyself","words were heard","delayed answer"] },
+  { book:"Daniel", chapter:10, verses:"13", text:"But the prince of the kingdom of Persia withstood me one and twenty days: but, lo, Michael, one of the chief princes, came to help me; and I remained there with the kings of Persia.", tags:["prince Persia withstood 21 days","Michael came to help","withstood","spiritual warfare"] },
+
+  // HUMILITY LEADS TO BIRTH
+  { book:"Luke", chapter:1, verses:"38", text:"And Mary said, Behold the handmaid of the Lord; be it unto me according to thy word. And the angel departed from her.", tags:["handmaid of Lord","be it unto me","according to thy word","fiat","humility"] },
+
+  // LAMENT FOR INNOCENTS
+  { book:"Matthew", chapter:2, verses:"18", text:"In Rama was there a voice heard, lamentation, and weeping, and great mourning, Rachel weeping for her children, and would not be comforted, because they are not.", tags:["voice heard Rama","lamentation weeping","Rachel weeping","would not be comforted","innocents"] },
+
+  // FOLLOW LEAVES
+  { book:"Matthew", chapter:4, verses:"20", text:"And they straightway left their nets, and followed him.", tags:["straightway left nets","followed him","fishers of men","leaving nets"] },
+  { book:"Matthew", chapter:9, verses:"9", text:"And as Jesus passed forth from thence, he saw a man, named Matthew, sitting at the receipt of custom: and he saith unto him, Follow me. And he arose, and followed him.", tags:["sitting at receipt custom","Follow me","arose followed","Matthew","custom"] },
+
+  // HEALING TOUCH
+  { book:"Mark", chapter:1, verses:"41", text:"And Jesus, moved with compassion, put forth his hand, and touched him, and saith unto him, I will; be thou clean.", tags:["moved with compassion","put forth hand touched","I will be thou clean","leper"] },
+
+  // NO MAN POOL / BLIND SILOAM
+  { book:"John", chapter:5, verses:"6-7", text:"When Jesus saw him lie, and knew that he had been now a long time in that case, he saith unto him, Wilt thou be made whole? The impotent man answered him, Sir, I have no man, when the water is troubled, to put me into the pool: but while I am coming, another steppeth down before me.", tags:["wilt thou be made whole","I have no man","water troubled","another steppeth before","Bethesda"] },
+  { book:"John", chapter:9, verses:"3", text:"Jesus answered, Neither hath this man sinned, nor his parents: but that the works of God should be made manifest in him.", tags:["neither hath this man sinned","works of God manifest","who sinned","born blind"] },
+
+  // COMPASSION AT GATE
+  { book:"Luke", chapter:7, verses:"13", text:"And when the Lord saw her, he had compassion on her, and said unto her, Weep not.", tags:["when Lord saw had compassion","Weep not","widow Nain","compassion"] },
+
+  // TRANSFIGURATION VOICE
+  { book:"Matthew", chapter:17, verses:"5", text:"While he yet spake, behold, a bright cloud overshadowed them: and behold a voice out of the cloud, which said, This is my beloved Son, in whom I am well pleased; hear ye him.", tags:["bright cloud overshadowed","beloved Son well pleased","hear ye him","transfiguration"] },
+
+  // SERVANT LEADERSHIP
+  { book:"John", chapter:13, verses:"14", text:"If I then, your Lord and Master, have washed your feet; ye also ought to wash one another's feet.", tags:["Lord and Master washed feet","ought to wash one another","servant leadership","wash feet"] },
+
+  // BEARING CROSS
+  { book:"Mark", chapter:15, verses:"21", text:"And they compel one Simon a Cyrenian, who passed by, coming out of the country, the father of Alexander and Rufus, to bear his cross.", tags:["compel Simon Cyrenian","passed by","bear his cross","compelled bearer"] },
+  { book:"Galatians", chapter:6, verses:"2", text:"Bear ye one another's burdens, and so fulfil the law of Christ.", tags:["bear one another burdens","fulfil law Christ","bear burdens"] },
+
+  // RESTORATION OF RUNAWAY
+  { book:"Philemon", chapter:1, verses:"11", text:"Which in time past was to thee unprofitable, but now profitable to thee and to me:", tags:["in time past unprofitable","now profitable","Onesimus","unprofitable now profitable"] },
+
+  // BOUNDARY vs POWER
+  { book:"Esther", chapter:1, verses:"12", text:"But the queen Vashti refused to come at the king's commandment by his chamberlains: therefore was the king very wroth, and his anger burned in him.", tags:["refused to come at king's commandment","Vashti","very wroth","boundary","refusal"] },
+
+  // ENDURING CURSING
+  { book:"2 Samuel", chapter:16, verses:"11", text:"And David said to Abishai, and to all his servants, Behold, my son, which came forth of my bowels, seeketh my life: how much more now may this Benjamite do it? let him alone, and let him curse; for the LORD hath bidden him.", tags:["let him alone and let him curse","LORD hath bidden him","Shimei","curse","endure cursing"] },
+
+  // SUFFICIENCY PRAYER
+  { book:"Proverbs", chapter:30, verses:"8", text:"Remove far from me vanity and lies: give me neither poverty nor riches; feed me with food convenient for me:", tags:["neither poverty nor riches","food convenient","vanity and lies","Agur","sufficiency"] },
+
+  // SECRET BOLDNESS
+  { book:"John", chapter:19, verses:"38", text:"And after this Joseph of Arimathaea, being a disciple of Jesus, but secretly for fear of the Jews, besought Pilate that he might take away the body of Jesus: and Pilate gave him leave. He came therefore, and took the body of Jesus.", tags:["disciple secretly for fear","besought Pilate take away body","Joseph of Arimathaea","secret disciple","bold"] },
+
+  // DISCERNMENT - REFRAIN
+  { book:"Acts", chapter:5, verses:"38", text:"And now I say unto you, Refrain from these men, and let them alone: for if this counsel or this work be of men, it will come to nought: But if it be of God, ye cannot overthrow it; lest haply ye be found even to fight against God.", tags:["Refrain let alone","if of men come to nought","if be of God cannot overthrow","fight against God","Gamaliel","discernment"] },
+
+  // CLEANSING PREJUDICE
+  { book:"Acts", chapter:10, verses:"15", text:"And the voice spake unto him again the second time, What God hath cleansed, that call not thou common.", tags:["What God hath cleansed","call not thou common","Rise Peter kill and eat","prejudice","sheet vision"] },
+
+  // CALL TO MACEDONIA
+  { book:"Acts", chapter:16, verses:"9", text:"And a vision appeared to Paul in the night; There stood a man of Macedonia, and prayed him, saying, Come over into Macedonia, and help us.", tags:["vision man of Macedonia","Come over and help us","Macedonian call","forbidden Asia","Bithynia"] },
+
+  // LAYING HANDS ON ENEMY
+  { book:"Acts", chapter:9, verses:"17", text:"And Ananias went his way, and entered into the house; and putting his hands on him said, Brother Saul, the Lord, even Jesus, that appeared unto thee in the way as thou camest, hath sent me, that thou mightest receive thy sight, and be filled with the Holy Ghost.", tags:["putting his hands on him","Brother Saul","Ananias","receive sight filled Holy Ghost","enemy to brother"] },
+
+  // GENERATIONAL FAITH
+  { book:"2 Timothy", chapter:1, verses:"5", text:"When I call to remembrance the unfeigned faith that is in thee, which dwelt first in thy grandmother Lois, and thy mother Eunice; and I am persuaded that in thee also.", tags:["unfeigned faith","dwelt first in grandmother Lois","mother Eunice","persuaded in thee also","generational faith"] },
+
+  // FORSAKING WORLD
+  { book:"2 Timothy", chapter:4, verses:"10", text:"For Demas hath forsaken me, having loved this present world, and is departed unto Thessalonica;", tags:["Demas hath forsaken me","having loved this present world","departed Thessalonica","forsaketh","world"] },
+
+  // PERSISTENT PRAYER
+  { book:"Luke", chapter:18, verses:"3", text:"And there was a widow in that city; and she came unto him, saying, Avenge me of mine adversary.", tags:["widow Avenge me adversary","judge feared not God","persistent widow","avenge"] },
+  { book:"Luke", chapter:11, verses:"8", text:"I say unto you, Though he will not rise and give him, because he is his friend, yet because of his importunity he will rise and give him as many as he needeth.", tags:["because of importunity","will rise and give","friend at midnight","three loaves","importunity"] },
+
+  // READINESS
+  { book:"Matthew", chapter:25, verses:"4", text:"But the wise took oil in their vessels with their lamps.", tags:["wise took oil in vessels","foolish no oil","ten virgins","readiness","oil in vessels"] },
+
+  // HEART SOILS
+  { book:"Matthew", chapter:13, verses:"8", text:"But other fell into good ground, and brought forth fruit, some an hundredfold, some sixtyfold, some thirtyfold.", tags:["good ground brought forth fruit","hundredfold sixtyfold thirtyfold","sower","good ground","fruit"] },
 ];
 
 export function searchVerses(query, n=5) {
