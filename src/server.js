@@ -1,8 +1,13 @@
 // Your Bible Counselor — Animated Fun UI + 150 Biblical Scenarios Gallery
 import http from "http";
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
 import { counsel, buildLLMPrompt } from "./agent.js";
 import { STORIES } from "../data/stories.js";
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 const PORT = process.env.PORT || 8787;
 
 // --- Security headers (defense-in-depth) ---
@@ -62,6 +67,19 @@ function isValidTop(v) {
   const n = parseInt(v, 10);
   if (Number.isNaN(n)) return 3;
   return Math.min(5, Math.max(1, n));
+}
+
+function serveStaticFile(res, filePath, contentType) {
+  try {
+    const abs = path.resolve(filePath);
+    // prevent path traversal
+    const data = fs.readFileSync(abs);
+    setSecurityHeaders(res);
+    res.writeHead(200, { "Content-Type": contentType });
+    return res.end(data);
+  } catch (e) {
+    return json(res, 404, { error: "Not found" });
+  }
 }
 
 function htmlHome() {
@@ -185,6 +203,7 @@ textarea:focus{border-color:var(--maroon);box-shadow:0 0 0 3px rgba(139,0,0,0.12
 <body>
 <div class="hero">
   <div class="floatingEmojis e1">📖</div><div class="floatingEmojis e2">✦</div><div class="floatingEmojis e3">🕊️</div><div class="floatingEmojis e4">🔥</div>
+  <img src="/Assets/logo_main.png" alt="Your Bible Counselor logo" style="width:130px;height:auto;background:white;border-radius:18px;padding:10px;box-shadow:0 8px 24px rgba(0,0,0,0.18);margin:0 auto 14px;display:block;animation:fadeUp 0.6s ease">
   <h1>Your <span>Bible Counselor</span></h1>
   <div class="sub">Simple, proven wisdom for every part of your life</div>
   <div class="badgeRow">
@@ -197,6 +216,7 @@ textarea:focus{border-color:var(--maroon);box-shadow:0 0 0 3px rgba(139,0,0,0.12
   <div class="card promptCard" id="promptCard">
     <h2>What do you need today?</h2>
     <p>Pick a mode — see live prompting tips — then Seek Counsel. <b>Auto</b> detects, or force <b>Stories</b> / <b>Verses</b>.</p>
+    <p class="small" style="margin:-4px 0 10px">📖 New here? <a href="/docs/Prompting_Guide.pdf" target="_blank" style="font-weight:700">Read the Prompting Guide</a> — get the most out of it.</p>
     <div class="modeToggle" role="tablist" aria-label="Prompt mode">
       <button data-mode="auto" class="active" onclick="setMode('auto')" aria-selected="true">⚡ Auto</button>
       <button data-mode="stories" onclick="setMode('stories')">📖 Stories</button>
@@ -444,6 +464,13 @@ const server = http.createServer((req, res) => {
   }
   if (url.pathname === "/health") return json(res, 200, { ok: true, stories: STORIES.length, canonical: "https://en.wikisource.org/wiki/The_Holy_Bible_(King_James_Version,_1769)" });
   if (url.pathname === "/stories") return json(res, 200, { count: STORIES.length, stories: STORIES.map(s => ({ id: s.id, title: s.title, character: s.character, tags: s.situationTags })) });
+  // Static assets — logo + prompting guide
+  if (url.pathname === "/Assets/logo_main.png" || url.pathname === "/assets/logo_main.png" || url.pathname === "/logo.png" || url.pathname === "/logo_main.png") {
+    return serveStaticFile(res, path.join(__dirname, "../Assets/logo_main.png"), "image/png");
+  }
+  if (url.pathname === "/docs/Prompting_Guide.pdf" || url.pathname === "/Prompting_Guide.pdf" || url.pathname === "/prompting_guide.pdf") {
+    return serveStaticFile(res, path.join(__dirname, "../docs/Prompting_Guide.pdf"), "application/pdf");
+  }
 
   if (url.pathname === "/counsel") {
     if (req.method === "GET") {

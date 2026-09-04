@@ -121,6 +121,7 @@ textarea:focus{border-color:var(--maroon);box-shadow:0 0 0 3px rgba(139,0,0,0.12
 <body>
 <div class="hero">
   <div class="floatingEmojis e1">📖</div><div class="floatingEmojis e2">✦</div><div class="floatingEmojis e3">🕊️</div><div class="floatingEmojis e4">🔥</div>
+  <img src="Assets/logo_main.png" alt="Your Bible Counselor logo" style="width:130px;height:auto;background:white;border-radius:18px;padding:10px;box-shadow:0 8px 24px rgba(0,0,0,0.18);margin:0 auto 14px;display:block">
   <h1>Your <span>Bible Counselor</span></h1>
   <div class="sub">Simple, proven wisdom for every part of your life</div>
   <div class="badgeRow">
@@ -133,6 +134,7 @@ textarea:focus{border-color:var(--maroon);box-shadow:0 0 0 3px rgba(139,0,0,0.12
   <div class="card promptCard" id="promptCard">
     <h2>What do you need today?</h2>
     <p>Pick a mode — see live prompting tips — then Seek Counsel. <b>Auto</b> detects, or force <b>Stories</b> / <b>Verses</b>.</p>
+    <p class="small" style="margin:-4px 0 10px">📖 New here? <a href="docs/Prompting_Guide.pdf" target="_blank" style="font-weight:700">Read the Prompting Guide</a> — get the most out of it.</p>
     <div class="modeToggle" role="tablist" aria-label="Prompt mode">
       <button data-mode="auto" class="active" onclick="setMode('auto')" aria-selected="true">⚡ Auto</button>
       <button data-mode="stories" onclick="setMode('stories')">📖 Stories</button>
@@ -433,5 +435,20 @@ renderGallery();
 
 fs.mkdirSync(outDir, { recursive: true });
 fs.writeFileSync(outFile, html);
+// copy logo + prompting guide for static hosting
+try {
+  const assetsSrc = path.join(__dirname, "../Assets/logo_main.png");
+  const assetsDstDir = path.join(outDir, "Assets");
+  fs.mkdirSync(assetsDstDir, { recursive: true });
+  fs.copyFileSync(assetsSrc, path.join(assetsDstDir, "logo_main.png"));
+  console.log("Copied Assets/logo_main.png");
+} catch(e){ console.log("Logo copy skipped:", e.message); }
+try {
+  const docsSrc = path.join(__dirname, "../docs/Prompting_Guide.pdf");
+  const docsDstDir = path.join(outDir, "docs");
+  fs.mkdirSync(docsDstDir, { recursive: true });
+  fs.copyFileSync(docsSrc, path.join(docsDstDir, "Prompting_Guide.pdf"));
+  console.log("Copied docs/Prompting_Guide.pdf");
+} catch(e){ console.log("Guide copy skipped:", e.message); }
 console.log(`Static site built: ${outFile} (${(html.length/1024).toFixed(1)} KB)`);
 console.log(`Stories: ${STORIES.length}, Verses: ${VERSES.length}`);
