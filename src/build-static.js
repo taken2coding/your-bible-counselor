@@ -123,7 +123,7 @@ textarea:focus{border-color:var(--maroon);box-shadow:0 0 0 3px rgba(139,0,0,0.12
 <body>
 <div class="hero">
   <div class="floatingEmojis e1">📖</div><div class="floatingEmojis e2">✦</div><div class="floatingEmojis e3">🕊️</div><div class="floatingEmojis e4">🔥</div>
-  <img src="Assets/logo_main.png" alt="Your Bible Counselor logo" style="width:130px;height:auto;background:white;border-radius:18px;padding:10px;box-shadow:0 8px 24px rgba(0,0,0,0.18);margin:0 auto 14px;display:block">
+  <img src="Assets/logo_main.png" alt="Your Bible Counselor logo" style="width:130px;height:auto;background:transparent;border-radius:0;padding:0;filter:drop-shadow(0 8px 24px rgba(0,0,0,0.28));margin:0 auto 14px;display:block">
   <h1>Your <span>Bible Counselor</span></h1>
   <div class="sub">Simple, proven wisdom for every part of your life</div>
   <div class="badgeRow">
