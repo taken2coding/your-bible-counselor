@@ -242,7 +242,7 @@ textarea:focus{border-color:var(--maroon);box-shadow:0 0 0 3px rgba(139,0,0,0.12
   <div class="showMore"><span class="countPill" id="countPill">24 shown • 126 hidden — click “Show all”</span></div>
 </div>
 
-<div class="footer">All verses KJV 1769 • Verify at <a href="https://en.wikisource.org/wiki/The_Holy_Bible_(King_James_Version,_1769)" target="_blank">Wikisource KJV 1769</a> • <span id="storyCountFoot"></span></div>
+<div class="footer">All verses KJV 1769 • Verify at <a href="https://en.wikisource.org/wiki/The_Holy_Bible_(King_James_Version,_1769)" target="_blank">Wikisource KJV 1769</a> • <span id="storyCountFoot"></span><br><span style="margin-top:8px;display:inline-block">Has this project blessed you in any way, we would be glad to read from you. Email the curator on: <a href="mailto:sirp4all@gmail.com">sirp4all@gmail.com</a></span></div>
 
 <script>
 const ALL_STORIES = ${allStoriesJson};
