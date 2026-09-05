@@ -30,18 +30,18 @@ const html = `<!doctype html>
 <meta name="keywords" content="bible counselor, KJV 1769, biblical scenarios, bible verses, wikisource, bible wisdom, christian counseling, bible stories, proverbs, psalms, ecclesiastes, song of solomon, acts, gospels">
 <meta name="author" content="The Bible Counselor">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://your-bible-counselor.onrender.com/">
+<link rel="canonical" href="https://www.biblecounselor.com.ng/">
 <meta property="og:title" content="Your Bible Counselor — KJV 1769 • ${STORY_COUNT} Biblical Scenarios">
 <meta property="og:description" content="Simple, proven wisdom for every part of your life. ${STORY_COUNT} stories, ${VERSE_COUNT}+ verses — deeply smart, never muddled. KJV 1769 verifiable at Wikisource.">
-<meta property="og:image" content="https://your-bible-counselor.onrender.com/Assets/logo_main.png">
-<meta property="og:url" content="https://your-bible-counselor.onrender.com/">
+<meta property="og:image" content="https://www.biblecounselor.com.ng/Assets/logo_main.png">
+<meta property="og:url" content="https://www.biblecounselor.com.ng/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="The Bible Counselor">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Your Bible Counselor — KJV 1769">
 <meta name="twitter:description" content="Simple, proven wisdom for every part of your life. ${STORY_COUNT} stories, ${VERSE_COUNT}+ verses with Wikisource provenance.">
-<meta name="twitter:image" content="https://your-bible-counselor.onrender.com/Assets/logo_main.png">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"The Bible Counselor","url":"https://your-bible-counselor.onrender.com/","description":"KJV 1769 verifiable wisdom for every situation — ${STORY_COUNT} stories, ${VERSE_COUNT}+ verses","inLanguage":"en"}</script>
+<meta name="twitter:image" content="https://www.biblecounselor.com.ng/Assets/logo_main.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"The Bible Counselor","url":"https://www.biblecounselor.com.ng/","description":"KJV 1769 verifiable wisdom for every situation — ${STORY_COUNT} stories, ${VERSE_COUNT}+ verses","inLanguage":"en"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
 <style>
