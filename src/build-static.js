@@ -316,7 +316,7 @@ textarea:focus{border-color:var(--primary);box-shadow:0 0 0 4px var(--primary-ri
   <div class="inner">
     <a class="brand" href="#">
       <img src="Assets/logo_main.png" alt="Bible Counselor logo" />
-      <span>The Bible Counselor</span>
+      <span>Bible Counselor</span>
     </a>
     <nav class="navLinks">
       <a class="navLink" href="docs/Prompting_Guide.pdf" target="_blank">Prompting Guide</a>
