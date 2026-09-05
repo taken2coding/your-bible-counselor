@@ -95,6 +95,9 @@ function htmlHome() {
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Your Bible Counselor — KJV 1769 • ${STORY_COUNT} Biblical Scenarios</title>
+<link rel="icon" href="/Assets/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/Assets/favicon.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/Assets/apple-touch-icon.png" sizes="180x180">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
 <style>
@@ -145,6 +148,32 @@ function htmlHome() {
     --border-strong:#334155;
   }
 }
+[data-theme="dark"]{
+  --bg:#0B0F14;
+  --bg-soft:#0F172A;
+  --surface:#111A23;
+  --surface-hover:#1A2532;
+  --surface-2:#1E2D3D;
+  --ink:#F1F5F9;
+  --ink-soft:#E2E8F0;
+  --muted:#94A3B8;
+  --subtle:#64748B;
+  --border:#1E293B;
+  --border-strong:#334155;
+}
+[data-theme="light"]{
+  --bg:#FDFCF8;
+  --bg-soft:#FFF7ED;
+  --surface:#FFFFFF;
+  --surface-hover:#F9F6F0;
+  --surface-2:#F9F6F0;
+  --ink:#1E293B;
+  --ink-soft:#334155;
+  --muted:#6B7280;
+  --subtle:#9CA3AF;
+  --border:#E7E0D6;
+  --border-strong:#D6CFC2;
+}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility}
 body{margin:0;font-family:'Inter',system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;overflow-x:hidden}
@@ -158,17 +187,18 @@ a:hover{text-decoration:underline}
 @keyframes shimmer{0%{background-position:-200% 0}100%{background-position:200% 0}}
 @keyframes confettiFall{0%{transform:translateY(-10px) rotate(0deg);opacity:1}100%{transform:translateY(520px) rotate(720deg);opacity:0}}
 @keyframes pulseSoft{0%,100%{transform:scale(1)}50%{transform:scale(1.02)}}
-/* Header */
-.siteHeader{position:sticky;top:0;z-index:40;backdrop-filter:blur(12px) saturate(1.2);background:color-mix(in srgb, var(--bg) 82%, transparent);border-bottom:1px solid var(--border);transition:background 0.2s, border-color 0.2s}
+/* Header — intense maroon for brand */
+.siteHeader{position:sticky;top:0;z-index:40;background:var(--primary);border-bottom:1px solid rgba(255,255,255,0.14);box-shadow:0 4px 16px rgba(107,31,42,0.18);transition:background 0.2s, border-color 0.2s}
 .siteHeader .inner{max-width:1120px;margin:0 auto;padding:10px 18px;display:flex;align-items:center;justify-content:space-between;gap:16px}
-.brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:-0.01em;color:var(--ink);text-decoration:none}
-.brand img{width:32px;height:32px;border-radius:10px;object-fit:contain;background:transparent}
-.brand span{font-family:'Fraunces',serif;font-size:14px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:-0.01em;color:white;text-decoration:none}
+.brand img{width:32px;height:32px;border-radius:10px;object-fit:contain;background:transparent;filter:drop-shadow(0 2px 6px rgba(0,0,0,0.18))}
+.brand span{font-family:'Fraunces',serif;font-size:14px;color:white}
+.brand span small{color:rgba(255,255,255,0.72) !important}
 .navLinks{display:flex;align-items:center;gap:8px}
-.navLink{padding:7px 10px;border-radius:var(--radius-pill);font-size:12px;font-weight:600;color:var(--muted);border:1px solid transparent;transition:all 0.15s}
-.navLink:hover{color:var(--ink);background:var(--surface-2);border-color:var(--border);text-decoration:none}
-.themeToggle{width:32px;height:32px;display:grid;place-items:center;border-radius:var(--radius-pill);border:1px solid var(--border);background:var(--surface);color:var(--muted);cursor:pointer;transition:all 0.15s}
-.themeToggle:hover{color:var(--ink);border-color:var(--border-strong);transform:translateY(-1px)}
+.navLink{padding:7px 12px;border-radius:var(--radius-pill);font-size:12px;font-weight:600;color:rgba(255,255,255,0.88);border:1px solid rgba(255,255,255,0.14);transition:all 0.15s}
+.navLink:hover{color:white;background:rgba(255,255,255,0.12);border-color:rgba(255,255,255,0.22);text-decoration:none}
+.themeToggle{width:32px;height:32px;display:grid;place-items:center;border-radius:var(--radius-pill);border:1px solid rgba(255,255,255,0.18);background:rgba(255,255,255,0.10);color:white;cursor:pointer;transition:all 0.15s}
+.themeToggle:hover{color:white;border-color:rgba(255,255,255,0.28);background:rgba(255,255,255,0.16);transform:translateY(-1px)}
 /* Hero */
 .hero{position:relative;overflow:hidden;background:
   radial-gradient(900px 500px at 12% -10%, rgba(180,83,9,0.14), transparent 60%),
@@ -515,6 +545,29 @@ qEl.addEventListener('focus', () => { /* placeholder auto-hides on typing */ });
 updateBadge();
 updateCharCount();
 
+// Theme switcher — persists, respects system, intense maroon header stays maroon in both themes
+const themeToggle = document.getElementById('themeToggle');
+function getPreferredTheme(){
+  try { const s = localStorage.getItem('bc_theme'); if (s) return s; } catch(e){}
+  return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+}
+function applyTheme(t){
+  document.documentElement.setAttribute('data-theme', t);
+  try { localStorage.setItem('bc_theme', t); } catch(e){}
+  if (themeToggle) {
+    themeToggle.textContent = t === 'dark' ? '☀' : '◐';
+    themeToggle.setAttribute('aria-label', t === 'dark' ? 'Switch to light theme' : 'Switch to dark theme');
+    themeToggle.title = t === 'dark' ? 'Switch to light' : 'Switch to dark';
+  }
+}
+applyTheme(getPreferredTheme());
+if (themeToggle) {
+  themeToggle.addEventListener('click', () => {
+    const cur = document.documentElement.getAttribute('data-theme') || getPreferredTheme();
+    applyTheme(cur === 'dark' ? 'light' : 'dark');
+  });
+}
+
 // Ask — now passes selectedMode
 function example(t){
   // keep current mode unless t is clearly verse-like and mode is auto
@@ -613,9 +666,18 @@ const server = http.createServer((req, res) => {
   }
   if (url.pathname === "/health") return json(res, 200, { ok: true, stories: STORIES.length, canonical: "https://en.wikisource.org/wiki/The_Holy_Bible_(King_James_Version,_1769)" });
   if (url.pathname === "/stories") return json(res, 200, { count: STORIES.length, stories: STORIES.map(s => ({ id: s.id, title: s.title, character: s.character, tags: s.situationTags })) });
-  // Static assets — logo + prompting guide
+  // Static assets — logo + prompting guide + favicon
   if (url.pathname === "/Assets/logo_main.png" || url.pathname === "/assets/logo_main.png" || url.pathname === "/logo.png" || url.pathname === "/logo_main.png") {
     return serveStaticFile(res, path.join(__dirname, "../Assets/logo_main.png"), "image/png");
+  }
+  if (url.pathname === "/favicon.ico" || url.pathname === "/Assets/favicon.ico" || url.pathname === "/assets/favicon.ico") {
+    return serveStaticFile(res, path.join(__dirname, "../Assets/favicon.ico"), "image/x-icon");
+  }
+  if (url.pathname === "/favicon.png" || url.pathname === "/Assets/favicon.png" || url.pathname === "/assets/favicon.png") {
+    return serveStaticFile(res, path.join(__dirname, "../Assets/favicon.png"), "image/png");
+  }
+  if (url.pathname === "/apple-touch-icon.png" || url.pathname === "/Assets/apple-touch-icon.png" || url.pathname === "/assets/apple-touch-icon.png") {
+    return serveStaticFile(res, path.join(__dirname, "../Assets/apple-touch-icon.png"), "image/png");
   }
   if (url.pathname === "/docs/Prompting_Guide.pdf" || url.pathname === "/Prompting_Guide.pdf" || url.pathname === "/prompting_guide.pdf") {
     return serveStaticFile(res, path.join(__dirname, "../docs/Prompting_Guide.pdf"), "application/pdf");
