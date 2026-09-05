@@ -17,151 +17,312 @@ const STORY_COUNT = STORIES.length;
 const VERSE_COUNT = VERSES.length;
 
 const html = `<!doctype html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="color-scheme" content="light dark"/>
 <title>Your Bible Counselor — KJV 1769 • ${STORY_COUNT} Biblical Scenarios</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
 <style>
-:root{--maroon:#8B0000;--maroon2:#A52A2A;--cream:#FFFAF0;--gold:#B8860B;--gold2:#DAA520;--green:#1A5A3A;--green2:#0F3D26;--ink:#1A1A2E;--muted:#6B7280;--card:#FFFFFF;--border:#E5E7EB;--radius:16px}
+:root{
+  --bg:#FFFBF5;
+  --bg-soft:#FFF7ED;
+  --surface:#FFFFFF;
+  --surface-hover:#F8FAFC;
+  --surface-2:#F1F5F9;
+  --ink:#0F172A;
+  --ink-soft:#1E293B;
+  --muted:#64748B;
+  --subtle:#94A3B8;
+  --border:#E2E8F0;
+  --border-strong:#CBD5E1;
+  --primary:#7C0A02;
+  --primary-hover:#9F0F0F;
+  --primary-soft:#FEF2F2;
+  --primary-ring:rgba(124,10,2,0.12);
+  --accent:#B45309;
+  --accent-soft:#FFFBEB;
+  --accent-ring:rgba(180,83,9,0.12);
+  --success:#065F46;
+  --success-soft:#ECFDF5;
+  --success-ring:rgba(6,95,70,0.12);
+  --radius:14px;
+  --radius-lg:18px;
+  --radius-xl:22px;
+  --radius-pill:999px;
+  --shadow-xs:0 1px 2px rgba(15,23,42,0.04);
+  --shadow-sm:0 2px 8px rgba(15,23,42,0.05), 0 4px 16px rgba(15,23,42,0.04);
+  --shadow-md:0 4px 16px rgba(15,23,42,0.06), 0 12px 32px rgba(15,23,42,0.06);
+  --shadow-lg:0 12px 32px rgba(15,23,42,0.08), 0 32px 64px rgba(15,23,42,0.10);
+  --ease:cubic-bezier(0.16,1,0.3,1);
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#0B0F14;
+    --bg-soft:#0F172A;
+    --surface:#111A23;
+    --surface-hover:#1A2532;
+    --surface-2:#1E2D3D;
+    --ink:#F1F5F9;
+    --ink-soft:#E2E8F0;
+    --muted:#94A3B8;
+    --subtle:#64748B;
+    --border:#1E293B;
+    --border-strong:#334155;
+  }
+}
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;font-family:'Inter',system-ui,sans-serif;background:var(--cream);color:var(--ink);line-height:1.6;overflow-x:hidden}
-a{color:var(--maroon);text-decoration:none}a:hover{text-decoration:underline}
+html{scroll-behavior:smooth; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility}
+body{margin:0;font-family:'Inter',system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;overflow-x:hidden}
+a{color:var(--primary);text-decoration:none}
+a:hover{text-decoration:underline}
+::selection{background:rgba(124,10,2,0.12)}
+:focus-visible{outline:2px solid var(--primary);outline-offset:2px}
 @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+@keyframes pop{0%{transform:scale(0.96);opacity:0}100%{transform:scale(1);opacity:1}}
 @keyframes shimmer{0%{background-position:-200% 0}100%{background-position:200% 0}}
-@keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
-@keyframes pop{0%{transform:scale(0.92);opacity:0}60%{transform:scale(1.03)}100%{transform:scale(1);opacity:1}}
-@keyframes pulseGlow{0%,100%{box-shadow:0 0 0 0 rgba(139,0,0,0.18)}50%{box-shadow:0 0 0 10px rgba(139,0,0,0)}}
-@keyframes confettiFall{0%{transform:translateY(-10px) rotate(0deg);opacity:1}100%{transform:translateY(400px) rotate(720deg);opacity:0}}
-@keyframes scrollReveal{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
-.hero{position:relative;overflow:hidden;background:linear-gradient(135deg,var(--maroon) 0%,#5A0A0A 60%,#1A1A2E 100%);color:white;padding:36px 20px 44px;text-align:center}
-.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(600px 300px at 20% 0%, rgba(218,165,32,0.18), transparent 60%), radial-gradient(500px 400px at 90% 100%, rgba(255,255,255,0.06), transparent 60%)}
-.hero > *{position:relative}
-.hero h1{font-family:'Cinzel',serif;font-size:32px;margin:0;letter-spacing:0.5px;animation:fadeUp 0.7s ease}
-.hero h1 span{background:linear-gradient(90deg,var(--gold2),#FFEC9C,var(--gold2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.hero .sub{opacity:0.9;margin:8px 0 6px;font-size:14px;animation:fadeUp 0.7s 0.1s both}
-.badgeRow{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:14px;animation:fadeUp 0.7s 0.2s both}
-.badge{background:rgba(255,255,255,0.14);border:1px solid rgba(255,255,255,0.22);backdrop-filter:blur(6px);padding:6px 12px;border-radius:999px;font-size:12px;font-weight:600;letter-spacing:0.2px}
-.badge.gold{background:linear-gradient(135deg,var(--gold2),var(--gold));color:#1A1A2E;border-color:transparent}
-.floatingEmojis{position:absolute;font-size:22px;opacity:0.18;animation:float 5s ease-in-out infinite;pointer-events:none}
-.floatingEmojis.e1{top:18px;left:6%} .floatingEmojis.e2{top:28px;right:8%;animation-delay:1s} .floatingEmojis.e3{bottom:16px;left:12%;animation-delay:2s} .floatingEmojis.e4{bottom:22px;right:10%;animation-delay:0.5s}
+@keyframes confettiFall{0%{transform:translateY(-10px) rotate(0deg);opacity:1}100%{transform:translateY(520px) rotate(720deg);opacity:0}}
+@keyframes pulseSoft{0%,100%{transform:scale(1)}50%{transform:scale(1.02)}}
+/* Header */
+.siteHeader{position:sticky;top:0;z-index:40;backdrop-filter:blur(12px) saturate(1.2);background:color-mix(in srgb, var(--bg) 82%, transparent);border-bottom:1px solid var(--border);transition:background 0.2s, border-color 0.2s}
+.siteHeader .inner{max-width:1120px;margin:0 auto;padding:10px 18px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:-0.01em;color:var(--ink);text-decoration:none}
+.brand img{width:32px;height:32px;border-radius:10px;object-fit:contain;background:transparent}
+.brand span{font-family:'Fraunces',serif;font-size:14px}
+.navLinks{display:flex;align-items:center;gap:8px}
+.navLink{padding:7px 10px;border-radius:var(--radius-pill);font-size:12px;font-weight:600;color:var(--muted);border:1px solid transparent;transition:all 0.15s}
+.navLink:hover{color:var(--ink);background:var(--surface-2);border-color:var(--border);text-decoration:none}
+.themeToggle{width:32px;height:32px;display:grid;place-items:center;border-radius:var(--radius-pill);border:1px solid var(--border);background:var(--surface);color:var(--muted);cursor:pointer;transition:all 0.15s}
+.themeToggle:hover{color:var(--ink);border-color:var(--border-strong);transform:translateY(-1px)}
+/* Hero */
+.hero{position:relative;overflow:hidden;background:
+  radial-gradient(900px 500px at 12% -10%, rgba(180,83,9,0.14), transparent 60%),
+  radial-gradient(800px 600px at 92% 10%, rgba(124,10,2,0.10), transparent 60%),
+  radial-gradient(700px 400px at 50% 120%, rgba(6,95,70,0.08), transparent 60%),
+  linear-gradient(180deg, var(--bg-soft) 0%, var(--bg) 65%);
+  border-bottom:1px solid var(--border);
+}
+.hero::before{content:'';position:absolute;inset:0;background:
+  linear-gradient(to right, rgba(148,163,184,0.08) 1px, transparent 1px),
+  linear-gradient(to bottom, rgba(148,163,184,0.08) 1px, transparent 1px);
+  background-size:32px 32px;mask:radial-gradient(900px 500px at 50% 0%, black 30%, transparent 72%);opacity:0.6;pointer-events:none}
+.heroInner{max-width:760px;margin:0 auto;padding:36px 18px 28px;text-align:center;position:relative}
+.heroLogo{width:112px;height:auto;display:block;margin:0 auto 14px;filter:drop-shadow(0 12px 24px rgba(15,23,42,0.12));animation:fadeUp 0.6s var(--ease)}
+.hero h1{font-family:'Fraunces',serif;font-size:36px;line-height:0.95;letter-spacing:-0.03em;margin:0;font-weight:700;color:var(--ink);animation:fadeUp 0.6s 0.08s both}
+.hero h1 span{font-style:italic;font-weight:600;color:var(--primary)}
+.hero .sub{max-width:560px;margin:10px auto 0;font-size:15px;line-height:1.5;color:var(--muted);animation:fadeUp 0.6s 0.14s both}
+.badgeRow{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:16px;animation:fadeUp 0.6s 0.2s both}
+.badge{display:inline-flex;align-items:center;gap:6px;padding:6px 10px;border-radius:var(--radius-pill);font-size:11px;font-weight:700;letter-spacing:0.02em;border:1px solid var(--border);background:var(--surface);color:var(--ink);box-shadow:var(--shadow-xs)}
+.badge.gold{background:linear-gradient(180deg, #FFFBEB 0%, #FEF3C7 100%);border-color:#FDE68A;color:#92400E}
+.badge.muted{color:var(--muted);background:var(--surface-2)}
+.heroCtas{display:flex;gap:10px;justify-content:center;margin-top:18px;animation:fadeUp 0.6s 0.26s both}
+.floatingDot{position:absolute;width:6px;height:6px;border-radius:50%;background:var(--primary);opacity:0.12;animation:float 6s ease-in-out infinite}
+/* Shell */
 .wrap{max-width:1080px;margin:0 auto;padding:0 18px}
-.card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);box-shadow:0 4px 20px rgba(0,0,0,0.06);transition:transform 0.18s, box-shadow 0.18s}
-.card:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(0,0,0,0.08)}
-.promptCard{margin:-22px auto 18px;max-width:980px;padding:20px 20px 16px;position:relative;z-index:2;animation:pop 0.5s ease}
-.promptCard h2{margin:0 0 4px;font-size:16px;color:var(--ink)} .promptCard p{margin:0 0 10px;color:var(--muted);font-size:13px}
-textarea{width:100%;min-height:92px;padding:14px 14px 14px 44px;border:1.5px solid var(--border);border-radius:12px;font-size:15px;font-family:inherit;resize:vertical;outline:none;transition:border 0.15s, box-shadow 0.15s;background:#FFFEFB}
-textarea:focus{border-color:var(--maroon);box-shadow:0 0 0 3px rgba(139,0,0,0.12)}
+.sectionGap{height:18px}
+/* Prompt Card — glass + depth */
+.promptCard{
+  margin:-18px auto 18px;max-width:860px;
+  background:color-mix(in srgb, var(--surface) 92%, transparent);
+  backdrop-filter:blur(16px) saturate(1.1);
+  border:1px solid var(--border);
+  border-radius:var(--radius-xl);
+  box-shadow:var(--shadow-lg);
+  padding:18px;
+  position:relative;z-index:2;
+  animation:pop 0.5s var(--ease);
+}
+.promptHead{display:flex;align-items:start;justify-content:space-between;gap:12px;margin-bottom:12px}
+.promptHead h2{margin:0;font-family:'Fraunces',serif;font-size:18px;letter-spacing:-0.02em;color:var(--ink);line-height:1.2}
+.promptHead p{margin:4px 0 0;color:var(--muted);font-size:13px;line-height:1.4}
+.promptHead .headIcon{width:36px;height:36px;display:grid;place-items:center;border-radius:12px;background:var(--primary-soft);color:var(--primary);border:1px solid #FECACA;flex:0 0 auto}
+.guideLink{font-size:12px;font-weight:600;white-space:nowrap}
+.modeLabel{font-size:11px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;color:var(--primary);display:flex;align-items:center;gap:6px;margin:12px 0 8px}
+.modeLabel::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--primary);box-shadow:0 0 0 6px var(--primary-ring);animation:pulseSoft 2s infinite}
+.modeToggle{position:relative;display:flex;gap:2px;padding:4px;background:var(--surface-2);border:1px solid var(--border);border-radius:var(--radius-pill);width:fit-content;max-width:100%;overflow:auto;scrollbar-width:none}
+.modeToggle::-webkit-scrollbar{display:none}
+.modeToggle button{position:relative;z-index:1;border:0;padding:8px 14px;border-radius:var(--radius-pill);font-weight:700;font-size:12px;cursor:pointer;background:transparent;color:var(--muted);transition:color 0.18s;white-space:nowrap}
+.modeToggle button.active{color:var(--ink)}
+.modeIndicator{position:absolute;top:4px;bottom:4px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-pill);box-shadow:var(--shadow-sm);transition:transform 0.28s var(--ease), width 0.28s var(--ease);will-change:transform,width}
+.modeToggle:has([data-mode='stories'].active) .modeIndicator{border-color:var(--primary);box-shadow:0 2px 8px rgba(124,10,2,0.08)}
+.modeToggle:has([data-mode='verses'].active) .modeIndicator{border-color:var(--success);box-shadow:0 2px 8px rgba(6,95,70,0.08)}
+.modeTips{margin:10px 0 12px;padding:10px 12px;border-radius:12px;border:1px dashed var(--border);background:var(--surface-2);font-size:12px;line-height:1.5;transition:all 0.2s}
+.modeTips.verses{border-color:var(--success);background:var(--success-soft)}
+.modeTips.stories{border-color:var(--primary);background:var(--primary-soft)}
+.modeTips.auto{border-color:#F59E0B;background:var(--accent-soft)}
+.modeTips code{background:var(--surface);padding:2px 6px;border-radius:6px;font-family:'JetBrains Mono',monospace;font-size:11px;border:1px solid var(--border)}
 .textWrap{position:relative}
-.textWrap::before{content:'✦';position:absolute;left:14px;top:14px;font-size:18px;opacity:0.5}
-.btnRow{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
-.btn{border:0;padding:10px 16px;border-radius:999px;font-weight:700;font-size:13px;cursor:pointer;transition:transform 0.12s, box-shadow 0.12s, filter 0.12s}
-.btn:active{transform:scale(0.98)}
-.btnPrimary{background:linear-gradient(135deg,var(--maroon),var(--maroon2));color:white;box-shadow:0 6px 16px rgba(139,0,0,0.28);animation:pulseGlow 2.6s infinite}
-.btnPrimary:hover{filter:brightness(1.06)}
-.btnGhost{background:white;border:1px solid var(--border);color:var(--ink)}
-.btnGhost:hover{border-color:var(--maroon);color:var(--maroon)}
-.btnGreen{background:linear-gradient(135deg,var(--green),var(--green2));color:white}
-.modeToggle{display:flex;gap:6px;padding:4px;background:#F3F4F6;border:1px solid var(--border);border-radius:999px;width:fit-content;margin:6px 0 10px}
-.modeToggle button{border:0;padding:7px 14px;border-radius:999px;font-weight:700;font-size:12px;cursor:pointer;background:transparent;color:var(--muted);transition:all 0.15s}
-.modeToggle button.active{background:white;border:1px solid var(--border);color:var(--ink);box-shadow:0 2px 8px rgba(0,0,0,0.08)}
-.modeToggle button.active[data-mode='stories']{background:linear-gradient(135deg,#FEF2F2,#FFF);border-color:var(--maroon);color:var(--maroon)}
-.modeToggle button.active[data-mode='verses']{background:linear-gradient(135deg,#ECFDF5,#FFF);border-color:var(--green);color:var(--green)}
-.modeToggle button.active[data-mode='auto']{background:linear-gradient(135deg,#FFFBEB,#FFF);border-color:var(--gold);color:#8B5A00}
-.modeTips{background:#FFFEFB;border:1px dashed var(--border);border-radius:12px;padding:10px 12px;margin:0 0 10px;font-size:12px;line-height:1.5;transition:all 0.2s}
-.modeTips strong{font-size:12px}
-.modeTips code{background:#F3F4F6;padding:2px 6px;border-radius:6px;font-family:'JetBrains Mono',monospace;font-size:11px;border:1px solid var(--border)}
-.modeTips.verses{border-color:var(--green);background:#F0FAF0}
-.modeTips.stories{border-color:var(--maroon);background:#FEF2F2}
-.modeTips.auto{border-color:var(--gold2);background:#FFFBEB}
-.promptAction{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:10px;padding:10px 12px;background:#F9FAFB;border:1px solid var(--border);border-radius:12px}
-.promptAction .btnPrimary{animation:none;box-shadow:0 4px 12px rgba(139,0,0,0.22);padding:11px 22px;font-size:14px}
-.promptAction .small{font-size:11px}
-.examplesRow{margin-top:10px;padding-top:8px;border-top:1px solid #F3F4F6}
-.examplesRow .label{font-size:11px;font-weight:700;color:var(--muted);letter-spacing:0.4px;text-transform:uppercase;margin-right:4px;align-self:center}
-.modeBadge{display:inline-flex;align-items:center;gap:6px;padding:4px 10px;border-radius:999px;font-size:11px;font-weight:700;letter-spacing:0.3px;border:1px solid var(--border);background:#F9FAFB}
-.modeBadge.verse{color:var(--green);border-color:var(--green);background:#ECFDF5}
-.modeBadge.story{color:var(--maroon);border-color:var(--maroon);background:#FEF2F2}
-.modeBadge.auto{color:#8B5A00;border-color:var(--gold2);background:#FFFBEB}
-#out{max-width:980px;margin:14px auto}
-.kjv{font-style:italic;background:#FDF6E3;border-left:4px solid var(--gold);padding:10px 12px;border-radius:0 10px 10px 0}
-.small{font-size:11px;color:var(--muted)}
-.outCard{animation:fadeUp 0.35s ease}
-.outCard h3{margin:0 0 6px;font-size:15px}
-.strategySteps li{margin:4px 0}
-.galleryHead{display:flex;align-items:end;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:22px 0 10px}
-.galleryHead h2{margin:0;font-family:'Cinzel',serif;color:var(--maroon);font-size:20px}
+textarea{
+  width:100%;min-height:112px;max-height:220px;
+  padding:14px 44px 14px 16px;
+  border:1.5px solid var(--border);border-radius:14px;
+  font-size:15px;line-height:1.5;font-family:'Inter',sans-serif;
+  resize:none;outline:none;transition:border-color 0.15s, box-shadow 0.15s, background 0.15s;
+  background:var(--surface);color:var(--ink);
+}
+textarea::placeholder{color:var(--subtle)}
+textarea:focus{border-color:var(--primary);box-shadow:0 0 0 4px var(--primary-ring);background:var(--surface)}
+.textMeta{position:absolute;right:10px;bottom:10px;display:flex;gap:6px;align-items:center}
+.charCount{font-size:11px;font-weight:600;color:var(--subtle);padding:2px 6px;border-radius:var(--radius-pill);background:var(--surface-2);border:1px solid var(--border)}
+.charCount.warn{color:var(--accent);border-color:#FDE68A;background:var(--accent-soft)}
+.charCount.over{color:#B91C1C;border-color:#FECACA;background:#FEF2F2}
+.clearBtn{width:28px;height:28px;display:grid;place-items:center;border-radius:var(--radius-pill);border:1px solid var(--border);background:var(--surface);color:var(--muted);cursor:pointer;font-size:14px;line-height:1;transition:all 0.15s}
+.clearBtn:hover{color:var(--ink);border-color:var(--border-strong);background:var(--surface-hover)}
+.promptAction{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:12px;padding:10px;background:var(--surface-2);border:1px solid var(--border);border-radius:14px}
+.btn{border:0;padding:10px 16px;border-radius:var(--radius-pill);font-weight:700;font-size:13px;cursor:pointer;transition:transform 0.12s, box-shadow 0.12s, filter 0.12s, background 0.15s, border-color 0.15s;display:inline-flex;align-items:center;gap:8px;justify-content:center;white-space:nowrap}
+.btn:active{transform:translateY(1px) scale(0.98)}
+.btnPrimary{background:linear-gradient(180deg, var(--primary) 0%, #5A0A0A 100%);color:white;box-shadow:0 6px 16px rgba(124,10,2,0.24), 0 2px 4px rgba(124,10,2,0.2);min-height:40px}
+.btnPrimary:hover{filter:brightness(1.06);box-shadow:0 8px 20px rgba(124,10,2,0.28)}
+.btnGhost{background:var(--surface);border:1px solid var(--border);color:var(--ink);box-shadow:var(--shadow-xs)}
+.btnGhost:hover{border-color:var(--border-strong);background:var(--surface-hover);transform:translateY(-1px);box-shadow:var(--shadow-sm)}
+.btnGreen{background:linear-gradient(180deg, var(--success) 0%, #064E3B 100%);color:white;box-shadow:0 6px 16px rgba(6,95,70,0.20)}
+.examplesRow{margin-top:12px;padding-top:12px;border-top:1px solid var(--border);display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.examplesRow .label{font-size:10px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:var(--subtle)}
+.modeBadge{display:inline-flex;align-items:center;gap:6px;padding:5px 10px;border-radius:var(--radius-pill);font-size:11px;font-weight:700;letter-spacing:0.02em;border:1px solid var(--border);background:var(--surface-2);color:var(--muted)}
+.modeBadge.verse{color:var(--success);border-color:var(--success);background:var(--success-soft)}
+.modeBadge.story{color:var(--primary);border-color:var(--primary);background:var(--primary-soft)}
+.modeBadge.auto{color:var(--accent);border-color:#F59E0B;background:var(--accent-soft)}
+/* Results */
+#out{max-width:860px;margin:16px auto}
+.kjv{font-style:italic;background:linear-gradient(180deg, #FFFBEB 0%, #FFF7ED 100%);border-left:3px solid #F59E0B;padding:12px 14px;border-radius:0 12px 12px 0;border-top:1px solid #FDE68A;border-right:1px solid #FDE68A;border-bottom:1px solid #FDE68A}
+.small{font-size:11px;color:var(--muted);line-height:1.4}
+.outCard{animation:fadeUp 0.4s var(--ease);border-radius:var(--radius-lg);overflow:hidden}
+.outCard h3{margin:0 0 6px;font-size:15px;letter-spacing:-0.01em}
+.strategySteps{margin:8px 0 0;padding-left:18px}
+.strategySteps li{margin:6px 0;font-size:13px;line-height:1.5}
+.resultMeta{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}
+.metaPill{font-size:10px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;padding:4px 8px;border-radius:var(--radius-pill);border:1px solid var(--border);background:var(--surface-2);color:var(--muted)}
+.copyBtn{margin-left:auto;padding:6px 10px;border-radius:var(--radius-pill);border:1px solid var(--border);background:var(--surface);font-size:11px;font-weight:700;cursor:pointer;color:var(--muted)}
+.copyBtn:hover{color:var(--ink);border-color:var(--border-strong)}
+/* Gallery */
+.galleryHead{display:flex;align-items:end;justify-content:space-between;gap:14px;flex-wrap:wrap;margin:28px 0 14px}
+.galleryHead h2{margin:0;font-family:'Fraunces',serif;font-size:22px;letter-spacing:-0.02em;color:var(--ink)}
 .filterBar{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
-.filterBar input, .filterBar select{padding:9px 12px;border:1.5px solid var(--border);border-radius:999px;font-size:13px;outline:none;background:white;min-width:180px}
-.filterBar input:focus, .filterBar select:focus{border-color:var(--maroon);box-shadow:0 0 0 3px rgba(139,0,0,0.1)}
-.stats{font-size:12px;color:var(--muted)}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px}
-.archCard{padding:14px 14px 12px;cursor:pointer;position:relative;overflow:hidden;animation:scrollReveal 0.4s ease}
-.archCard::after{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold2),var(--maroon),var(--green));opacity:0;transition:opacity 0.18s}
+.filterBar input, .filterBar select{padding:10px 14px;border:1.5px solid var(--border);border-radius:var(--radius-pill);font-size:13px;outline:none;background:var(--surface);color:var(--ink);min-width:200px;transition:border-color 0.15s, box-shadow 0.15s}
+.filterBar input:focus, .filterBar select:focus{border-color:var(--primary);box-shadow:0 0 0 4px var(--primary-ring)}
+.filterBar input{padding-left:36px;background-image:url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 19a8 8 0 1 0 0-16 8 8 0 0 0 0 16ZM21 21l-4.2-4.2' stroke='%2364748B' stroke-width='1.7' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:12px center}
+.stats{font-size:12px;color:var(--muted);margin-top:4px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
+.archCard{
+  padding:16px 16px 14px;cursor:pointer;position:relative;overflow:hidden;
+  background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);
+  box-shadow:var(--shadow-xs);transition:transform 0.18s var(--ease), box-shadow 0.18s var(--ease), border-color 0.18s;
+}
+.archCard::after{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg, #F59E0B, var(--primary), var(--success));opacity:0;transition:opacity 0.18s}
+.archCard:hover{transform:translateY(-3px);box-shadow:var(--shadow-md);border-color:var(--border-strong)}
 .archCard:hover::after{opacity:1}
-.archCard:hover{transform:translateY(-3px) scale(1.01)}
-.archTop{font-size:11px;font-weight:700;letter-spacing:0.4px;color:var(--maroon);text-transform:uppercase}
-.archTitle{font-weight:700;font-size:13px;line-height:1.3;margin:4px 0 4px;color:var(--ink)}
-.archChar{font-size:12px;color:var(--muted);font-style:italic}
-.tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
-.tag{font-size:10px;font-weight:600;padding:3px 7px;border-radius:999px;background:#F3F4F6;border:1px solid var(--border);color:#374151}
+.archCard:focus-visible{outline:2px solid var(--primary);outline-offset:2px}
+.archTop{font-size:10px;font-weight:700;letter-spacing:0.06em;color:var(--primary);text-transform:uppercase;display:flex;align-items:center;gap:6px}
+.archTop::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--primary);opacity:0.9}
+.archTitle{font-weight:700;font-size:13.5px;line-height:1.35;margin:6px 0 4px;color:var(--ink);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:36px}
+.archChar{font-size:12px;color:var(--muted);font-style:italic;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
+.tag{font-size:10px;font-weight:600;padding:4px 8px;border-radius:var(--radius-pill);background:var(--surface-2);border:1px solid var(--border);color:var(--muted);max-width:120px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .tag.more{background:var(--ink);color:white;border-color:var(--ink)}
-.archCta{margin-top:8px;font-size:11px;font-weight:700;color:var(--maroon);display:flex;align-items:center;gap:4px}
-.archCta span{transition:transform 0.15s} .archCard:hover .archCta span{transform:translateX(3px)}
-.showMore{display:flex;justify-content:center;margin:14px 0}
-.countPill{background:var(--ink);color:white;padding:6px 12px;border-radius:999px;font-size:12px;font-weight:700}
-.confetti{position:fixed;top:-10px;width:8px;height:14px;border-radius:2px;pointer-events:none;z-index:9999;animation:confettiFall 1.2s ease forwards}
-.footer{margin:28px 0 24px;text-align:center;color:var(--muted);font-size:11px}
-.loadingDot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--maroon);margin:0 2px;animation:float 0.8s infinite}
+.archCta{margin-top:10px;font-size:11px;font-weight:700;color:var(--primary);display:flex;align-items:center;gap:6px}
+.archCta span{transition:transform 0.15s var(--ease)} .archCard:hover .archCta span{transform:translateX(4px)}
+.showMore{display:flex;justify-content:center;margin:18px 0}
+.countPill{background:var(--ink);color:white;padding:8px 14px;border-radius:var(--radius-pill);font-size:12px;font-weight:700;box-shadow:var(--shadow-sm)}
+.confetti{position:fixed;top:-10px;width:8px;height:14px;border-radius:2px;pointer-events:none;z-index:9999;animation:confettiFall 1.2s var(--ease) forwards}
+.footer{margin:36px 0 28px;text-align:center;color:var(--muted);font-size:12px;line-height:1.6}
+.footer a{color:var(--muted);text-decoration:underline;text-underline-offset:3px}
+.footer a:hover{color:var(--ink)}
+.loadingDot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--primary);margin:0 2px;animation:float 0.8s ease-in-out infinite}
 .loadingDot:nth-child(2){animation-delay:0.15s} .loadingDot:nth-child(3){animation-delay:0.3s}
-@media (max-width:640px){.hero h1{font-size:24px}.grid{grid-template-columns:1fr 1fr} .filterBar input{min-width:140px} .promptAction{flex-direction:column;align-items:stretch} .promptAction .btnPrimary{width:100%;justify-content:center}}
+.skeleton{height:12px;background:linear-gradient(90deg, var(--surface-2) 25%, var(--border) 50%, var(--surface-2) 75%);background-size:200% 100%;animation:shimmer 1.2s infinite;border-radius:8px}
+@media (max-width:720px){
+  .heroInner{padding:28px 16px 22px}
+  .hero h1{font-size:28px}
+  .promptCard{margin:-14px auto 16px;padding:16px}
+  .grid{grid-template-columns:1fr}
+  .filterBar input{min-width:0;flex:1 1 100%}
+  .promptAction{flex-direction:column;align-items:stretch}
+  .promptAction .btnPrimary{width:100%}
+  .siteHeader .inner{padding:10px 14px}
+}
 </style>
 </head>
 <body>
+<header class="siteHeader">
+  <div class="inner">
+    <a class="brand" href="#">
+      <img src="Assets/logo_main.png" alt="Bible Counselor logo" />
+      <span>The Bible Counselor</span>
+    </a>
+    <nav class="navLinks">
+      <a class="navLink" href="docs/Prompting_Guide.pdf" target="_blank">Prompting Guide</a>
+      <a class="navLink" href="#gallery">Scenarios</a>
+      <button class="themeToggle" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">◐</button>
+    </nav>
+  </div>
+</header>
+
 <div class="hero">
-  <div class="floatingEmojis e1">📖</div><div class="floatingEmojis e2">✦</div><div class="floatingEmojis e3">🕊️</div><div class="floatingEmojis e4">🔥</div>
-  <img src="Assets/logo_main.png" alt="Your Bible Counselor logo" style="width:130px;height:auto;background:transparent;border-radius:0;padding:0;filter:drop-shadow(0 8px 24px rgba(0,0,0,0.28));margin:0 auto 14px;display:block">
-  <h1>Your <span>Bible Counselor</span></h1>
-  <div class="sub">Simple, proven wisdom for every part of your life</div>
-  <div class="badgeRow">
-    <span class="badge gold">✦ ${STORY_COUNT} Biblical Scenarios</span>
-    <span class="badge">📜 ${VERSE_COUNT} Verses</span>
+  <div class="floatingDot" style="top:18%;left:8%;animation-delay:0s"></div>
+  <div class="floatingDot" style="top:22%;right:10%;animation-delay:1.2s"></div>
+  <div class="floatingDot" style="bottom:18%;left:14%;animation-delay:0.6s"></div>
+  <div class="heroInner">
+    <img src="Assets/logo_main.png" alt="Your Bible Counselor logo" style="width:120px;height:auto;background:transparent;border-radius:0;padding:0;filter:drop-shadow(0 10px 28px rgba(15,23,42,0.14));margin:0 auto 14px;display:block">
+    <h1>Your <span>Bible Counselor</span></h1>
+    <p class="sub">KJV 1769 — verifiable wisdom for every modern situation. <span style="color:var(--ink);font-weight:600">${STORY_COUNT} stories</span> • <span style="color:var(--ink);font-weight:600">${VERSE_COUNT} verses</span> — deeply smart, never muddled.</p>
+    <div class="badgeRow">
+      <span class="badge gold">✦ ${STORY_COUNT} Biblical Scenarios</span>
+      <span class="badge">📜 ${VERSE_COUNT} Verses</span>
+      <span class="badge muted">✓ Wikisource Provenance</span>
+    </div>
+    <div class="heroCtas">
+      <a class="btn btnPrimary" href="#promptCard" style="text-decoration:none">✦ Seek Counsel</a>
+      <a class="btn btnGhost" href="#gallery" style="text-decoration:none">Explore scenarios ↓</a>
+    </div>
   </div>
 </div>
 
 <div class="wrap">
   <div class="card promptCard" id="promptCard">
-    <h2>What do you need today?</h2>
-    <p>Pick a mode — see live prompting tips — then Seek Counsel. <b>Auto</b> detects, or force <b>Stories</b> / <b>Verses</b>.</p>
-    <p class="small" style="margin:-4px 0 10px">📖 New here? <a href="docs/Prompting_Guide.pdf" target="_blank" style="font-weight:700">Read the Prompting Guide</a> — get the most out of it.</p>
-    <div class="small" style="margin:0 0 6px;color:var(--maroon);font-weight:700;display:flex;align-items:center;gap:6px;animation:fadeUp 0.7s 0.15s both">👉 Select preferred mode:</div>
+    <div class="promptHead">
+      <div>
+        <h2>What do you need today?</h2>
+        <p>Describe a situation or ask for verses. The Bible Counselor never muddles.</p>
+      </div>
+      <div class="headIcon" aria-hidden="true">✦</div>
+    </div>
+    <p class="small" style="margin:0 0 10px">📖 New here? <a href="docs/Prompting_Guide.pdf" target="_blank" style="font-weight:700">Read the Prompting Guide</a></p>
+    <div class="small" style="margin:0 0 8px;color:var(--primary);font-weight:700;display:flex;align-items:center;gap:8px">
+      <span style="width:20px;height:20px;display:grid;place-items:center;border-radius:50%;background:var(--primary);color:white;font-size:10px">→</span>
+      Select preferred mode:
+    </div>
     <div class="modeToggle" role="tablist" aria-label="Prompt mode">
+      <div class="modeIndicator" id="modeIndicator"></div>
       <button data-mode="auto" class="active" onclick="setMode('auto')" aria-selected="true">⚡ Auto</button>
       <button data-mode="stories" onclick="setMode('stories')">📖 Stories</button>
       <button data-mode="verses" onclick="setMode('verses')">📜 Verses</button>
     </div>
     <div id="modeTips" class="modeTips auto">
-      <strong>⚡ Auto —</strong> Describe a situation <em>or</em> ask for verses. E.g. <code>10 verses about diligence</code> or <code>I am in a cave like David at Adullam</code> — we auto-detect, never muddle. Tip: include a number + "verses" for verses; include emotion/situation for stories.
+      <strong>⚡ Auto —</strong> Describe a situation <em>or</em> ask for verses. E.g. <code>10 verses about diligence</code> or <code>I am in a cave like David at Adullam</code> — auto-detects.
     </div>
     <div class="textWrap">
-      <textarea id="q" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="true" placeholder="Try: 10 verses about peace  — or —  I feel forgotten like Joseph in prison..."></textarea>
+      <textarea id="q" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="true" placeholder="Try: 10 verses about peace  — or —  I feel forgotten like Joseph in prison..." rows="3"></textarea>
+      <div class="textMeta">
+        <span class="charCount" id="charCount">0 / 600</span>
+        <button class="clearBtn" id="clearBtn" type="button" aria-label="Clear" title="Clear">×</button>
+      </div>
     </div>
     <div class="promptAction">
       <button class="btn btnPrimary" onclick="ask()">✦ Seek Counsel — <span id="actionModeLabel">Auto</span></button>
-      <span class="small">↵ Enter to send • Shift+↵ newline • Mode controls tips &amp; results</span>
+      <span class="small">↵ Enter to send • Shift+↵ newline</span>
       <span id="modeBadge" class="modeBadge auto">● Auto</span>
     </div>
     <div class="btnRow examplesRow" id="examplesRow">
-      <span class="label">Try:</span>
+      <span class="label">Try</span>
       <button class="btn btnGhost" onclick="example('10 verses about diligence')">10 verses diligence</button>
       <button class="btn btnGhost" onclick="example('5 verses that talk about fear')">5 verses fear</button>
       <button class="btn btnGreen" onclick="example('10 verses to justify background checks')">Background checks</button>
       <button class="btn btnGhost" onclick="example('falsely accused and forgotten in prison like Joseph')">Falsely accused</button>
       <button class="btn btnGhost" onclick="example('need courage to speak up like Esther, afraid')">Esther courage</button>
-      <button class="btn btnGhost" onclick="document.getElementById('gallery').scrollIntoView({behavior:'smooth'})">↓ ${STORY_COUNT} Biblical Scenarios</button>
+      <button class="btn btnGhost" onclick="document.getElementById('gallery').scrollIntoView({behavior:'smooth'})">↓ ${STORY_COUNT} scenarios</button>
     </div>
   </div>
 
@@ -169,21 +330,26 @@ textarea:focus{border-color:var(--maroon);box-shadow:0 0 0 3px rgba(139,0,0,0.12
 
   <div class="galleryHead" id="gallery">
     <div>
-      <h2>📚 Explore All ${STORY_COUNT} Biblical Scenarios</h2>
-      <div class="stats" id="galleryStats">Showing 24 of ${STORY_COUNT} — click any card to auto-prompt</div>
+      <h2>Explore</h2>
+      <div class="small" style="color:var(--muted);font-weight:600;letter-spacing:0.04em;text-transform:uppercase">${STORY_COUNT} Biblical Scenarios • ${VERSE_COUNT} Verses</div>
+      <div class="stats" id="galleryStats">Showing 24 of ${STORY_COUNT}</div>
     </div>
     <div class="filterBar">
-      <input id="archSearch" placeholder="Filter scenarios… e.g., fear, diligence, debt" oninput="filterGallery()"/>
-      <select id="archSort" onchange="filterGallery()"><option value="relevance">Sort: Relevance</option><option value="alpha">A → Z</option><option value="book">By Book</option></select>
-      <button class="btn btnGhost" style="padding:8px 12px" onclick="shuffleGallery()">🎲 Shuffle</button>
-      <button class="btn btnGhost" style="padding:8px 12px" onclick="toggleGallery()">Show all</button>
+      <input id="archSearch" placeholder="Filter — e.g., fear, diligence, debt…" oninput="filterGallery()" />
+      <select id="archSort" onchange="filterGallery()"><option value="relevance">Relevance</option><option value="alpha">A → Z</option><option value="book">By Book</option></select>
+      <button class="btn btnGhost" style="padding:9px 12px" onclick="shuffleGallery()" aria-label="Shuffle">🎲</button>
+      <button class="btn btnGhost" style="padding:9px 12px" onclick="toggleGallery()">Show all</button>
     </div>
   </div>
   <div class="grid" id="archGrid"></div>
-  <div class="showMore"><span class="countPill" id="countPill">24 shown • 126 hidden — click “Show all”</span></div>
+  <div class="showMore"><span class="countPill" id="countPill">Loading…</span></div>
 </div>
 
-<div class="footer">All verses KJV 1769 • Verify at <a href="https://en.wikisource.org/wiki/The_Holy_Bible_(King_James_Version,_1769)" target="_blank">Wikisource KJV 1769</a> • <span id="storyCountFoot"></span><br><span style="margin-top:8px;display:inline-block">Has this project blessed you in any way, we would be glad to read from you. Email the curator on: <a href="mailto:sirp4all@gmail.com">sirp4all@gmail.com</a></span></div>
+<div class="footer">
+  <div>All verses <b>KJV 1769</b> • Verify at <a href="https://en.wikisource.org/wiki/The_Holy_Bible_(King_James_Version,_1769)" target="_blank">Wikisource KJV 1769</a> • <span id="storyCountFoot"></span></div>
+  <div style="margin-top:8px">Has this project blessed you? <a href="mailto:sirp4all@gmail.com">Email the curator — sirp4all@gmail.com</a></div>
+  <div style="margin-top:6px;opacity:0.7">Static • Client-side counsel • No data leaves your device</div>
+</div>
 
 <script>
 const ALL_STORIES_META = ${allStoriesJson};
