@@ -32,14 +32,14 @@ const html = `<!doctype html>
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://www.biblecounselor.com.ng/">
 <meta property="og:title" content="Your Bible Counselor — KJV 1769 • ${STORY_COUNT} Biblical Scenarios">
-<meta property="og:description" content="Simple, proven wisdom for every part of your life. ${STORY_COUNT} stories, ${VERSE_COUNT}+ verses — deeply smart, never muddled. KJV 1769 verifiable at Wikisource.">
+<meta property="og:description" content="Simple, proven wisdom for every part of your life. ${STORY_COUNT} stories, ${VERSE_COUNT}+ verses. KJV 1769 verified.">
 <meta property="og:image" content="https://www.biblecounselor.com.ng/Assets/logo_main.png">
 <meta property="og:url" content="https://www.biblecounselor.com.ng/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="The Bible Counselor">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Your Bible Counselor — KJV 1769">
-<meta name="twitter:description" content="Simple, proven wisdom for every part of your life. ${STORY_COUNT} stories, ${VERSE_COUNT}+ verses with Wikisource provenance.">
+<meta name="twitter:description" content="Simple, proven wisdom for every part of your life. ${STORY_COUNT} stories, ${VERSE_COUNT}+ verses with KJV Bible references.">
 <meta name="twitter:image" content="https://www.biblecounselor.com.ng/Assets/logo_main.png">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"The Bible Counselor","url":"https://www.biblecounselor.com.ng/","description":"KJV 1769 verifiable wisdom for every situation — ${STORY_COUNT} stories, ${VERSE_COUNT}+ verses","inLanguage":"en"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -337,7 +337,7 @@ textarea:focus{border-color:var(--primary);box-shadow:0 0 0 4px var(--primary-ri
     <div class="badgeRow">
       <span class="badge gold">✦ ${STORY_COUNT} Biblical Scenarios</span>
       <span class="badge">📜 ${VERSE_COUNT}+ Verses</span>
-      <span class="badge muted">✓ Wikisource Provenance</span>
+      <span class="badge muted">✓ KJV Bible references</span>
     </div>
     <div class="heroCtas">
       <a class="btn btnPrimary" href="#promptCard" style="text-decoration:none">✦ Seek Counsel</a>
@@ -351,7 +351,7 @@ textarea:focus{border-color:var(--primary);box-shadow:0 0 0 4px var(--primary-ri
     <div class="promptHead">
       <div>
         <h2>What do you need today?</h2>
-        <p>Describe a situation or ask for verses. The Bible Counselor never muddles.</p>
+        <p>Describe a situation or ask for verses. The Bible Counselor provides you the strategic guide you need based on Scripture.</p>
       </div>
       <div class="headIcon" aria-hidden="true">✦</div>
     </div>
