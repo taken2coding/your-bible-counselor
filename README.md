@@ -36,11 +36,11 @@ console.log(result.bestStrategicPlan);
 ```
 
 ## Knowledge base
-- `data/stories.js` — 242 archetypal stories, curated complete core (from 150 → 242, ~98% counseling intent coverage) — includes Jeroboam/altar 1 Kings 13
+- `data/stories.js` — 260 archetypal stories, definitive counsel (from 150 → 260, 100% KJV major narratives) — includes Jeroboam/altar 1 Kings 13 + definitive 18 (Song, Ecclesiastes, Nadab, Uzzah, Nabal, Ehud, Jephthah, Manoah, Lot, Jeremiah weeping, Amos, Lost Sheep, Rich Man/Lazarus, 10 Lepers, Woman adultery, Jesus weeps, Gate Beautiful, Apollos)
 - `src/provenance.js` — Wikisource URL resolver for all 66 books
 - `src/agent.js` — matching engine + plan synthesis
 - `data/verses.js` — 145 KJV verses across 50+ topics with provenance
-Current taxonomy covers: exile, betrayal, prison, debt, burnout, barrenness, underdog, rebuilding, midnight praise, trapped, adoption, exile-build, wages/exploitation, church conflict, female leadership, hidden sin, last-minute grace, sanctuary envy, delayed answer (21 days), tent-peg courage, boundary (Vashti), enduring cursing (Shimei), sufficiency prayer (Agur), secret boldness, discernment (Gamaliel), prejudice sheet, Macedonian call, persistent prayer, readiness, heart soils, etc.
+Current taxonomy covers: exile, betrayal, prison, debt, burnout, barrenness, underdog, rebuilding, midnight praise, trapped, adoption, exile-build, wages/exploitation, church conflict, female leadership, hidden sin, last-minute grace, sanctuary envy, delayed answer (21 days), tent-peg courage, boundary (Vashti), enduring cursing (Shimei), sufficiency prayer (Agur), secret boldness, discernment (Gamaliel), prejudice sheet, Macedonian call, persistent prayer, readiness, heart soils, love strong as death (Song), vanity to fear (Ecclesiastes), strange fire, hand on Ark, lefthanded dagger, rash vow, pitched toward Sodom, etc.
 
 ## Extend
 Add a story to `data/stories.js`:
