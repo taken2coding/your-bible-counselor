@@ -352,6 +352,9 @@ textarea:focus{border-color:var(--primary);box-shadow:0 0 0 4px var(--primary-ri
 .loadingDot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--primary);margin:0 2px;animation:float 0.8s ease-in-out infinite}
 .loadingDot:nth-child(2){animation-delay:0.15s} .loadingDot:nth-child(3){animation-delay:0.3s}
 .skeleton{height:12px;background:linear-gradient(90deg, var(--surface-2) 25%, var(--border) 50%, var(--surface-2) 75%);background-size:200% 100%;animation:shimmer 1.2s infinite;border-radius:8px}
+@media (max-width:767px){
+  .navLink{display:none !important}
+}
 @media (max-width:720px){
   .heroInner{padding:28px 16px 22px}
   .hero h1{font-size:28px}
