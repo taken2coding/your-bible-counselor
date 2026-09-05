@@ -99,27 +99,27 @@ function htmlHome() {
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#FFFBF5;
+  --bg:#FDFCF8;
   --bg-soft:#FFF7ED;
   --surface:#FFFFFF;
-  --surface-hover:#F8FAFC;
-  --surface-2:#F1F5F9;
-  --ink:#0F172A;
-  --ink-soft:#1E293B;
-  --muted:#64748B;
-  --subtle:#94A3B8;
-  --border:#E2E8F0;
-  --border-strong:#CBD5E1;
-  --primary:#7C0A02;
-  --primary-hover:#9F0F0F;
-  --primary-soft:#FEF2F2;
-  --primary-ring:rgba(124,10,2,0.12);
-  --accent:#B45309;
-  --accent-soft:#FFFBEB;
-  --accent-ring:rgba(180,83,9,0.12);
-  --success:#065F46;
-  --success-soft:#ECFDF5;
-  --success-ring:rgba(6,95,70,0.12);
+  --surface-2:#F9F6F0;
+  --surface-3:#F1EDE8;
+  --ink:#1E293B;
+  --ink-2:#334155;
+  --muted:#6B7280;
+  --faint:#9CA3AF;
+  --border:#E7E0D6;
+  --border-strong:#D6CFC2;
+  --primary:#6B1F2A;
+  --primary-hover:#8B2D2B;
+  --primary-soft:#FDF2F2;
+  --primary-ring:rgba(107,31,42,0.13);
+  --accent:#8B5E34;
+  --accent-soft:#FDF6E3;
+  --accent-ring:rgba(139,94,52,0.13);
+  --success:#2E5E4E;
+  --success-soft:#E8F5F0;
+  --success-ring:rgba(46,94,78,0.13);
   --radius:14px;
   --radius-lg:18px;
   --radius-xl:22px;
@@ -325,7 +325,7 @@ textarea:focus{border-color:var(--primary);box-shadow:0 0 0 4px var(--primary-ri
   <div class="heroInner">
     <img src="Assets/logo_main.png" alt="Your Bible Counselor logo" style="width:120px;height:auto;background:transparent;border-radius:0;padding:0;filter:drop-shadow(0 10px 28px rgba(15,23,42,0.14));margin:0 auto 14px;display:block">
     <h1>Your <span>Bible Counselor</span></h1>
-    <p class="sub">KJV 1769 — verifiable wisdom for every modern situation. <span style="color:var(--ink);font-weight:600">${STORY_COUNT} stories</span> • <span style="color:var(--ink);font-weight:600">${VERSE_COUNT} verses</span> — deeply smart, never muddled.</p>
+    <p class="sub">Simple, proven wisdom for every part of your life.</p>
     <div class="badgeRow">
       <span class="badge gold">✦ ${STORY_COUNT} Biblical Scenarios</span>
       <span class="badge">📜 ${VERSE_COUNT} Verses</span>
@@ -487,16 +487,33 @@ function updateBadge(){
   // also hint badge border for auto
   if(!isVerse && !qEl.value.includes('verse')) badge.className='modeBadge auto';
 }
-qEl.addEventListener('input', updateBadge);
+const charCountEl = document.getElementById('charCount');
+const clearBtnEl = document.getElementById('clearBtn');
+function updateCharCount(){
+  const len = qEl.value.length;
+  if (charCountEl) {
+    charCountEl.textContent = len + ' / 600';
+    charCountEl.classList.toggle('warn', len > 480 && len <= 580);
+    charCountEl.classList.toggle('over', len > 580);
+  }
+  if (clearBtnEl) clearBtnEl.style.display = len > 0 ? 'grid' : 'none';
+  qEl.style.height = 'auto';
+  qEl.style.height = Math.min(qEl.scrollHeight, 260) + 'px';
+}
+qEl.addEventListener('input', () => { updateBadge(); updateCharCount(); });
 qEl.addEventListener('keydown', (e)=>{
   if(e.key==='Enter' && !e.shiftKey){ e.preventDefault(); ask(); }
 });
-// Ensure prompt box is empty after refresh — placeholder shows, gives way on typing, no stale value
+if (clearBtnEl) {
+  clearBtnEl.addEventListener('click', () => { qEl.value=''; updateBadge(); updateCharCount(); qEl.focus(); });
+  clearBtnEl.style.display = 'none';
+}
 qEl.value = '';
 try { if (sessionStorage.getItem('bc_q')) sessionStorage.removeItem('bc_q'); } catch(e){}
-window.addEventListener('pageshow', () => { qEl.value = ''; updateBadge(); });
+window.addEventListener('pageshow', () => { qEl.value = ''; updateBadge(); updateCharCount(); });
 qEl.addEventListener('focus', () => { /* placeholder auto-hides on typing */ });
 updateBadge();
+updateCharCount();
 
 // Ask — now passes selectedMode
 function example(t){
