@@ -222,6 +222,7 @@ textarea:focus{border-color:var(--maroon);box-shadow:0 0 0 3px rgba(139,0,0,0.12
     <h2>What do you need today?</h2>
     <p>Pick a mode — see live prompting tips — then Seek Counsel. <b>Auto</b> detects, or force <b>Stories</b> / <b>Verses</b>.</p>
     <p class="small" style="margin:-4px 0 10px">📖 New here? <a href="/docs/Prompting_Guide.pdf" target="_blank" style="font-weight:700">Read the Prompting Guide</a> — get the most out of it.</p>
+    <div class="small" style="margin:0 0 6px;color:var(--maroon);font-weight:700;display:flex;align-items:center;gap:6px;animation:fadeUp 0.7s 0.15s both">👉 Select preferred mode:</div>
     <div class="modeToggle" role="tablist" aria-label="Prompt mode">
       <button data-mode="auto" class="active" onclick="setMode('auto')" aria-selected="true">⚡ Auto</button>
       <button data-mode="stories" onclick="setMode('stories')">📖 Stories</button>
@@ -231,7 +232,7 @@ textarea:focus{border-color:var(--maroon);box-shadow:0 0 0 3px rgba(139,0,0,0.12
       <strong>⚡ Auto —</strong> Describe a situation <em>or</em> ask for verses. E.g. <code>10 verses about diligence</code> or <code>I am in a cave like David at Adullam</code> — we auto-detect, never muddle. Tip: include a number + "verses" for verses; include emotion/situation for stories.
     </div>
     <div class="textWrap">
-      <textarea id="q" placeholder="Try: 10 verses about peace  — or —  I feel forgotten like Joseph in prison...">I feel overwhelmed and burnt out after a big win, like Elijah after Mount Carmel — how do I find fresh strength?</textarea>
+      <textarea id="q" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="true" placeholder="Try: 10 verses about peace  — or —  I feel forgotten like Joseph in prison..."></textarea>
     </div>
     <div class="promptAction">
       <button class="btn btnPrimary" onclick="ask()">✦ Seek Counsel — <span id="actionModeLabel">Auto</span></button>
@@ -369,6 +370,11 @@ qEl.addEventListener('input', updateBadge);
 qEl.addEventListener('keydown', (e)=>{
   if(e.key==='Enter' && !e.shiftKey){ e.preventDefault(); ask(); }
 });
+// Ensure prompt box is empty after refresh — placeholder shows, gives way on typing, no stale value
+qEl.value = '';
+try { if (sessionStorage.getItem('bc_q')) sessionStorage.removeItem('bc_q'); } catch(e){}
+window.addEventListener('pageshow', () => { qEl.value = ''; updateBadge(); });
+qEl.addEventListener('focus', () => { /* placeholder auto-hides on typing */ });
 updateBadge();
 
 // Ask — now passes selectedMode
