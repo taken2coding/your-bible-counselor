@@ -98,6 +98,21 @@ function htmlHome() {
 <link rel="icon" href="/Assets/favicon.ico" type="image/x-icon">
 <link rel="icon" href="/Assets/favicon.png" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="/Assets/apple-touch-icon.png" sizes="180x180">
+<meta name="description" content="Your Bible Counselor — Simple, proven wisdom for every part of your life. KJV 1769 verifiable. ${STORY_COUNT} biblical scenarios and ${VERSE_COUNT}+ verses with Wikisource provenance.">
+<meta name="keywords" content="bible counselor, KJV 1769, biblical scenarios, bible verses, wikisource, bible wisdom, christian counseling">
+<meta name="author" content="The Bible Counselor">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://your-bible-counselor.onrender.com/">
+<meta property="og:title" content="Your Bible Counselor — KJV 1769 • ${STORY_COUNT} Biblical Scenarios">
+<meta property="og:description" content="Simple, proven wisdom for every part of your life. ${STORY_COUNT} stories, ${VERSE_COUNT}+ verses — deeply smart, never muddled.">
+<meta property="og:image" content="https://your-bible-counselor.onrender.com/Assets/logo_main.png">
+<meta property="og:url" content="https://your-bible-counselor.onrender.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="The Bible Counselor">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Your Bible Counselor — KJV 1769">
+<meta name="twitter:description" content="Simple, proven wisdom for every part of your life.">
+<meta name="twitter:image" content="https://your-bible-counselor.onrender.com/Assets/logo_main.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
 <style>
@@ -209,7 +224,7 @@ a:hover{text-decoration:underline}
 .siteHeader .inner{max-width:1120px;margin:0 auto;padding:10px 18px;display:flex;align-items:center;justify-content:space-between;gap:16px}
 .brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:-0.01em;color:white;text-decoration:none}
 .brand img{width:32px;height:32px;border-radius:10px;object-fit:contain;background:transparent;filter:drop-shadow(0 2px 6px rgba(0,0,0,0.18))}
-.brand span{font-family:'Fraunces',serif;font-size:14px;color:white}
+.brand span{font-family:'Cinzel',serif;font-size:14px;letter-spacing:0.02em;color:white}
 .brand span small{color:rgba(255,255,255,0.72) !important}
 .navLinks{display:flex;align-items:center;gap:8px}
 .navLink{padding:7px 12px;border-radius:var(--radius-pill);font-size:12px;font-weight:600;color:rgba(255,255,255,0.88);border:1px solid rgba(255,255,255,0.14);transition:all 0.15s}
@@ -378,7 +393,7 @@ textarea:focus{border-color:var(--primary);box-shadow:0 0 0 4px var(--primary-ri
     <p class="sub">Simple, proven wisdom for every part of your life.</p>
     <div class="badgeRow">
       <span class="badge gold">✦ ${STORY_COUNT} Biblical Scenarios</span>
-      <span class="badge">📜 ${VERSE_COUNT} Verses</span>
+      <span class="badge">📜 ${VERSE_COUNT}+ Verses</span>
       <span class="badge muted">✓ Wikisource Provenance</span>
     </div>
     <div class="heroCtas">
@@ -615,7 +630,7 @@ async function ask(){
   if(q.length>600){ alert('Please shorten to under 600 characters.'); return; }
   const out=document.getElementById('out');
   const modeParam = selectedMode==='auto' ? '' : '&mode='+selectedMode;
-  out.innerHTML='<div class=card style="padding:18px;text-align:center"><div><span class=loadingDot></span><span class=loadingDot></span><span class=loadingDot></span></div><p class=small>Seeking counsel for: <em>'+esc(q).slice(0,120)+'</em> — mode: <b>'+esc(selectedMode)+'</b> — consulting ${STORY_COUNT} archetypes + ${VERSE_COUNT} verses…</p></div>';
+  out.innerHTML='<div class=card style="padding:18px;text-align:center"><div><span class=loadingDot></span><span class=loadingDot></span><span class=loadingDot></span></div><p class=small>Seeking counsel for: <em>'+esc(q).slice(0,120)+'</em> — mode: <b>'+esc(selectedMode)+'</b> — consulting ${STORY_COUNT} archetypes + ${VERSE_COUNT}+ verses…</p></div>';
   out.scrollIntoView({behavior:'smooth', block:'start'});
   const res=await fetch('/counsel?q='+encodeURIComponent(q)+modeParam, {headers:{'ngrok-skip-browser-warning':'true'}});
   const text=await res.text();
