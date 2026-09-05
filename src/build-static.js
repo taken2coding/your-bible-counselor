@@ -75,6 +75,10 @@ const html = `<!doctype html>
     --border:#1E293B;
     --border-strong:#334155;
   }
+  .kjv{background:linear-gradient(180deg, #1E293B 0%, #0F172A 100%) !important;border-color:#334155 !important;color:#F1F5F9 !important}
+  .modeTips{background:#1E2D3D !important;border-color:#1E293B !important;color:#F1F5F9 !important}
+  .badge{background:#1E2D3D !important;border-color:#1E293B !important;color:#F1F5F9 !important}
+  textarea{background:#111A23 !important;color:#F1F5F9 !important}
 }
 [data-theme="dark"]{
   --bg:#0B0F14;
@@ -89,6 +93,19 @@ const html = `<!doctype html>
   --border:#1E293B;
   --border-strong:#334155;
 }
+[data-theme="dark"] .kjv{background:linear-gradient(180deg, #1E293B 0%, #0F172A 100%) !important;border-color:#334155 !important;color:var(--ink) !important}
+[data-theme="dark"] .kjv a{color:#93C5FD}
+[data-theme="dark"] .modeTips{background:var(--surface-2) !important;border-color:var(--border) !important;color:var(--ink) !important}
+[data-theme="dark"] .modeTips.verses{background:#0F2A1F !important;border-color:#14532D !important}
+[data-theme="dark"] .modeTips.stories{background:#2A1111 !important;border-color:#7C2D2B !important}
+[data-theme="dark"] .modeTips.auto{background:#2A2111 !important;border-color:#8B5E34 !important}
+[data-theme="dark"] .modeTips code{background:var(--surface) !important;border-color:var(--border) !important;color:var(--ink) !important}
+[data-theme="dark"] .badge{background:var(--surface-2) !important;border-color:var(--border) !important;color:var(--ink) !important}
+[data-theme="dark"] .badge.gold{background:linear-gradient(180deg, #2A2111 0%, #3B2F14 100%) !important;border-color:#8B5E34 !important;color:#FDE68A !important}
+[data-theme="dark"] .promptCard{background:color-mix(in srgb, var(--surface) 96%, transparent) !important}
+[data-theme="dark"] .archCard{border-color:var(--border) !important}
+[data-theme="dark"] textarea{background:var(--surface) !important;color:var(--ink) !important}
+[data-theme="dark"] textarea::placeholder{color:var(--subtle) !important}
 [data-theme="light"]{
   --bg:#FDFCF8;
   --bg-soft:#FFF7ED;
