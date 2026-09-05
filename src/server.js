@@ -99,7 +99,7 @@ function htmlHome() {
 <link rel="icon" href="/Assets/favicon.png" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="/Assets/apple-touch-icon.png" sizes="180x180">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
 <style>
 :root{
   --bg:#FDFCF8;
@@ -230,7 +230,7 @@ a:hover{text-decoration:underline}
   background-size:32px 32px;mask:radial-gradient(900px 500px at 50% 0%, black 30%, transparent 72%);opacity:0.6;pointer-events:none}
 .heroInner{max-width:760px;margin:0 auto;padding:36px 18px 28px;text-align:center;position:relative}
 .heroLogo{width:112px;height:auto;display:block;margin:0 auto 14px;filter:drop-shadow(0 12px 24px rgba(15,23,42,0.12));animation:fadeUp 0.6s var(--ease)}
-.hero h1{font-family:'Fraunces',serif;font-size:36px;line-height:0.95;letter-spacing:-0.03em;margin:0;font-weight:700;color:var(--ink);animation:fadeUp 0.6s 0.08s both}
+.hero h1{font-family:'Cinzel',serif;font-size:32px;line-height:1;letter-spacing:0.5px;margin:0;font-weight:600;color:var(--ink);animation:fadeUp 0.6s 0.08s both}
 .hero h1 span{font-style:italic;font-weight:600;color:var(--primary)}
 .hero .sub{max-width:560px;margin:10px auto 0;font-size:15px;line-height:1.5;color:var(--muted);animation:fadeUp 0.6s 0.14s both}
 .badgeRow{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:16px;animation:fadeUp 0.6s 0.2s both}
@@ -318,7 +318,7 @@ textarea:focus{border-color:var(--primary);box-shadow:0 0 0 4px var(--primary-ri
 .copyBtn:hover{color:var(--ink);border-color:var(--border-strong)}
 /* Gallery */
 .galleryHead{display:flex;align-items:end;justify-content:space-between;gap:14px;flex-wrap:wrap;margin:28px 0 14px}
-.galleryHead h2{margin:0;font-family:'Fraunces',serif;font-size:22px;letter-spacing:-0.02em;color:var(--ink)}
+.galleryHead h2{margin:0;font-family:'Cinzel',serif;font-size:20px;letter-spacing:0.2px;color:var(--ink)}
 .filterBar{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
 .filterBar input, .filterBar select{padding:10px 14px;border:1.5px solid var(--border);border-radius:var(--radius-pill);font-size:13px;outline:none;background:var(--surface);color:var(--ink);min-width:200px;transition:border-color 0.15s, box-shadow 0.15s}
 .filterBar input:focus, .filterBar select:focus{border-color:var(--primary);box-shadow:0 0 0 4px var(--primary-ring)}
