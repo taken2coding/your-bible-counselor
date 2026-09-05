@@ -414,7 +414,6 @@ textarea:focus{border-color:var(--primary);box-shadow:0 0 0 4px var(--primary-ri
 <div class="footer">
   <div>All verses <b>KJV 1769</b> • Verify at <a href="https://en.wikisource.org/wiki/The_Holy_Bible_(King_James_Version,_1769)" target="_blank">Wikisource KJV 1769</a> • <span id="storyCountFoot"></span></div>
   <div style="margin-top:8px">Has this project blessed you? <a href="mailto:sirp4all@gmail.com">Email the curator — sirp4all@gmail.com</a></div>
-  <div style="margin-top:6px;opacity:0.7">Static • Client-side counsel • No data leaves your device</div>
 </div>
 
 <script>
