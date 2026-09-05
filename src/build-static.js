@@ -682,7 +682,7 @@ function ask(){
   if(!q) return;
   if(q.length>600){ alert('Please shorten to under 600 characters.'); return; }
   const out=document.getElementById('out');
-  out.innerHTML='<div class=card style="padding:18px;text-align:center"><div><span class=loadingDot></span><span class=loadingDot></span><span class=loadingDot></span></div><p class=small>Seeking counsel for: <em>'+esc(q).slice(0,120)+'</em> — mode: <b>'+esc(selectedMode)+'</b> — consulting '+STORY_COUNT+' Biblical Scenarios + '+VERSE_COUNT+'+ verses'…</p></div>';
+  out.innerHTML='<div class=card style="padding:18px;text-align:center"><div><span class=loadingDot></span><span class=loadingDot></span><span class=loadingDot></span></div><p class=small>Seeking counsel for: <em>'+esc(q).slice(0,120)+'</em> — mode: <b>'+esc(selectedMode)+'</b> — consulting '+STORY_COUNT+' Biblical Scenarios + '+VERSE_COUNT+'+ verses…</p></div>';
   out.scrollIntoView({behavior:'smooth', block:'start'});
   // client-side counsel — no fetch, instant, static-safe
   setTimeout(()=>{

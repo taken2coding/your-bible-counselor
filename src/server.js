@@ -90,10 +90,11 @@ function htmlHome() {
   const STORY_COUNT_CLIENT = STORIES.length;
   const VERSE_COUNT_CLIENT = VERSES.length;
   return `<!doctype html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="color-scheme" content="light dark"/>
 <title>Your Bible Counselor — KJV 1769 • ${STORY_COUNT} Biblical Scenarios</title>
 <link rel="icon" href="/Assets/favicon.ico" type="image/x-icon">
 <link rel="icon" href="/Assets/favicon.png" type="image/png" sizes="32x32">
@@ -383,6 +384,20 @@ textarea:focus{border-color:var(--primary);box-shadow:0 0 0 4px var(--primary-ri
 </style>
 </head>
 <body>
+<header class="siteHeader">
+  <div class="inner">
+    <a class="brand" href="#">
+      <img src="Assets/logo_main.png" alt="Bible Counselor logo" />
+      <span>Bible Counselor</span>
+    </a>
+    <nav class="navLinks">
+      <a class="navLink" href="docs/Prompting_Guide.pdf" target="_blank">Prompting Guide</a>
+      <a class="navLink" href="#gallery">Scenarios</a>
+      <button class="themeToggle" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">◐</button>
+    </nav>
+  </div>
+</header>
+
 <div class="hero">
   <div class="floatingDot" style="top:18%;left:8%;animation-delay:0s"></div>
   <div class="floatingDot" style="top:22%;right:10%;animation-delay:1.2s"></div>
@@ -405,11 +420,20 @@ textarea:focus{border-color:var(--primary);box-shadow:0 0 0 4px var(--primary-ri
 
 <div class="wrap">
   <div class="card promptCard" id="promptCard">
-    <h2>What do you need today?</h2>
-    <p>Pick a mode — see live prompting tips — then Seek Counsel. <b>Auto</b> detects, or force <b>Stories</b> / <b>Verses</b>.</p>
-    <p class="small" style="margin:-4px 0 10px">📖 New here? <a href="/docs/Prompting_Guide.pdf" target="_blank" style="font-weight:700">Read the Prompting Guide</a> — get the most out of it.</p>
-    <div class="small" style="margin:0 0 6px;color:var(--maroon);font-weight:700;display:flex;align-items:center;gap:6px;animation:fadeUp 0.7s 0.15s both">👉 Select preferred mode:</div>
+    <div class="promptHead">
+      <div>
+        <h2>What do you need today?</h2>
+        <p>Describe a situation or ask for verses. The Bible Counselor never muddles.</p>
+      </div>
+      <div class="headIcon" aria-hidden="true">✦</div>
+    </div>
+    <p class="small" style="margin:0 0 10px">📖 New here? <a href="docs/Prompting_Guide.pdf" target="_blank" style="font-weight:700">Read the Prompting Guide</a></p>
+    <div class="small" style="margin:0 0 8px;color:var(--primary);font-weight:700;display:flex;align-items:center;gap:8px">
+      <span style="width:20px;height:20px;display:grid;place-items:center;border-radius:50%;background:var(--primary);color:white;font-size:10px">→</span>
+      Select preferred mode:
+    </div>
     <div class="modeToggle" role="tablist" aria-label="Prompt mode">
+      <div class="modeIndicator" id="modeIndicator"></div>
       <button data-mode="auto" class="active" onclick="setMode('auto')" aria-selected="true">⚡ Auto</button>
       <button data-mode="stories" onclick="setMode('stories')">📖 Stories</button>
       <button data-mode="verses" onclick="setMode('verses')">📜 Verses</button>
@@ -418,7 +442,11 @@ textarea:focus{border-color:var(--primary);box-shadow:0 0 0 4px var(--primary-ri
       <strong>⚡ Auto —</strong> Describe a situation <em>or</em> ask for verses. E.g. <code>10 verses about diligence</code> or <code>I am in a cave like David at Adullam</code> — we auto-detect, never muddle. Tip: include a number + "verses" for verses; include emotion/situation for stories.
     </div>
     <div class="textWrap">
-      <textarea id="q" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="true" placeholder="Try: 10 verses about peace  — or —  I feel forgotten like Joseph in prison..."></textarea>
+      <textarea id="q" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="true" placeholder="Try: 10 verses about peace  — or —  I feel forgotten like Joseph in prison..." rows="3"></textarea>
+      <div class="textMeta">
+        <span class="charCount" id="charCount">0 / 600</span>
+        <button class="clearBtn" id="clearBtn" type="button" aria-label="Clear" title="Clear">×</button>
+      </div>
     </div>
     <div class="promptAction">
       <button class="btn btnPrimary" onclick="ask()">✦ Seek Counsel — <span id="actionModeLabel">Auto</span></button>
